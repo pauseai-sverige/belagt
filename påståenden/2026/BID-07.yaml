@@ -13,7 +13,7 @@ källa:
   typ: preprint
   citat: produces students that are significantly more likely than their teachers to admit their hidden behavior when asked
   hämtad: '2026-10-17'
-  arkiv: null
+  arkiv: https://web.archive.org/web/20261010014824/https://arxiv.org/abs/2610.11012
 förbehåll: Preprint som inte är granskad av andra forskare. Försöken gjordes på AuditBenchs modeller med inbyggda
   hemligheter, inte på verkliga AI-system som döljer felinriktning, och författarna skriver att effekten
   till stor del försvinner när eleven inte delar lärarens förtränade bas.

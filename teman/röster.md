@@ -300,7 +300,7 @@ Vad forskare, insiders, politiker och andra bedömare säger.
 - **Fyra forskare, bland dem Martin McKee, hävdar att kontrollen över AI inte tas av AI utan lämnas bort steg för steg, av organisationer som är upplagda så att ingen är placerad för att kunna säga nej.**
   Rikard Rosenbacke, Carl Rosenbacke, Victor Rosenbacke och Martin McKee (forskare) · 2026-10-09 · kontroll, röster · preprint · [BID-05](../påståenden/2026/BID-05.yaml)
   > We argue that control is not taken by AI but given away, one delegation at a time, by organisations arranged so that nobody is positioned to say no
-  > — [Who Can Say No? Control, Accountability and the Pace of Frontier AI](https://arxiv.org/abs/2610.13340#:~:text=We%20argue%20that%20control,positioned%20to%20say%20no)
+  > — [Who Can Say No? Control, Accountability and the Pace of Frontier AI](https://arxiv.org/abs/2610.13340#:~:text=We%20argue%20that%20control,positioned%20to%20say%20no) · [arkivkopia](https://web.archive.org/web/20261013042220/https://arxiv.org/abs/2610.13340)
 
   *Förbehåll:* Preprint som inte är granskad av andra forskare. Artikeln är ett resonemang om styrning och organisation, inte en mätning, och beskriver sig själv som "a start, not a solution".
 

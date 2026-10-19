@@ -2010,36 +2010,36 @@ Alla 324 påståenden i arkivet, i den ordning det de handlar om hände eller sa
 - **Tre forskare rapporterar att AI-modeller som tränats genom destillation (elevmodeller) från modeller med dolda beteenden (lärarmodeller) oftare avslöjade beteendet när de tillfrågades än lärarmodellerna själva. Forskarna föreslår metoden för att avslöja AI som döljer sin felinriktning.**
   Sebastian Prasanna, Jacqueline Tay och Alek Westover (forskare) · 2026-10-07 · kontroll · preprint · [BID-07](./påståenden/2026/BID-07.yaml)
   > produces students that are significantly more likely than their teachers to admit their hidden behavior when asked
-  > — [Distillation for Incrimination and Distillation for Capabilities](https://arxiv.org/abs/2610.11012#:~:text=produces%20students%20that%20are,hidden%20behavior%20when%20asked)
+  > — [Distillation for Incrimination and Distillation for Capabilities](https://arxiv.org/abs/2610.11012#:~:text=produces%20students%20that%20are,hidden%20behavior%20when%20asked) · [arkivkopia](https://web.archive.org/web/20261010014824/https://arxiv.org/abs/2610.11012)
 
   *Förbehåll:* Preprint som inte är granskad av andra forskare. Försöken gjordes på AuditBenchs modeller med inbyggda hemligheter, inte på verkliga AI-system som döljer felinriktning, och författarna skriver att effekten till stor del försvinner när eleven inte delar lärarens förtränade bas.
 - **EU-kommissionen uppger att dess vetenskapliga panel för AI har undersökt nyliga incidenter där kontrollen över AI-system gått förlorad, och tillsammans med AI-kontoret tagit fram frågor till de företag som utvecklade modellerna.**
   EU-kommissionen · 2026-10-09 · styrning, kontroll · myndighet · [BID-04](./påståenden/2026/BID-04.yaml)
   > The panel has been investigating recent loss-of-control incidents, and together with the Commission’s AI Office, has worked on a set of questions for the companies that developed the models involved.
-  > — [Commission holds special meeting of Scientific panel on frontier AI safety and risks](https://digital-strategy.ec.europa.eu/en/news/commission-holds-special-meeting-scientific-panel-frontier-ai-safety-and-risks#:~:text=The%20panel%20has%20been,developed%20the%20models%20involved)
+  > — [Commission holds special meeting of Scientific panel on frontier AI safety and risks](https://digital-strategy.ec.europa.eu/en/news/commission-holds-special-meeting-scientific-panel-frontier-ai-safety-and-risks#:~:text=The%20panel%20has%20been,developed%20the%20models%20involved) · [arkivkopia](https://web.archive.org/web/20261016113953/https://digital-strategy.ec.europa.eu/en/news/commission-holds-special-meeting-scientific-panel-frontier-ai-safety-and-risks)
 
   *Förbehåll:* Pressmeddelandet beskriver inte vilka incidenterna var eller vad frågorna till företagen innehåller. Det är kommissionens egen beskrivning av panelens arbete.
 - **Fyra forskare, bland dem Martin McKee, hävdar att kontrollen över AI inte tas av AI utan lämnas bort steg för steg, av organisationer som är upplagda så att ingen är placerad för att kunna säga nej.**
   Rikard Rosenbacke, Carl Rosenbacke, Victor Rosenbacke och Martin McKee (forskare) · 2026-10-09 · kontroll, röster · preprint · [BID-05](./påståenden/2026/BID-05.yaml)
   > We argue that control is not taken by AI but given away, one delegation at a time, by organisations arranged so that nobody is positioned to say no
-  > — [Who Can Say No? Control, Accountability and the Pace of Frontier AI](https://arxiv.org/abs/2610.13340#:~:text=We%20argue%20that%20control,positioned%20to%20say%20no)
+  > — [Who Can Say No? Control, Accountability and the Pace of Frontier AI](https://arxiv.org/abs/2610.13340#:~:text=We%20argue%20that%20control,positioned%20to%20say%20no) · [arkivkopia](https://web.archive.org/web/20261013042220/https://arxiv.org/abs/2610.13340)
 
   *Förbehåll:* Preprint som inte är granskad av andra forskare. Artikeln är ett resonemang om styrning och organisation, inte en mätning, och beskriver sig själv som "a start, not a solution".
 - **Ordföranden i EU:s vetenskapliga panel för AI rekommenderade EU-kommissionen att granska de modeller som bara används internt hos AI-utvecklare, bland annat genom en insatsstyrka för att upptäcka och utreda incidenter där kontrollen över AI gått förlorad.**
   Seán Ó hÉigeartaigh, ordförande i EU:s vetenskapliga panel för AI, enligt EU-kommissionen · 2026-10-09 · styrning, kontroll · myndighet · [BID-06](./påståenden/2026/BID-06.yaml)
   > ensure governance of the risk posed by internal models during development activities and deployment for testing; strengthen EU capabilities related to detection, evaluation and investigation of incidents of this nature (e.g., via a task force
-  > — [Special meeting of the AI Scientific Panel](https://digital-strategy.ec.europa.eu/en/news/special-meeting-ai-scientific-panel#:~:text=ensure%20governance%20of%20the,via%20a%20task%20force)
+  > — [Special meeting of the AI Scientific Panel](https://digital-strategy.ec.europa.eu/en/news/special-meeting-ai-scientific-panel#:~:text=ensure%20governance%20of%20the,via%20a%20task%20force) · [arkivkopia](https://web.archive.org/web/20261013112823/https://digital-strategy.ec.europa.eu/en/news/special-meeting-ai-scientific-panel)
 
   *Förbehåll:* Det är ordförandens och vice ordförandens rekommendationer till kommissionen, inte ett beslut. Texten anger inte vilka incidenterna var. Kommissionens egen sammanfattning av mötet, inte panelens skrivna rapport.
 - **Den brittiska regeringen uppger att den ska pröva skärpta skydd mot AI-hot inom regelverket för cybersäkerhet och motståndskraft, bland annat hur allvarliga AI-incidenter och nästan-olyckor kan identifieras och rapporteras.**
   Storbritanniens regering (Cabinet Office, AI Security Institute, NCSC och DCMS) · 2026-10-12 · styrning · myndighet · [BID-02](./påståenden/2026/BID-02.yaml)
   > Stronger protections against emerging AI threats to be considered through the Cyber Security and Resilience Bill regime, such as how serious AI incidents and near misses can be identified and reported.
-  > — [Britain steps up national defences against growing AI risks](https://www.gov.uk/government/news/britain-steps-up-national-defences-against-growing-ai-risks#:~:text=Stronger%20protections%20against%20emerging,be%20identified%20and%20reported)
+  > — [Britain steps up national defences against growing AI risks](https://www.gov.uk/government/news/britain-steps-up-national-defences-against-growing-ai-risks#:~:text=Stronger%20protections%20against%20emerging,be%20identified%20and%20reported) · [arkivkopia](https://web.archive.org/web/20261013071839/https://www.gov.uk/government/news/britain-steps-up-national-defences-against-growing-ai-risks)
 
   *Förbehåll:* Det är ett pressmeddelande om vad regeringen ska överväga, inte en lag. Pressmeddelandet skriver att detaljerna ska utarbetas tillsammans med parlamentariker, tekniska experter och de aktörer som ska genomföra dem.
 - **Storbritanniens AI-minister Kanishka Narayan uppmanade företagen som utvecklar de mest kraftfulla AI-systemen att inte släppa ett system om de inte kan kontrollera riskerna tillräckligt.**
   Kanishka Narayan (Storbritanniens AI-minister) · 2026-10-12 · styrning, kontroll · myndighet · [BID-03](./påståenden/2026/BID-03.yaml)
   > And if you cannot adequately control the risks, do not release the system.
-  > — [Britain steps up national defences against growing AI risks](https://www.gov.uk/government/news/britain-steps-up-national-defences-against-growing-ai-risks#:~:text=And%20if%20you%20cannot,not%20release%20the%20system)
+  > — [Britain steps up national defences against growing AI risks](https://www.gov.uk/government/news/britain-steps-up-national-defences-against-growing-ai-risks#:~:text=And%20if%20you%20cannot,not%20release%20the%20system) · [arkivkopia](https://web.archive.org/web/20261013071839/https://www.gov.uk/government/news/britain-steps-up-national-defences-against-growing-ai-risks)
 
   *Förbehåll:* Uttalandet är ett citat av ministern i regeringens pressmeddelande och är inte ett lagkrav. Ministern säger i samma stycke att regeringen "will legislate wherever necessary", men pressmeddelandet anger inga konkreta lagförslag om att hindra lanseringar.
