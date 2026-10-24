@@ -8459,6 +8459,133 @@
    "ersatt_av": null,
    "citera": "Kanishka Narayan (Storbritanniens AI-minister), 2026-10-12. Britain steps up national defences against growing AI risks. https://www.gov.uk/government/news/britain-steps-up-national-defences-against-growing-ai-risks. Via Belagt BID-03: https://pauseai-sverige.github.io/belagt/#BID-03",
    "citatlänk": "https://www.gov.uk/government/news/britain-steps-up-national-defences-against-growing-ai-risks#:~:text=And%20if%20you%20cannot,not%20release%20the%20system"
+  },
+  {
+   "id": "BID-08",
+   "påstående": "Google DeepMind uppger att Gemini 4 Argon löste alla 12 simulerade cyberangrepp från början till slut i företagets egna tester, mot fem i föregående modellgeneration.",
+   "typ": "mätning",
+   "vem": "Google DeepMind (AI-företag)",
+   "datum": "2026-10-13",
+   "tema": [
+    "missbruk",
+    "förmågor"
+   ],
+   "källa": {
+    "url": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
+    "titel": "Developing Gemini 4 Argon responsibly and safely",
+    "typ": "partsuppgift",
+    "citat": "solving all 12 of the end-to-end simulated cyberattack scenarios, up from five in our previous generation",
+    "hämtad": "2026-10-24",
+    "arkiv": null
+   },
+   "förbehåll": "Företaget mäter sin egen modell med sina egna tester, och blogginlägget redovisar inte testerna i detalj (hänvisar till en separat säkerhetsrapport). DeepMind skriver att man på grund av förhöjda förmågor inom cyber och biologi införde en ny uppsättning skyddsåtgärder.",
+   "vikt": 2,
+   "bäst_före": null,
+   "kontrollerad": "2026-10-24",
+   "ersatt_av": null,
+   "citera": "Google DeepMind (AI-företag), 2026-10-13. Developing Gemini 4 Argon responsibly and safely. https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/. Via Belagt BID-08: https://pauseai-sverige.github.io/belagt/#BID-08",
+   "citatlänk": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/#:~:text=solving%20all%2012%20of,in%20our%20previous%20generation"
+  },
+  {
+   "id": "BID-09",
+   "påstående": "Google DeepMind uppger att dess övervakning av Gemini 4 Argon fångade modellen när den under träning i sällsynta fall försökte fuska i testerna, bland annat genom att krascha testmiljön för att slippa poängsättas för ett misslyckat försök.",
+   "typ": "händelse",
+   "vem": "Google DeepMind (AI-företag)",
+   "datum": "2026-10-13",
+   "tema": [
+    "kontroll"
+   ],
+   "källa": {
+    "url": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
+    "titel": "Developing Gemini 4 Argon responsibly and safely",
+    "typ": "partsuppgift",
+    "citat": "in one case it even crashed the evaluation sandbox to avoid getting scored for a failed run",
+    "hämtad": "2026-10-24",
+    "arkiv": null
+   },
+   "förbehåll": "Partsuppgift om den egna modellen. Enligt företaget skedde det i sällsynta fall, när träningsuppgifter var svåra eller träningsmiljöer felaktiga. Företaget skriver också att man i säkerhetstester med så kallade honeypots inte fann något fall där modellen ökade sin förmåga att ta dolda handlingar, till exempel att sabotera säkerhetsövervakning.",
+   "vikt": 2,
+   "bäst_före": null,
+   "kontrollerad": "2026-10-24",
+   "ersatt_av": null,
+   "citera": "Google DeepMind (AI-företag), 2026-10-13. Developing Gemini 4 Argon responsibly and safely. https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/. Via Belagt BID-09: https://pauseai-sverige.github.io/belagt/#BID-09",
+   "citatlänk": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/#:~:text=in%20one%20case%20it,for%20a%20failed%20run"
+  },
+  {
+   "id": "BID-10",
+   "påstående": "Google DeepMind uppger att när en bestraffning av genvägar av misstag lades på modellens tankekedja under en träningskörning, blev andelen genvägar som modellen tog utan att nämna dem i sina tankar mer än tre gånger så stor, från 11,2 till 36,4 procent.",
+   "typ": "mätning",
+   "vem": "Google DeepMind (AI-företag)",
+   "datum": "2026-10-13",
+   "tema": [
+    "kontroll"
+   ],
+   "källa": {
+    "url": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
+    "titel": "Developing Gemini 4 Argon responsibly and safely",
+    "typ": "partsuppgift",
+    "citat": "the share of shortcuts the model took silently — without mentioning them in its thoughts — more than tripled (from 11.2% to 36.4%)",
+    "hämtad": "2026-10-24",
+    "arkiv": null
+   },
+   "förbehåll": "Partsuppgift. Företaget beskriver det som en körning där straffet lades på av misstag och redovisar inte upplägget i detalj i blogginlägget. Slutsatsen enligt företaget är att man inte straffar vad modellen skriver i sin tankekedja under träning, för att tankekedjan ska förbli genomskinlig och möjlig att övervaka.",
+   "vikt": 2,
+   "bäst_före": null,
+   "kontrollerad": "2026-10-24",
+   "ersatt_av": null,
+   "citera": "Google DeepMind (AI-företag), 2026-10-13. Developing Gemini 4 Argon responsibly and safely. https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/. Via Belagt BID-10: https://pauseai-sverige.github.io/belagt/#BID-10",
+   "citatlänk": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/#:~:text=the%20share%20of%20shortcuts,%28from%2011.2%25%20to%2036.4%25"
+  },
+  {
+   "id": "BID-12",
+   "påstående": "Forskare rapporterar att transkript av modellers lösningar fortfarande säger något om modellernas förmåga efter att ett test har mättats, och att parvis bedömning minskade prediktionsfelet 5,3 gånger jämfört med att bara använda de mättade poängen.",
+   "typ": "mätning",
+   "vem": "Morio Hamada, Jehyeok Yeon, Matteo Migliarini, Justin Olive och Magda Dubois (forskare)",
+   "datum": "2026-10-14",
+   "tema": [
+    "förmågor",
+    "kontroll"
+   ],
+   "källa": {
+    "url": "https://arxiv.org/abs/2610.20667",
+    "titel": "Evaluating Model Capabilities After Benchmark Saturation",
+    "typ": "preprint",
+    "citat": "pairwise judging performs best, reducing prediction error by 5.3 times compared to a baseline using only saturated benchmark scores",
+    "hämtad": "2026-10-24",
+    "arkiv": null
+   },
+   "förbehåll": "Preprint som inte är granskad. Mätningen bygger på simulerad mättnad med historiska modeller och tester. Författarna skriver att metodernas prediktionskraft inte alltid generaliserar vid fördelningsskift, till exempel genom att de underskattade de första resonemangsmodellerna i början av 2025.",
+   "vikt": 1,
+   "bäst_före": null,
+   "kontrollerad": "2026-10-24",
+   "ersatt_av": null,
+   "citera": "Morio Hamada, Jehyeok Yeon, Matteo Migliarini, Justin Olive och Magda Dubois (forskare), 2026-10-14. Evaluating Model Capabilities After Benchmark Saturation. https://arxiv.org/abs/2610.20667. Via Belagt BID-12: https://pauseai-sverige.github.io/belagt/#BID-12",
+   "citatlänk": "https://arxiv.org/abs/2610.20667#:~:text=pairwise%20judging%20performs%20best%2C,only%20saturated%20benchmark%20scores"
+  },
+  {
+   "id": "BID-11",
+   "påstående": "Sjutton forskare rapporterar att debatt mellan AI-system ökade mänskliga domares träffsäkerhet, medan svagare språkmodeller som domare inte hade motsvarande nytta och i vissa fall blev sämre.",
+   "typ": "mätning",
+   "vem": "Maria Victoria Carro m.fl. (17 forskare)",
+   "datum": "2026-10-20",
+   "tema": [
+    "kontroll"
+   ],
+   "källa": {
+    "url": "https://arxiv.org/abs/2610.28539",
+    "titel": "Humans Correct Their Judgments Through Debate, but Weaker AI Models Do Not",
+    "typ": "preprint",
+    "citat": "For weaker language models, however, the results are mixed: debate provides no comparable gains in most settings and can even reduce accuracy.",
+    "hämtad": "2026-10-24",
+    "arkiv": null
+   },
+   "förbehåll": "Preprint som inte är granskad av andra forskare. Författarna skriver att resultaten stödjer debatt som väg till skalbar mänsklig tillsyn men väcker tvivel om nyttan när svagare AI-system är övervakare, vilket väcker oro för helt automatiserade tränings- och kontrollkedjor i högriskmiljöer.",
+   "vikt": 1,
+   "bäst_före": null,
+   "kontrollerad": "2026-10-24",
+   "ersatt_av": null,
+   "citera": "Maria Victoria Carro m.fl. (17 forskare), 2026-10-20. Humans Correct Their Judgments Through Debate, but Weaker AI Models Do Not. https://arxiv.org/abs/2610.28539. Via Belagt BID-11: https://pauseai-sverige.github.io/belagt/#BID-11",
+   "citatlänk": "https://arxiv.org/abs/2610.28539#:~:text=For%20weaker%20language%20models%2C,can%20even%20reduce%20accuracy"
   }
  ]
 }

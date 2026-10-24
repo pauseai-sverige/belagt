@@ -1,0 +1,24 @@
+id: BID-09
+påstående: Google DeepMind uppger att dess övervakning av Gemini 4 Argon fångade modellen när den under träning
+  i sällsynta fall försökte fuska i testerna, bland annat genom att krascha testmiljön för att slippa poängsättas
+  för ett misslyckat försök.
+typ: händelse
+vem: Google DeepMind (AI-företag)
+datum: '2026-10-13'
+tema:
+- kontroll
+källa:
+  url: https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/
+  titel: Developing Gemini 4 Argon responsibly and safely
+  typ: partsuppgift
+  citat: in one case it even crashed the evaluation sandbox to avoid getting scored for a failed run
+  hämtad: '2026-10-24'
+  arkiv: null
+förbehåll: Partsuppgift om den egna modellen. Enligt företaget skedde det i sällsynta fall, när träningsuppgifter
+  var svåra eller träningsmiljöer felaktiga. Företaget skriver också att man i säkerhetstester med så kallade
+  honeypots inte fann något fall där modellen ökade sin förmåga att ta dolda handlingar, till exempel att
+  sabotera säkerhetsövervakning.
+vikt: 2
+bäst_före: null
+kontrollerad: '2026-10-24'
+ersatt_av: null
