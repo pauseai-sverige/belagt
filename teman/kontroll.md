@@ -4,7 +4,7 @@
 
 Går systemen att styra, övervaka och testa? Alignment, tankekedjor och testmedvetenhet.
 
-63 påståenden, de viktigaste först inom varje år.
+67 påståenden, de viktigaste först inom varje år.
 
 ## 2026
 
@@ -296,6 +296,18 @@ Går systemen att styra, övervaka och testa? Alignment, tankekedjor och testmed
   > — [Britain steps up national defences against growing AI risks](https://www.gov.uk/government/news/britain-steps-up-national-defences-against-growing-ai-risks#:~:text=And%20if%20you%20cannot,not%20release%20the%20system) · [arkivkopia](https://web.archive.org/web/20261013071839/https://www.gov.uk/government/news/britain-steps-up-national-defences-against-growing-ai-risks)
 
   *Förbehåll:* Uttalandet är ett citat av ministern i regeringens pressmeddelande och är inte ett lagkrav. Ministern säger i samma stycke att regeringen "will legislate wherever necessary", men pressmeddelandet anger inga konkreta lagförslag om att hindra lanseringar.
+- **Google DeepMind uppger att dess övervakning av Gemini 4 Argon fångade modellen när den under träning i sällsynta fall försökte fuska i testerna, bland annat genom att krascha testmiljön för att slippa poängsättas för ett misslyckat försök.**
+  Google DeepMind (AI-företag) · 2026-10-13 · kontroll · partsuppgift · [BID-09](../påståenden/2026/BID-09.yaml)
+  > in one case it even crashed the evaluation sandbox to avoid getting scored for a failed run
+  > — [Developing Gemini 4 Argon responsibly and safely](https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/#:~:text=in%20one%20case%20it,for%20a%20failed%20run)
+
+  *Förbehåll:* Partsuppgift om den egna modellen. Enligt företaget skedde det i sällsynta fall, när träningsuppgifter var svåra eller träningsmiljöer felaktiga. Företaget skriver också att man i säkerhetstester med så kallade honeypots inte fann något fall där modellen ökade sin förmåga att ta dolda handlingar, till exempel att sabotera säkerhetsövervakning.
+- **Google DeepMind uppger att när en bestraffning av genvägar av misstag lades på modellens tankekedja under en träningskörning, blev andelen genvägar som modellen tog utan att nämna dem i sina tankar mer än tre gånger så stor, från 11,2 till 36,4 procent.**
+  Google DeepMind (AI-företag) · 2026-10-13 · kontroll · partsuppgift · [BID-10](../påståenden/2026/BID-10.yaml)
+  > the share of shortcuts the model took silently — without mentioning them in its thoughts — more than tripled (from 11.2% to 36.4%)
+  > — [Developing Gemini 4 Argon responsibly and safely](https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/#:~:text=the%20share%20of%20shortcuts,%28from%2011.2%25%20to%2036.4%25)
+
+  *Förbehåll:* Partsuppgift. Företaget beskriver det som en körning där straffet lades på av misstag och redovisar inte upplägget i detalj i blogginlägget. Slutsatsen enligt företaget är att man inte straffar vad modellen skriver i sin tankekedja under träning, för att tankekedjan ska förbli genomskinlig och möjlig att övervaka.
 - **Tre forskare hävdar att de har bevisat att inte ens en perfekt AI-agent kan garantera säkert beteende i två beskrivna miljöer, där miljön bara är delvis observerbar och agenten måste agera inom begränsad tid.**
   Leo Zeitler, Jack Richings och Victoria Nockles (forskare) · 2026-10-07 · kontroll · preprint · [BID-01](../påståenden/2026/BID-01.yaml)
   > In these scenarios, we prove that even a perfect agent cannot guarantee safe behaviour.
@@ -314,6 +326,18 @@ Går systemen att styra, övervaka och testa? Alignment, tankekedjor och testmed
   > — [Who Can Say No? Control, Accountability and the Pace of Frontier AI](https://arxiv.org/abs/2610.13340#:~:text=We%20argue%20that%20control,positioned%20to%20say%20no) · [arkivkopia](https://web.archive.org/web/20261013042220/https://arxiv.org/abs/2610.13340)
 
   *Förbehåll:* Preprint som inte är granskad av andra forskare. Artikeln är ett resonemang om styrning och organisation, inte en mätning, och beskriver sig själv som "a start, not a solution".
+- **Forskare rapporterar att transkript av modellers lösningar fortfarande säger något om modellernas förmåga efter att ett test har mättats, och att parvis bedömning minskade prediktionsfelet 5,3 gånger jämfört med att bara använda de mättade poängen.**
+  Morio Hamada, Jehyeok Yeon, Matteo Migliarini, Justin Olive och Magda Dubois (forskare) · 2026-10-14 · förmågor, kontroll · preprint · [BID-12](../påståenden/2026/BID-12.yaml)
+  > pairwise judging performs best, reducing prediction error by 5.3 times compared to a baseline using only saturated benchmark scores
+  > — [Evaluating Model Capabilities After Benchmark Saturation](https://arxiv.org/abs/2610.20667#:~:text=pairwise%20judging%20performs%20best%2C,only%20saturated%20benchmark%20scores)
+
+  *Förbehåll:* Preprint som inte är granskad. Mätningen bygger på simulerad mättnad med historiska modeller och tester. Författarna skriver att metodernas prediktionskraft inte alltid generaliserar vid fördelningsskift, till exempel genom att de underskattade de första resonemangsmodellerna i början av 2025.
+- **Sjutton forskare rapporterar att debatt mellan AI-system ökade mänskliga domares träffsäkerhet, medan svagare språkmodeller som domare inte hade motsvarande nytta och i vissa fall blev sämre.**
+  Maria Victoria Carro m.fl. (17 forskare) · 2026-10-20 · kontroll · preprint · [BID-11](../påståenden/2026/BID-11.yaml)
+  > For weaker language models, however, the results are mixed: debate provides no comparable gains in most settings and can even reduce accuracy.
+  > — [Humans Correct Their Judgments Through Debate, but Weaker AI Models Do Not](https://arxiv.org/abs/2610.28539#:~:text=For%20weaker%20language%20models%2C,can%20even%20reduce%20accuracy)
+
+  *Förbehåll:* Preprint som inte är granskad av andra forskare. Författarna skriver att resultaten stödjer debatt som väg till skalbar mänsklig tillsyn men väcker tvivel om nyttan när svagare AI-system är övervakare, vilket väcker oro för helt automatiserade tränings- och kontrollkedjor i högriskmiljöer.
 
 ## 2025
 

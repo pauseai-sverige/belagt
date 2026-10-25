@@ -1,0 +1,25 @@
+id: BID-12
+påstående: Forskare rapporterar att transkript av modellers lösningar fortfarande säger något om modellernas förmåga
+  efter att ett test har mättats, och att parvis bedömning minskade prediktionsfelet 5,3 gånger jämfört med att
+  bara använda de mättade poängen.
+typ: mätning
+vem: Morio Hamada, Jehyeok Yeon, Matteo Migliarini, Justin Olive och Magda Dubois (forskare)
+datum: '2026-10-14'
+tema:
+- förmågor
+- kontroll
+källa:
+  url: https://arxiv.org/abs/2610.20667
+  titel: Evaluating Model Capabilities After Benchmark Saturation
+  typ: preprint
+  citat: pairwise judging performs best, reducing prediction error by 5.3 times compared to a baseline using only
+    saturated benchmark scores
+  hämtad: '2026-10-24'
+  arkiv: null
+förbehåll: Preprint som inte är granskad. Mätningen bygger på simulerad mättnad med historiska modeller och tester.
+  Författarna skriver att metodernas prediktionskraft inte alltid generaliserar vid fördelningsskift, till
+  exempel genom att de underskattade de första resonemangsmodellerna i början av 2025.
+vikt: 1
+bäst_före: null
+kontrollerad: '2026-10-24'
+ersatt_av: null

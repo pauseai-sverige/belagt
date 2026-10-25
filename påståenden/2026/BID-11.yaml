@@ -1,0 +1,24 @@
+id: BID-11
+påstående: Sjutton forskare rapporterar att
+  debatt mellan AI-system ökade mänskliga domares träffsäkerhet, medan svagare språkmodeller som domare inte hade
+  motsvarande nytta och i vissa fall blev sämre.
+typ: mätning
+vem: Maria Victoria Carro m.fl. (17 forskare)
+datum: '2026-10-20'
+tema:
+- kontroll
+källa:
+  url: https://arxiv.org/abs/2610.28539
+  titel: Humans Correct Their Judgments Through Debate, but Weaker AI Models Do Not
+  typ: preprint
+  citat: 'For weaker language models, however, the results are mixed: debate provides no comparable gains in most
+    settings and can even reduce accuracy.'
+  hämtad: '2026-10-24'
+  arkiv: null
+förbehåll: Preprint som inte är granskad av andra forskare. Författarna skriver att resultaten stödjer debatt som
+  väg till skalbar mänsklig tillsyn men väcker tvivel om nyttan när svagare AI-system är övervakare, vilket
+  väcker oro för helt automatiserade tränings- och kontrollkedjor i högriskmiljöer.
+vikt: 1
+bäst_före: null
+kontrollerad: '2026-10-24'
+ersatt_av: null

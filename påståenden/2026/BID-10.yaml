@@ -1,0 +1,24 @@
+id: BID-10
+påstående: Google DeepMind uppger att när en bestraffning av genvägar av misstag lades på modellens tankekedja
+  under en träningskörning, blev andelen genvägar som modellen tog utan att nämna dem i sina tankar mer än tre
+  gånger så stor, från 11,2 till 36,4 procent.
+typ: mätning
+vem: Google DeepMind (AI-företag)
+datum: '2026-10-13'
+tema:
+- kontroll
+källa:
+  url: https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/
+  titel: Developing Gemini 4 Argon responsibly and safely
+  typ: partsuppgift
+  citat: the share of shortcuts the model took silently — without mentioning them in its thoughts — more than
+    tripled (from 11.2% to 36.4%)
+  hämtad: '2026-10-24'
+  arkiv: null
+förbehåll: Partsuppgift. Företaget beskriver det som en körning där straffet lades på av misstag och redovisar
+  inte upplägget i detalj i blogginlägget. Slutsatsen enligt företaget är att man inte straffar vad modellen
+  skriver i sin tankekedja under träning, för att tankekedjan ska förbli genomskinlig och möjlig att övervaka.
+vikt: 2
+bäst_före: null
+kontrollerad: '2026-10-24'
+ersatt_av: null

@@ -4,7 +4,7 @@
 
 Vad AI-systemen kan göra och hur det mäts.
 
-36 påståenden, de viktigaste först inom varje år.
+38 påståenden, de viktigaste först inom varje år.
 
 ## 2026
 
@@ -123,12 +123,24 @@ Vad AI-systemen kan göra och hur det mäts.
   > — [Google AI Pro och Ultra — få åtkomst till Gemini 3.1 Pro med mera](https://gemini.google/subscriptions/#:~:text=2%20599%20SEK%20%2Fm%C3%A5nad%3A,%C3%A4n%20med%20AI%20Pro) · [arkivkopia](https://web.archive.org/web/20260922214026/https://gemini.google/subscriptions/)
 
   *Förbehåll:* Visar hur stor prisskillnaden är mellan gratisnivån och de dyraste abonnemangen. Priser och villkor ändras ofta.
+- **Google DeepMind uppger att Gemini 4 Argon löste alla 12 simulerade cyberangrepp från början till slut i företagets egna tester, mot fem i föregående modellgeneration.**
+  Google DeepMind (AI-företag) · 2026-10-13 · missbruk, förmågor · partsuppgift · [BID-08](../påståenden/2026/BID-08.yaml)
+  > solving all 12 of the end-to-end simulated cyberattack scenarios, up from five in our previous generation
+  > — [Developing Gemini 4 Argon responsibly and safely](https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/#:~:text=solving%20all%2012%20of,in%20our%20previous%20generation)
+
+  *Förbehåll:* Företaget mäter sin egen modell med sina egna tester, och blogginlägget redovisar inte testerna i detalj (hänvisar till en separat säkerhetsrapport). DeepMind skriver att man på grund av förhöjda förmågor inom cyber och biologi införde en ny uppsättning skyddsåtgärder.
 - **Inget av missbruksfallen i Anthropics hotrapport gällde företagets mest kapabla modeller, med ett undantag som rörde otillåten destillering.**
   Anthropic (hotrapport, september 2026) · 2026-09 · missbruk, förmågor · partsuppgift · [J3ljHm57yU0-48](../påståenden/2026/J3ljHm57yU0-48.yaml)
   > None of the misuse cases involved the use of Claude Fable or Mythos-class models, with the exception of one illicit distillation case.
   > — [Countering misuse of AI: September 2026 / Anthropic](https://www.anthropic.com/threat-intelligence-report-september-2026#:~:text=None%20of%20the%20misuse,one%20illicit%20distillation%20case) · [arkivkopia](https://web.archive.org/web/20260923034616/https://www.anthropic.com/threat-intelligence-report-september-2026)
 
   *Förbehåll:* Missbruket skedde alltså med förhållandevis svaga modeller.
+- **Forskare rapporterar att transkript av modellers lösningar fortfarande säger något om modellernas förmåga efter att ett test har mättats, och att parvis bedömning minskade prediktionsfelet 5,3 gånger jämfört med att bara använda de mättade poängen.**
+  Morio Hamada, Jehyeok Yeon, Matteo Migliarini, Justin Olive och Magda Dubois (forskare) · 2026-10-14 · förmågor, kontroll · preprint · [BID-12](../påståenden/2026/BID-12.yaml)
+  > pairwise judging performs best, reducing prediction error by 5.3 times compared to a baseline using only saturated benchmark scores
+  > — [Evaluating Model Capabilities After Benchmark Saturation](https://arxiv.org/abs/2610.20667#:~:text=pairwise%20judging%20performs%20best%2C,only%20saturated%20benchmark%20scores)
+
+  *Förbehåll:* Preprint som inte är granskad. Mätningen bygger på simulerad mättnad med historiska modeller och tester. Författarna skriver att metodernas prediktionskraft inte alltid generaliserar vid fördelningsskift, till exempel genom att de underskattade de första resonemangsmodellerna i början av 2025.
 
 ## 2025
 

@@ -1,0 +1,23 @@
+id: BID-08
+påstående: Google DeepMind uppger att Gemini 4 Argon löste alla 12 simulerade cyberangrepp från början till slut
+  i företagets egna tester, mot fem i föregående modellgeneration.
+typ: mätning
+vem: Google DeepMind (AI-företag)
+datum: '2026-10-13'
+tema:
+- missbruk
+- förmågor
+källa:
+  url: https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/
+  titel: Developing Gemini 4 Argon responsibly and safely
+  typ: partsuppgift
+  citat: solving all 12 of the end-to-end simulated cyberattack scenarios, up from five in our previous generation
+  hämtad: '2026-10-24'
+  arkiv: null
+förbehåll: Företaget mäter sin egen modell med sina egna tester, och blogginlägget redovisar inte testerna i
+  detalj (hänvisar till en separat säkerhetsrapport). DeepMind skriver att man på grund av förhöjda förmågor
+  inom cyber och biologi införde en ny uppsättning skyddsåtgärder.
+vikt: 2
+bäst_före: null
+kontrollerad: '2026-10-24'
+ersatt_av: null
