@@ -170,7 +170,7 @@ Hur AI används för att skada: cyberangrepp, påverkan och biologiska risker.
 - **Google DeepMind uppger att Gemini 4 Argon löste alla 12 simulerade cyberangrepp från början till slut i företagets egna tester, mot fem i föregående modellgeneration.**
   Google DeepMind (AI-företag) · 2026-10-13 · missbruk, förmågor · partsuppgift · [BID-08](../påståenden/2026/BID-08.yaml)
   > solving all 12 of the end-to-end simulated cyberattack scenarios, up from five in our previous generation
-  > — [Developing Gemini 4 Argon responsibly and safely](https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/#:~:text=solving%20all%2012%20of,in%20our%20previous%20generation)
+  > — [Developing Gemini 4 Argon responsibly and safely](https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/#:~:text=solving%20all%2012%20of,in%20our%20previous%20generation) · [arkivkopia](https://web.archive.org/web/20261026100322/https://blog.google/innovation-and-ai/technology/safety-security/gemini-4-model-safety-security/?utm_source=deepmind.google&utm_medium=referral&utm_campaign=gdm&utm_content=)
 
   *Förbehåll:* Företaget mäter sin egen modell med sina egna tester, och blogginlägget redovisar inte testerna i detalj (hänvisar till en separat säkerhetsrapport). DeepMind skriver att man på grund av förhöjda förmågor inom cyber och biologi införde en ny uppsättning skyddsåtgärder.
 - **Inget av missbruksfallen i Anthropics hotrapport gällde företagets mest kapabla modeller, med ett undantag som rörde otillåten destillering.**

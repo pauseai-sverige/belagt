@@ -2046,30 +2046,30 @@ Alla 329 påståenden i arkivet, i den ordning det de handlar om hände eller sa
 - **Google DeepMind uppger att Gemini 4 Argon löste alla 12 simulerade cyberangrepp från början till slut i företagets egna tester, mot fem i föregående modellgeneration.**
   Google DeepMind (AI-företag) · 2026-10-13 · missbruk, förmågor · partsuppgift · [BID-08](./påståenden/2026/BID-08.yaml)
   > solving all 12 of the end-to-end simulated cyberattack scenarios, up from five in our previous generation
-  > — [Developing Gemini 4 Argon responsibly and safely](https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/#:~:text=solving%20all%2012%20of,in%20our%20previous%20generation)
+  > — [Developing Gemini 4 Argon responsibly and safely](https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/#:~:text=solving%20all%2012%20of,in%20our%20previous%20generation) · [arkivkopia](https://web.archive.org/web/20261026100322/https://blog.google/innovation-and-ai/technology/safety-security/gemini-4-model-safety-security/?utm_source=deepmind.google&utm_medium=referral&utm_campaign=gdm&utm_content=)
 
   *Förbehåll:* Företaget mäter sin egen modell med sina egna tester, och blogginlägget redovisar inte testerna i detalj (hänvisar till en separat säkerhetsrapport). DeepMind skriver att man på grund av förhöjda förmågor inom cyber och biologi införde en ny uppsättning skyddsåtgärder.
 - **Google DeepMind uppger att dess övervakning av Gemini 4 Argon fångade modellen när den under träning i sällsynta fall försökte fuska i testerna, bland annat genom att krascha testmiljön för att slippa poängsättas för ett misslyckat försök.**
   Google DeepMind (AI-företag) · 2026-10-13 · kontroll · partsuppgift · [BID-09](./påståenden/2026/BID-09.yaml)
   > in one case it even crashed the evaluation sandbox to avoid getting scored for a failed run
-  > — [Developing Gemini 4 Argon responsibly and safely](https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/#:~:text=in%20one%20case%20it,for%20a%20failed%20run)
+  > — [Developing Gemini 4 Argon responsibly and safely](https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/#:~:text=in%20one%20case%20it,for%20a%20failed%20run) · [arkivkopia](https://web.archive.org/web/20261026100322/https://blog.google/innovation-and-ai/technology/safety-security/gemini-4-model-safety-security/?utm_source=deepmind.google&utm_medium=referral&utm_campaign=gdm&utm_content=)
 
   *Förbehåll:* Partsuppgift om den egna modellen. Enligt företaget skedde det i sällsynta fall, när träningsuppgifter var svåra eller träningsmiljöer felaktiga. Företaget skriver också att man i säkerhetstester med så kallade honeypots inte fann något fall där modellen ökade sin förmåga att ta dolda handlingar, till exempel att sabotera säkerhetsövervakning.
 - **Google DeepMind uppger att när en bestraffning av genvägar av misstag lades på modellens tankekedja under en träningskörning, blev andelen genvägar som modellen tog utan att nämna dem i sina tankar mer än tre gånger så stor, från 11,2 till 36,4 procent.**
   Google DeepMind (AI-företag) · 2026-10-13 · kontroll · partsuppgift · [BID-10](./påståenden/2026/BID-10.yaml)
   > the share of shortcuts the model took silently — without mentioning them in its thoughts — more than tripled (from 11.2% to 36.4%)
-  > — [Developing Gemini 4 Argon responsibly and safely](https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/#:~:text=the%20share%20of%20shortcuts,%28from%2011.2%25%20to%2036.4%25)
+  > — [Developing Gemini 4 Argon responsibly and safely](https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/#:~:text=the%20share%20of%20shortcuts,%28from%2011.2%25%20to%2036.4%25) · [arkivkopia](https://web.archive.org/web/20261026100322/https://blog.google/innovation-and-ai/technology/safety-security/gemini-4-model-safety-security/?utm_source=deepmind.google&utm_medium=referral&utm_campaign=gdm&utm_content=)
 
   *Förbehåll:* Partsuppgift. Företaget beskriver det som en körning där straffet lades på av misstag och redovisar inte upplägget i detalj i blogginlägget. Slutsatsen enligt företaget är att man inte straffar vad modellen skriver i sin tankekedja under träning, för att tankekedjan ska förbli genomskinlig och möjlig att övervaka.
 - **Forskare rapporterar att transkript av modellers lösningar fortfarande säger något om modellernas förmåga efter att ett test har mättats, och att parvis bedömning minskade prediktionsfelet 5,3 gånger jämfört med att bara använda de mättade poängen.**
   Morio Hamada, Jehyeok Yeon, Matteo Migliarini, Justin Olive och Magda Dubois (forskare) · 2026-10-14 · förmågor, kontroll · preprint · [BID-12](./påståenden/2026/BID-12.yaml)
   > pairwise judging performs best, reducing prediction error by 5.3 times compared to a baseline using only saturated benchmark scores
-  > — [Evaluating Model Capabilities After Benchmark Saturation](https://arxiv.org/abs/2610.20667#:~:text=pairwise%20judging%20performs%20best%2C,only%20saturated%20benchmark%20scores)
+  > — [Evaluating Model Capabilities After Benchmark Saturation](https://arxiv.org/abs/2610.20667#:~:text=pairwise%20judging%20performs%20best%2C,only%20saturated%20benchmark%20scores) · [arkivkopia](https://web.archive.org/web/20261016033758/https://arxiv.org/abs/2610.20667)
 
   *Förbehåll:* Preprint som inte är granskad. Mätningen bygger på simulerad mättnad med historiska modeller och tester. Författarna skriver att metodernas prediktionskraft inte alltid generaliserar vid fördelningsskift, till exempel genom att de underskattade de första resonemangsmodellerna i början av 2025.
 - **Sjutton forskare rapporterar att debatt mellan AI-system ökade mänskliga domares träffsäkerhet, medan svagare språkmodeller som domare inte hade motsvarande nytta och i vissa fall blev sämre.**
   Maria Victoria Carro m.fl. (17 forskare) · 2026-10-20 · kontroll · preprint · [BID-11](./påståenden/2026/BID-11.yaml)
   > For weaker language models, however, the results are mixed: debate provides no comparable gains in most settings and can even reduce accuracy.
-  > — [Humans Correct Their Judgments Through Debate, but Weaker AI Models Do Not](https://arxiv.org/abs/2610.28539#:~:text=For%20weaker%20language%20models%2C,can%20even%20reduce%20accuracy)
+  > — [Humans Correct Their Judgments Through Debate, but Weaker AI Models Do Not](https://arxiv.org/abs/2610.28539#:~:text=For%20weaker%20language%20models%2C,can%20even%20reduce%20accuracy) · [arkivkopia](https://web.archive.org/web/20261021213049/https://arxiv.org/abs/2610.28539)
 
   *Förbehåll:* Preprint som inte är granskad av andra forskare. Författarna skriver att resultaten stödjer debatt som väg till skalbar mänsklig tillsyn men väcker tvivel om nyttan när svagare AI-system är övervakare, vilket väcker oro för helt automatiserade tränings- och kontrollkedjor i högriskmiljöer.

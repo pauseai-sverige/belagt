@@ -15,7 +15,7 @@ källa:
   citat: pairwise judging performs best, reducing prediction error by 5.3 times compared to a baseline using only
     saturated benchmark scores
   hämtad: '2026-10-24'
-  arkiv: null
+  arkiv: https://web.archive.org/web/20261016033758/https://arxiv.org/abs/2610.20667
 förbehåll: Preprint som inte är granskad. Mätningen bygger på simulerad mättnad med historiska modeller och tester.
   Författarna skriver att metodernas prediktionskraft inte alltid generaliserar vid fördelningsskift, till
   exempel genom att de underskattade de första resonemangsmodellerna i början av 2025.

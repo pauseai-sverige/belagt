@@ -13,7 +13,7 @@ källa:
   typ: partsuppgift
   citat: in one case it even crashed the evaluation sandbox to avoid getting scored for a failed run
   hämtad: '2026-10-24'
-  arkiv: null
+  arkiv: https://web.archive.org/web/20261026100322/https://blog.google/innovation-and-ai/technology/safety-security/gemini-4-model-safety-security/?utm_source=deepmind.google&utm_medium=referral&utm_campaign=gdm&utm_content=
 förbehåll: Partsuppgift om den egna modellen. Enligt företaget skedde det i sällsynta fall, när träningsuppgifter
   var svåra eller träningsmiljöer felaktiga. Företaget skriver också att man i säkerhetstester med så kallade
   honeypots inte fann något fall där modellen ökade sin förmåga att ta dolda handlingar, till exempel att
