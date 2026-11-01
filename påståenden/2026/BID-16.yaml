@@ -1,0 +1,22 @@
+id: BID-16
+påstående: Forskare rapporterar att den bästa av sex frontmodeller klarade 44 procent av uppgifterna i robotbenchmarken
+  LIBERO-10 när modellerna styrde roboten direkt utan uppgiftsspecifik träning.
+typ: mätning
+vem: May Espinola, Qifan Zhang och Yu Xiang (forskare)
+datum: '2026-10-21'
+tema:
+- förmågor
+källa:
+  url: https://arxiv.org/abs/2610.30051
+  titel: 'From Reasoning to Action: Benchmarking Frontier AI Models on LIBERO-10 Robot Manipulation Tasks'
+  typ: preprint
+  citat: GPT-6 Astra achieves the highest success rate of 44%, followed by Gemini-4 Argon at 43%
+  hämtad: '2026-11-01'
+  arkiv: null
+förbehåll: Preprint som inte är granskad. Modellerna styr roboten via verktygsanrop utan finjustering för
+  uppgiften, så resultatet säger inget om robotar som tränats för uppgiften. Författarna skriver att modellerna
+  klarade placeringsuppgifter relativt bra men hade svårt med exakta placeringar och uppgifter i flera steg.
+vikt: 1
+bäst_före: null
+kontrollerad: '2026-11-01'
+ersatt_av: null

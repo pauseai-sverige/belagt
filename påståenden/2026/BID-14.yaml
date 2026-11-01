@@ -1,0 +1,22 @@
+id: BID-14
+påstående: Japans digitalmyndighet uppger att dess nya regler för styrning, säkerhet och trygghet vid statsanställdas
+  användning av AI-agenter togs fram i samarbete med Japans AI-säkerhetsinstitut (AISI).
+typ: händelse
+vem: Japans digitalmyndighet (Digital Agency)
+datum: '2026-10-20'
+tema:
+- styrning
+- kontroll
+källa:
+  url: https://www.digital.go.jp/en/policies/genai/agent-safety-standard
+  titel: 'Expanding the AI Agent Environments and Safety Standards of Government AI GENAI Across Society'
+  typ: myndighet
+  citat: The GENAI Standards were developed with the cooperation of the AI Safety Institute (AISI)
+  hämtad: '2026-11-01'
+  arkiv: null
+förbehåll: Myndigheten beskriver sina egna regler. Själva standarden finns bara på japanska (PDF) och har inte
+  lästs för den här posten. Datumet är det som bevakningen angav för sidan.
+vikt: 2
+bäst_före: null
+kontrollerad: '2026-11-01'
+ersatt_av: null

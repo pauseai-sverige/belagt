@@ -4,7 +4,7 @@
 
 Hur AI används för att skada: cyberangrepp, påverkan och biologiska risker.
 
-34 påståenden, de viktigaste först inom varje år.
+35 påståenden, de viktigaste först inom varje år.
 
 ## 2026
 
@@ -179,6 +179,12 @@ Hur AI används för att skada: cyberangrepp, påverkan och biologiska risker.
   > — [Countering misuse of AI: September 2026 / Anthropic](https://www.anthropic.com/threat-intelligence-report-september-2026#:~:text=None%20of%20the%20misuse,one%20illicit%20distillation%20case) · [arkivkopia](https://web.archive.org/web/20260923034616/https://www.anthropic.com/threat-intelligence-report-september-2026)
 
   *Förbehåll:* Missbruket skedde alltså med förhållandevis svaga modeller.
+- **Forskare rapporterar att språkmodeller i deras säkerhetstester var särskilt sårbara på kinesiska och i flerstegssamtal.**
+  Hongyu Li, Xinlong Huang, Zhan Yu m.fl. (forskare) · 2026-10-21 · kontroll, missbruk · preprint · [BID-17](../påståenden/2026/BID-17.yaml)
+  > models are particularly susceptible in Chinese and multi-turn contexts
+  > — [Beyond Binary Labels: Diagnostic Evaluation of LLM Safety with Prompt-Level Rubrics](https://arxiv.org/abs/2610.29225#:~:text=models%20are%20particularly%20susceptible,Chinese%20and%20multi%2Dturn%20contexts)
+
+  *Förbehåll:* Preprint som inte är granskad. Resultaten gäller författarnas egen tvåspråkiga testmängd (engelska och kinesiska) och deras bedömningsmetod, som enligt dem stämmer med människors bedömning i 95,34 procent av fallen. Modellerna namnges inte i sammanfattningen, och den säger att varje modell också har egna sårbarheter.
 
 ## 2025
 

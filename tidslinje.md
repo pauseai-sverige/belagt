@@ -2,7 +2,7 @@
 
 # Tidslinje
 
-Alla 329 påståenden i arkivet, i den ordning det de handlar om hände eller sades.
+Alla 334 påståenden i arkivet, i den ordning det de handlar om hände eller sades.
 
 ## 2017
 
@@ -2073,3 +2073,33 @@ Alla 329 påståenden i arkivet, i den ordning det de handlar om hände eller sa
   > — [Humans Correct Their Judgments Through Debate, but Weaker AI Models Do Not](https://arxiv.org/abs/2610.28539#:~:text=For%20weaker%20language%20models%2C,can%20even%20reduce%20accuracy) · [arkivkopia](https://web.archive.org/web/20261021213049/https://arxiv.org/abs/2610.28539)
 
   *Förbehåll:* Preprint som inte är granskad av andra forskare. Författarna skriver att resultaten stödjer debatt som väg till skalbar mänsklig tillsyn men väcker tvivel om nyttan när svagare AI-system är övervakare, vilket väcker oro för helt automatiserade tränings- och kontrollkedjor i högriskmiljöer.
+- **Japans digitalmyndighet uppger att den börjar erbjuda cirka 180 000 statsanställda miljöer för att skapa och köra AI-agenter inom regeringens AI-system GENAI.**
+  Japans digitalmyndighet (Digital Agency) · 2026-10-20 · samhälle, styrning · myndighet · [BID-13](./påståenden/2026/BID-13.yaml)
+  > the Digital Agency is beginning to provide two types of AI agent environments through Government AI GENAI for approximately 180,000 government employees
+  > — [Expanding the AI Agent Environments and Safety Standards of Government AI GENAI Across Society](https://www.digital.go.jp/en/policies/genai/agent-safety-standard#:~:text=the%20Digital%20Agency%20is,approximately%20180%2C000%20government%20employees)
+
+  *Förbehåll:* Myndigheten beskriver sitt eget projekt. Den ena miljön, "Agent Chat", rullas ut stegvis och den andra, "GENAI Workbench", väntas först runt december 2026. Datumet är det som bevakningen angav för sidan.
+- **Japans digitalmyndighet uppger att dess nya regler för styrning, säkerhet och trygghet vid statsanställdas användning av AI-agenter togs fram i samarbete med Japans AI-säkerhetsinstitut (AISI).**
+  Japans digitalmyndighet (Digital Agency) · 2026-10-20 · styrning, kontroll · myndighet · [BID-14](./påståenden/2026/BID-14.yaml)
+  > The GENAI Standards were developed with the cooperation of the AI Safety Institute (AISI)
+  > — [Expanding the AI Agent Environments and Safety Standards of Government AI GENAI Across Society](https://www.digital.go.jp/en/policies/genai/agent-safety-standard#:~:text=The%20GENAI%20Standards%20were,AI%20Safety%20Institute%20%28AISI)
+
+  *Förbehåll:* Myndigheten beskriver sina egna regler. Själva standarden finns bara på japanska (PDF) och har inte lästs för den här posten. Datumet är det som bevakningen angav för sidan.
+- **Japans regering inrättade genom regeringsbeslut ett råd för AI- och digital omställning, som ska driva omställningen med utgångspunkten att riskerna med AI ska minimeras.**
+  Japans regering, återgivet av Digital Agency · 2026-10-20 · styrning · myndighet · [BID-15](./påståenden/2026/BID-15.yaml)
+  > through thorough utilization of AI and digital technologies, based on the premise of minimizing risks from AI
+  > — [AI and Digital Transformation Promotion Council](https://www.digital.go.jp/en/councils/ai_digital#:~:text=through%20thorough%20utilization%20of,minimizing%20risks%20from%20AI)
+
+  *Förbehåll:* Sidan är en engelsk, delvis maskinöversatt återgivning från digitalmyndigheten av regeringsbeslutet. Rådets första möte hölls den 22 oktober 2026. Sidan säger inget om vilka åtgärder som ska minska riskerna.
+- **Forskare rapporterar att den bästa av sex frontmodeller klarade 44 procent av uppgifterna i robotbenchmarken LIBERO-10 när modellerna styrde roboten direkt utan uppgiftsspecifik träning.**
+  May Espinola, Qifan Zhang och Yu Xiang (forskare) · 2026-10-21 · förmågor · preprint · [BID-16](./påståenden/2026/BID-16.yaml)
+  > GPT-6 Astra achieves the highest success rate of 44%, followed by Gemini-4 Argon at 43%
+  > — [From Reasoning to Action: Benchmarking Frontier AI Models on LIBERO-10 Robot Manipulation Tasks](https://arxiv.org/abs/2610.30051#:~:text=GPT%2D6%20Astra%20achieves%20the,Gemini%2D4%20Argon%20at%2043%25)
+
+  *Förbehåll:* Preprint som inte är granskad. Modellerna styr roboten via verktygsanrop utan finjustering för uppgiften, så resultatet säger inget om robotar som tränats för uppgiften. Författarna skriver att modellerna klarade placeringsuppgifter relativt bra men hade svårt med exakta placeringar och uppgifter i flera steg.
+- **Forskare rapporterar att språkmodeller i deras säkerhetstester var särskilt sårbara på kinesiska och i flerstegssamtal.**
+  Hongyu Li, Xinlong Huang, Zhan Yu m.fl. (forskare) · 2026-10-21 · kontroll, missbruk · preprint · [BID-17](./påståenden/2026/BID-17.yaml)
+  > models are particularly susceptible in Chinese and multi-turn contexts
+  > — [Beyond Binary Labels: Diagnostic Evaluation of LLM Safety with Prompt-Level Rubrics](https://arxiv.org/abs/2610.29225#:~:text=models%20are%20particularly%20susceptible,Chinese%20and%20multi%2Dturn%20contexts)
+
+  *Förbehåll:* Preprint som inte är granskad. Resultaten gäller författarnas egen tvåspråkiga testmängd (engelska och kinesiska) och deras bedömningsmetod, som enligt dem stämmer med människors bedömning i 95,34 procent av fallen. Modellerna namnges inte i sammanfattningen, och den säger att varje modell också har egna sårbarheter.
