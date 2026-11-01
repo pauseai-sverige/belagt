@@ -4,7 +4,7 @@
 
 Reglering, standarder, tillsyn och förslag om att bromsa eller pausa.
 
-117 påståenden, de viktigaste först inom varje år.
+120 påståenden, de viktigaste först inom varje år.
 
 ## 2026
 
@@ -415,6 +415,18 @@ Reglering, standarder, tillsyn och förslag om att bromsa eller pausa.
   > — [Britain steps up national defences against growing AI risks](https://www.gov.uk/government/news/britain-steps-up-national-defences-against-growing-ai-risks#:~:text=And%20if%20you%20cannot,not%20release%20the%20system) · [arkivkopia](https://web.archive.org/web/20261013071839/https://www.gov.uk/government/news/britain-steps-up-national-defences-against-growing-ai-risks)
 
   *Förbehåll:* Uttalandet är ett citat av ministern i regeringens pressmeddelande och är inte ett lagkrav. Ministern säger i samma stycke att regeringen "will legislate wherever necessary", men pressmeddelandet anger inga konkreta lagförslag om att hindra lanseringar.
+- **Japans digitalmyndighet uppger att den börjar erbjuda cirka 180 000 statsanställda miljöer för att skapa och köra AI-agenter inom regeringens AI-system GENAI.**
+  Japans digitalmyndighet (Digital Agency) · 2026-10-20 · samhälle, styrning · myndighet · [BID-13](../påståenden/2026/BID-13.yaml)
+  > the Digital Agency is beginning to provide two types of AI agent environments through Government AI GENAI for approximately 180,000 government employees
+  > — [Expanding the AI Agent Environments and Safety Standards of Government AI GENAI Across Society](https://www.digital.go.jp/en/policies/genai/agent-safety-standard#:~:text=the%20Digital%20Agency%20is,approximately%20180%2C000%20government%20employees)
+
+  *Förbehåll:* Myndigheten beskriver sitt eget projekt. Den ena miljön, "Agent Chat", rullas ut stegvis och den andra, "GENAI Workbench", väntas först runt december 2026. Datumet är det som bevakningen angav för sidan.
+- **Japans digitalmyndighet uppger att dess nya regler för styrning, säkerhet och trygghet vid statsanställdas användning av AI-agenter togs fram i samarbete med Japans AI-säkerhetsinstitut (AISI).**
+  Japans digitalmyndighet (Digital Agency) · 2026-10-20 · styrning, kontroll · myndighet · [BID-14](../påståenden/2026/BID-14.yaml)
+  > The GENAI Standards were developed with the cooperation of the AI Safety Institute (AISI)
+  > — [Expanding the AI Agent Environments and Safety Standards of Government AI GENAI Across Society](https://www.digital.go.jp/en/policies/genai/agent-safety-standard#:~:text=The%20GENAI%20Standards%20were,AI%20Safety%20Institute%20%28AISI)
+
+  *Förbehåll:* Myndigheten beskriver sina egna regler. Själva standarden finns bara på japanska (PDF) och har inte lästs för den här posten. Datumet är det som bevakningen angav för sidan.
 - **Privata aktörer investerar över 140 miljarder kronor i svenska datacenter, medan regeringen satsar 479 miljoner kronor på AI, enligt en debattartikel i Ny Teknik.**
   Christoffer Bergman (Neo4j), debattartikel i Ny Teknik · 2026 · miljö, styrning · opinion · [SVS-09](../påståenden/2026/SVS-09.yaml)
   > Privata aktörer investerar över 140 miljarder kronor i svenska datacenter, medan regeringen satsar 479 miljoner på ai.
@@ -457,6 +469,12 @@ Reglering, standarder, tillsyn och förslag om att bromsa eller pausa.
   > — [Dario Amodei We Must Pace the Frontier Is Vague](https://www.startuphub.ai/ai-news/artificial-intelligence/2026/dario-amodei-we-must-pace-the-frontier-is-vague#:~:text=The%20skeptic%20case%20is,has%20no%20pacing%20mechanism) · [arkivkopia](https://web.archive.org/web/20261012115848/https://www.startuphub.ai/ai-news/artificial-intelligence/2026/dario-amodei-we-must-pace-the-frontier-is-vague)
 
   *Förbehåll:* Liten källa med mindre tyngd. Poängen är ändå saklig och kan kontrolleras mot Amodeis egen text ([J3ljHm57yU0-28](https://pauseai-sverige.github.io/belagt/#J3ljHm57yU0-28), [J3ljHm57yU0-31](https://pauseai-sverige.github.io/belagt/#J3ljHm57yU0-31)). Samma källa uppger att oberoende granskningar räknade till cirka 1 200 respektive cirka 700 agenter i Hugging Face-intrånget. Det är andrahandsuppgifter.
+- **Japans regering inrättade genom regeringsbeslut ett råd för AI- och digital omställning, som ska driva omställningen med utgångspunkten att riskerna med AI ska minimeras.**
+  Japans regering, återgivet av Digital Agency · 2026-10-20 · styrning · myndighet · [BID-15](../påståenden/2026/BID-15.yaml)
+  > through thorough utilization of AI and digital technologies, based on the premise of minimizing risks from AI
+  > — [AI and Digital Transformation Promotion Council](https://www.digital.go.jp/en/councils/ai_digital#:~:text=through%20thorough%20utilization%20of,minimizing%20risks%20from%20AI)
+
+  *Förbehåll:* Sidan är en engelsk, delvis maskinöversatt återgivning från digitalmyndigheten av regeringsbeslutet. Rådets första möte hölls den 22 oktober 2026. Sidan säger inget om vilka åtgärder som ska minska riskerna.
 
 ## 2025
 

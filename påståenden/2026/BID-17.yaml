@@ -1,0 +1,23 @@
+id: BID-17
+påstående: Forskare rapporterar att språkmodeller i deras säkerhetstester var särskilt sårbara på kinesiska och i
+  flerstegssamtal.
+typ: mätning
+vem: Hongyu Li, Xinlong Huang, Zhan Yu m.fl. (forskare)
+datum: '2026-10-21'
+tema:
+- kontroll
+- missbruk
+källa:
+  url: https://arxiv.org/abs/2610.29225
+  titel: 'Beyond Binary Labels: Diagnostic Evaluation of LLM Safety with Prompt-Level Rubrics'
+  typ: preprint
+  citat: models are particularly susceptible in Chinese and multi-turn contexts
+  hämtad: '2026-11-01'
+  arkiv: null
+förbehåll: Preprint som inte är granskad. Resultaten gäller författarnas egen tvåspråkiga testmängd (engelska och
+  kinesiska) och deras bedömningsmetod, som enligt dem stämmer med människors bedömning i 95,34 procent av fallen.
+  Modellerna namnges inte i sammanfattningen, och den säger att varje modell också har egna sårbarheter.
+vikt: 1
+bäst_före: null
+kontrollerad: '2026-11-01'
+ersatt_av: null

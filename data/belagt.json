@@ -8586,6 +8586,134 @@
    "ersatt_av": null,
    "citera": "Maria Victoria Carro m.fl. (17 forskare), 2026-10-20. Humans Correct Their Judgments Through Debate, but Weaker AI Models Do Not. https://arxiv.org/abs/2610.28539. Via Belagt BID-11: https://pauseai-sverige.github.io/belagt/#BID-11",
    "citatlänk": "https://arxiv.org/abs/2610.28539#:~:text=For%20weaker%20language%20models%2C,can%20even%20reduce%20accuracy"
+  },
+  {
+   "id": "BID-13",
+   "påstående": "Japans digitalmyndighet uppger att den börjar erbjuda cirka 180 000 statsanställda miljöer för att skapa och köra AI-agenter inom regeringens AI-system GENAI.",
+   "typ": "händelse",
+   "vem": "Japans digitalmyndighet (Digital Agency)",
+   "datum": "2026-10-20",
+   "tema": [
+    "samhälle",
+    "styrning"
+   ],
+   "källa": {
+    "url": "https://www.digital.go.jp/en/policies/genai/agent-safety-standard",
+    "titel": "Expanding the AI Agent Environments and Safety Standards of Government AI GENAI Across Society",
+    "typ": "myndighet",
+    "citat": "the Digital Agency is beginning to provide two types of AI agent environments through Government AI GENAI for approximately 180,000 government employees",
+    "hämtad": "2026-11-01",
+    "arkiv": null
+   },
+   "förbehåll": "Myndigheten beskriver sitt eget projekt. Den ena miljön, \"Agent Chat\", rullas ut stegvis och den andra, \"GENAI Workbench\", väntas först runt december 2026. Datumet är det som bevakningen angav för sidan.",
+   "vikt": 2,
+   "bäst_före": "2027-06-01",
+   "kontrollerad": "2026-11-01",
+   "ersatt_av": null,
+   "citera": "Japans digitalmyndighet (Digital Agency), 2026-10-20. Expanding the AI Agent Environments and Safety Standards of Government AI GENAI Across Society. https://www.digital.go.jp/en/policies/genai/agent-safety-standard. Via Belagt BID-13: https://pauseai-sverige.github.io/belagt/#BID-13",
+   "citatlänk": "https://www.digital.go.jp/en/policies/genai/agent-safety-standard#:~:text=the%20Digital%20Agency%20is,approximately%20180%2C000%20government%20employees"
+  },
+  {
+   "id": "BID-14",
+   "påstående": "Japans digitalmyndighet uppger att dess nya regler för styrning, säkerhet och trygghet vid statsanställdas användning av AI-agenter togs fram i samarbete med Japans AI-säkerhetsinstitut (AISI).",
+   "typ": "händelse",
+   "vem": "Japans digitalmyndighet (Digital Agency)",
+   "datum": "2026-10-20",
+   "tema": [
+    "styrning",
+    "kontroll"
+   ],
+   "källa": {
+    "url": "https://www.digital.go.jp/en/policies/genai/agent-safety-standard",
+    "titel": "Expanding the AI Agent Environments and Safety Standards of Government AI GENAI Across Society",
+    "typ": "myndighet",
+    "citat": "The GENAI Standards were developed with the cooperation of the AI Safety Institute (AISI)",
+    "hämtad": "2026-11-01",
+    "arkiv": null
+   },
+   "förbehåll": "Myndigheten beskriver sina egna regler. Själva standarden finns bara på japanska (PDF) och har inte lästs för den här posten. Datumet är det som bevakningen angav för sidan.",
+   "vikt": 2,
+   "bäst_före": null,
+   "kontrollerad": "2026-11-01",
+   "ersatt_av": null,
+   "citera": "Japans digitalmyndighet (Digital Agency), 2026-10-20. Expanding the AI Agent Environments and Safety Standards of Government AI GENAI Across Society. https://www.digital.go.jp/en/policies/genai/agent-safety-standard. Via Belagt BID-14: https://pauseai-sverige.github.io/belagt/#BID-14",
+   "citatlänk": "https://www.digital.go.jp/en/policies/genai/agent-safety-standard#:~:text=The%20GENAI%20Standards%20were,AI%20Safety%20Institute%20%28AISI"
+  },
+  {
+   "id": "BID-15",
+   "påstående": "Japans regering inrättade genom regeringsbeslut ett råd för AI- och digital omställning, som ska driva omställningen med utgångspunkten att riskerna med AI ska minimeras.",
+   "typ": "händelse",
+   "vem": "Japans regering, återgivet av Digital Agency",
+   "datum": "2026-10-20",
+   "tema": [
+    "styrning"
+   ],
+   "källa": {
+    "url": "https://www.digital.go.jp/en/councils/ai_digital",
+    "titel": "AI and Digital Transformation Promotion Council",
+    "typ": "myndighet",
+    "citat": "through thorough utilization of AI and digital technologies, based on the premise of minimizing risks from AI",
+    "hämtad": "2026-11-01",
+    "arkiv": null
+   },
+   "förbehåll": "Sidan är en engelsk, delvis maskinöversatt återgivning från digitalmyndigheten av regeringsbeslutet. Rådets första möte hölls den 22 oktober 2026. Sidan säger inget om vilka åtgärder som ska minska riskerna.",
+   "vikt": 1,
+   "bäst_före": null,
+   "kontrollerad": "2026-11-01",
+   "ersatt_av": null,
+   "citera": "Japans regering, återgivet av Digital Agency, 2026-10-20. AI and Digital Transformation Promotion Council. https://www.digital.go.jp/en/councils/ai_digital. Via Belagt BID-15: https://pauseai-sverige.github.io/belagt/#BID-15",
+   "citatlänk": "https://www.digital.go.jp/en/councils/ai_digital#:~:text=through%20thorough%20utilization%20of,minimizing%20risks%20from%20AI"
+  },
+  {
+   "id": "BID-16",
+   "påstående": "Forskare rapporterar att den bästa av sex frontmodeller klarade 44 procent av uppgifterna i robotbenchmarken LIBERO-10 när modellerna styrde roboten direkt utan uppgiftsspecifik träning.",
+   "typ": "mätning",
+   "vem": "May Espinola, Qifan Zhang och Yu Xiang (forskare)",
+   "datum": "2026-10-21",
+   "tema": [
+    "förmågor"
+   ],
+   "källa": {
+    "url": "https://arxiv.org/abs/2610.30051",
+    "titel": "From Reasoning to Action: Benchmarking Frontier AI Models on LIBERO-10 Robot Manipulation Tasks",
+    "typ": "preprint",
+    "citat": "GPT-6 Astra achieves the highest success rate of 44%, followed by Gemini-4 Argon at 43%",
+    "hämtad": "2026-11-01",
+    "arkiv": null
+   },
+   "förbehåll": "Preprint som inte är granskad. Modellerna styr roboten via verktygsanrop utan finjustering för uppgiften, så resultatet säger inget om robotar som tränats för uppgiften. Författarna skriver att modellerna klarade placeringsuppgifter relativt bra men hade svårt med exakta placeringar och uppgifter i flera steg.",
+   "vikt": 1,
+   "bäst_före": null,
+   "kontrollerad": "2026-11-01",
+   "ersatt_av": null,
+   "citera": "May Espinola, Qifan Zhang och Yu Xiang (forskare), 2026-10-21. From Reasoning to Action: Benchmarking Frontier AI Models on LIBERO-10 Robot Manipulation Tasks. https://arxiv.org/abs/2610.30051. Via Belagt BID-16: https://pauseai-sverige.github.io/belagt/#BID-16",
+   "citatlänk": "https://arxiv.org/abs/2610.30051#:~:text=GPT%2D6%20Astra%20achieves%20the,Gemini%2D4%20Argon%20at%2043%25"
+  },
+  {
+   "id": "BID-17",
+   "påstående": "Forskare rapporterar att språkmodeller i deras säkerhetstester var särskilt sårbara på kinesiska och i flerstegssamtal.",
+   "typ": "mätning",
+   "vem": "Hongyu Li, Xinlong Huang, Zhan Yu m.fl. (forskare)",
+   "datum": "2026-10-21",
+   "tema": [
+    "kontroll",
+    "missbruk"
+   ],
+   "källa": {
+    "url": "https://arxiv.org/abs/2610.29225",
+    "titel": "Beyond Binary Labels: Diagnostic Evaluation of LLM Safety with Prompt-Level Rubrics",
+    "typ": "preprint",
+    "citat": "models are particularly susceptible in Chinese and multi-turn contexts",
+    "hämtad": "2026-11-01",
+    "arkiv": null
+   },
+   "förbehåll": "Preprint som inte är granskad. Resultaten gäller författarnas egen tvåspråkiga testmängd (engelska och kinesiska) och deras bedömningsmetod, som enligt dem stämmer med människors bedömning i 95,34 procent av fallen. Modellerna namnges inte i sammanfattningen, och den säger att varje modell också har egna sårbarheter.",
+   "vikt": 1,
+   "bäst_före": null,
+   "kontrollerad": "2026-11-01",
+   "ersatt_av": null,
+   "citera": "Hongyu Li, Xinlong Huang, Zhan Yu m.fl. (forskare), 2026-10-21. Beyond Binary Labels: Diagnostic Evaluation of LLM Safety with Prompt-Level Rubrics. https://arxiv.org/abs/2610.29225. Via Belagt BID-17: https://pauseai-sverige.github.io/belagt/#BID-17",
+   "citatlänk": "https://arxiv.org/abs/2610.29225#:~:text=models%20are%20particularly%20susceptible,Chinese%20and%20multi%2Dturn%20contexts"
   }
  ]
 }

@@ -4,7 +4,7 @@
 
 Hur AI påverkar arbete, ekonomi och vardag: jobb, beroende, AI-kompanjoner och kritiskt tänkande.
 
-36 påståenden, de viktigaste först inom varje år.
+37 påståenden, de viktigaste först inom varje år.
 
 ## 2026
 
@@ -148,6 +148,12 @@ Hur AI påverkar arbete, ekonomi och vardag: jobb, beroende, AI-kompanjoner och 
   > — [人工智能拟人化互动服务管理暂行办法](https://www.cac.gov.cn/2026-04/10/c_1777558395078289.htm#:~:text=%E8%87%AA2026%E5%B9%B47%E6%9C%8815%E6%97%A5%E8%B5%B7,%EF%BC%8C%E4%BB%A5%E6%98%BE%E8%91%97%E6%96%B9%E5%BC%8F%E6%8F%90%E7%A4%BA%E5%AE%89%E5%85%A8%E9%A3%8E%E9%99%A9) · [arkivkopia](https://web.archive.org/web/20260929120757/https://www.cac.gov.cn/2026-04/10/c_1777558395078289.htm)
 
   *Förbehåll:* Ersätter [KIN-02](https://pauseai-sverige.github.io/belagt/#KIN-02), som återgav reglerna via Concordia AI. Kraven på suicidprevention, beroende och minderåriga finns i samma regler, se [KIN-09](https://pauseai-sverige.github.io/belagt/#KIN-09) till [KIN-12](https://pauseai-sverige.github.io/belagt/#KIN-12). Reglerna innehåller också politiska innehållskrav, se [KIN-13](https://pauseai-sverige.github.io/belagt/#KIN-13).
+- **Japans digitalmyndighet uppger att den börjar erbjuda cirka 180 000 statsanställda miljöer för att skapa och köra AI-agenter inom regeringens AI-system GENAI.**
+  Japans digitalmyndighet (Digital Agency) · 2026-10-20 · samhälle, styrning · myndighet · [BID-13](../påståenden/2026/BID-13.yaml)
+  > the Digital Agency is beginning to provide two types of AI agent environments through Government AI GENAI for approximately 180,000 government employees
+  > — [Expanding the AI Agent Environments and Safety Standards of Government AI GENAI Across Society](https://www.digital.go.jp/en/policies/genai/agent-safety-standard#:~:text=the%20Digital%20Agency%20is,approximately%20180%2C000%20government%20employees)
+
+  *Förbehåll:* Myndigheten beskriver sitt eget projekt. Den ena miljön, "Agent Chat", rullas ut stegvis och den andra, "GENAI Workbench", väntas först runt december 2026. Datumet är det som bevakningen angav för sidan.
 - **Enligt SCB använder 65 procent av de svenska företagen inte AI alls, och det vanligaste skälet är brist på kompetens.**
   Christoffer Bergman (Neo4j), debattartikel i Ny Teknik · 2026 · samhälle · opinion · [SVS-10](../påståenden/2026/SVS-10.yaml)
   > Enligt SCB använder 65 procent av de svenska företagen inte ai alls.

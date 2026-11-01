@@ -1,0 +1,21 @@
+id: BID-15
+påstående: Japans regering inrättade genom regeringsbeslut ett råd för AI- och digital omställning, som ska driva
+  omställningen med utgångspunkten att riskerna med AI ska minimeras.
+typ: händelse
+vem: Japans regering, återgivet av Digital Agency
+datum: '2026-10-20'
+tema:
+- styrning
+källa:
+  url: https://www.digital.go.jp/en/councils/ai_digital
+  titel: AI and Digital Transformation Promotion Council
+  typ: myndighet
+  citat: through thorough utilization of AI and digital technologies, based on the premise of minimizing risks from AI
+  hämtad: '2026-11-01'
+  arkiv: null
+förbehåll: Sidan är en engelsk, delvis maskinöversatt återgivning från digitalmyndigheten av regeringsbeslutet.
+  Rådets första möte hölls den 22 oktober 2026. Sidan säger inget om vilka åtgärder som ska minska riskerna.
+vikt: 1
+bäst_före: null
+kontrollerad: '2026-11-01'
+ersatt_av: null
