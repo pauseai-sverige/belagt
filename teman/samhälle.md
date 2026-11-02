@@ -151,7 +151,7 @@ Hur AI påverkar arbete, ekonomi och vardag: jobb, beroende, AI-kompanjoner och 
 - **Japans digitalmyndighet uppger att den börjar erbjuda cirka 180 000 statsanställda miljöer för att skapa och köra AI-agenter inom regeringens AI-system GENAI.**
   Japans digitalmyndighet (Digital Agency) · 2026-10-20 · samhälle, styrning · myndighet · [BID-13](../påståenden/2026/BID-13.yaml)
   > the Digital Agency is beginning to provide two types of AI agent environments through Government AI GENAI for approximately 180,000 government employees
-  > — [Expanding the AI Agent Environments and Safety Standards of Government AI GENAI Across Society](https://www.digital.go.jp/en/policies/genai/agent-safety-standard#:~:text=the%20Digital%20Agency%20is,approximately%20180%2C000%20government%20employees)
+  > — [Expanding the AI Agent Environments and Safety Standards of Government AI GENAI Across Society](https://www.digital.go.jp/en/policies/genai/agent-safety-standard#:~:text=the%20Digital%20Agency%20is,approximately%20180%2C000%20government%20employees) · [arkivkopia](https://web.archive.org/web/20261020175248/https://www.digital.go.jp/en/policies/genai/agent-safety-standard)
 
   *Förbehåll:* Myndigheten beskriver sitt eget projekt. Den ena miljön, "Agent Chat", rullas ut stegvis och den andra, "GENAI Workbench", väntas först runt december 2026. Datumet är det som bevakningen angav för sidan.
 - **Enligt SCB använder 65 procent av de svenska företagen inte AI alls, och det vanligaste skälet är brist på kompetens.**

@@ -418,13 +418,13 @@ Reglering, standarder, tillsyn och förslag om att bromsa eller pausa.
 - **Japans digitalmyndighet uppger att den börjar erbjuda cirka 180 000 statsanställda miljöer för att skapa och köra AI-agenter inom regeringens AI-system GENAI.**
   Japans digitalmyndighet (Digital Agency) · 2026-10-20 · samhälle, styrning · myndighet · [BID-13](../påståenden/2026/BID-13.yaml)
   > the Digital Agency is beginning to provide two types of AI agent environments through Government AI GENAI for approximately 180,000 government employees
-  > — [Expanding the AI Agent Environments and Safety Standards of Government AI GENAI Across Society](https://www.digital.go.jp/en/policies/genai/agent-safety-standard#:~:text=the%20Digital%20Agency%20is,approximately%20180%2C000%20government%20employees)
+  > — [Expanding the AI Agent Environments and Safety Standards of Government AI GENAI Across Society](https://www.digital.go.jp/en/policies/genai/agent-safety-standard#:~:text=the%20Digital%20Agency%20is,approximately%20180%2C000%20government%20employees) · [arkivkopia](https://web.archive.org/web/20261020175248/https://www.digital.go.jp/en/policies/genai/agent-safety-standard)
 
   *Förbehåll:* Myndigheten beskriver sitt eget projekt. Den ena miljön, "Agent Chat", rullas ut stegvis och den andra, "GENAI Workbench", väntas först runt december 2026. Datumet är det som bevakningen angav för sidan.
 - **Japans digitalmyndighet uppger att dess nya regler för styrning, säkerhet och trygghet vid statsanställdas användning av AI-agenter togs fram i samarbete med Japans AI-säkerhetsinstitut (AISI).**
   Japans digitalmyndighet (Digital Agency) · 2026-10-20 · styrning, kontroll · myndighet · [BID-14](../påståenden/2026/BID-14.yaml)
   > The GENAI Standards were developed with the cooperation of the AI Safety Institute (AISI)
-  > — [Expanding the AI Agent Environments and Safety Standards of Government AI GENAI Across Society](https://www.digital.go.jp/en/policies/genai/agent-safety-standard#:~:text=The%20GENAI%20Standards%20were,AI%20Safety%20Institute%20%28AISI)
+  > — [Expanding the AI Agent Environments and Safety Standards of Government AI GENAI Across Society](https://www.digital.go.jp/en/policies/genai/agent-safety-standard#:~:text=The%20GENAI%20Standards%20were,AI%20Safety%20Institute%20%28AISI) · [arkivkopia](https://web.archive.org/web/20261020175248/https://www.digital.go.jp/en/policies/genai/agent-safety-standard)
 
   *Förbehåll:* Myndigheten beskriver sina egna regler. Själva standarden finns bara på japanska (PDF) och har inte lästs för den här posten. Datumet är det som bevakningen angav för sidan.
 - **Privata aktörer investerar över 140 miljarder kronor i svenska datacenter, medan regeringen satsar 479 miljoner kronor på AI, enligt en debattartikel i Ny Teknik.**
@@ -472,7 +472,7 @@ Reglering, standarder, tillsyn och förslag om att bromsa eller pausa.
 - **Japans regering inrättade genom regeringsbeslut ett råd för AI- och digital omställning, som ska driva omställningen med utgångspunkten att riskerna med AI ska minimeras.**
   Japans regering, återgivet av Digital Agency · 2026-10-20 · styrning · myndighet · [BID-15](../påståenden/2026/BID-15.yaml)
   > through thorough utilization of AI and digital technologies, based on the premise of minimizing risks from AI
-  > — [AI and Digital Transformation Promotion Council](https://www.digital.go.jp/en/councils/ai_digital#:~:text=through%20thorough%20utilization%20of,minimizing%20risks%20from%20AI)
+  > — [AI and Digital Transformation Promotion Council](https://www.digital.go.jp/en/councils/ai_digital#:~:text=through%20thorough%20utilization%20of,minimizing%20risks%20from%20AI) · [arkivkopia](https://web.archive.org/web/20261102121830/https://www.digital.go.jp/en/councils/ai_digital)
 
   *Förbehåll:* Sidan är en engelsk, delvis maskinöversatt återgivning från digitalmyndigheten av regeringsbeslutet. Rådets första möte hölls den 22 oktober 2026. Sidan säger inget om vilka åtgärder som ska minska riskerna.
 

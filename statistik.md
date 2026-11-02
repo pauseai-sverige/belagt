@@ -6,7 +6,7 @@ Varje påstående i arkivet är kontrollerat mot sin källa. Men arkivet kan än
 
 - **334** påståenden, varav 321 aktuella och 13 ersatta
 - **137** olika källor och **83** olika webbplatser
-- **5** poster saknar ännu arkivkopia
+- **0** poster saknar ännu arkivkopia
 - **37** översättningar är inte granskade av någon som läser språket
 - **10** aktuella poster bygger på att någon annan återger primärkällan: BAL-13, BAL-14, BAL-15, BID-06, BID-15, J3ljHm57yU0-01, KIN-23, SVR-14, SVR-15, SVS-13. Intervjuer i medier räknas med här, men duger enligt [metoden](METOD.md) när tidningen själv har gjort intervjun.
 

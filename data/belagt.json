@@ -8603,7 +8603,7 @@
     "typ": "myndighet",
     "citat": "the Digital Agency is beginning to provide two types of AI agent environments through Government AI GENAI for approximately 180,000 government employees",
     "hämtad": "2026-11-01",
-    "arkiv": null
+    "arkiv": "https://web.archive.org/web/20261020175248/https://www.digital.go.jp/en/policies/genai/agent-safety-standard"
    },
    "förbehåll": "Myndigheten beskriver sitt eget projekt. Den ena miljön, \"Agent Chat\", rullas ut stegvis och den andra, \"GENAI Workbench\", väntas först runt december 2026. Datumet är det som bevakningen angav för sidan.",
    "vikt": 2,
@@ -8629,7 +8629,7 @@
     "typ": "myndighet",
     "citat": "The GENAI Standards were developed with the cooperation of the AI Safety Institute (AISI)",
     "hämtad": "2026-11-01",
-    "arkiv": null
+    "arkiv": "https://web.archive.org/web/20261020175248/https://www.digital.go.jp/en/policies/genai/agent-safety-standard"
    },
    "förbehåll": "Myndigheten beskriver sina egna regler. Själva standarden finns bara på japanska (PDF) och har inte lästs för den här posten. Datumet är det som bevakningen angav för sidan.",
    "vikt": 2,
@@ -8654,7 +8654,7 @@
     "typ": "myndighet",
     "citat": "through thorough utilization of AI and digital technologies, based on the premise of minimizing risks from AI",
     "hämtad": "2026-11-01",
-    "arkiv": null
+    "arkiv": "https://web.archive.org/web/20261102121830/https://www.digital.go.jp/en/councils/ai_digital"
    },
    "förbehåll": "Sidan är en engelsk, delvis maskinöversatt återgivning från digitalmyndigheten av regeringsbeslutet. Rådets första möte hölls den 22 oktober 2026. Sidan säger inget om vilka åtgärder som ska minska riskerna.",
    "vikt": 1,
@@ -8679,7 +8679,7 @@
     "typ": "preprint",
     "citat": "GPT-6 Astra achieves the highest success rate of 44%, followed by Gemini-4 Argon at 43%",
     "hämtad": "2026-11-01",
-    "arkiv": null
+    "arkiv": "https://web.archive.org/web/20261023151051/https://arxiv.org/abs/2610.30051"
    },
    "förbehåll": "Preprint som inte är granskad. Modellerna styr roboten via verktygsanrop utan finjustering för uppgiften, så resultatet säger inget om robotar som tränats för uppgiften. Författarna skriver att modellerna klarade placeringsuppgifter relativt bra men hade svårt med exakta placeringar och uppgifter i flera steg.",
    "vikt": 1,
@@ -8705,7 +8705,7 @@
     "typ": "preprint",
     "citat": "models are particularly susceptible in Chinese and multi-turn contexts",
     "hämtad": "2026-11-01",
-    "arkiv": null
+    "arkiv": "https://web.archive.org/web/20261022073828/https://arxiv.org/abs/2610.29225"
    },
    "förbehåll": "Preprint som inte är granskad. Resultaten gäller författarnas egen tvåspråkiga testmängd (engelska och kinesiska) och deras bedömningsmetod, som enligt dem stämmer med människors bedömning i 95,34 procent av fallen. Modellerna namnges inte i sammanfattningen, och den säger att varje modell också har egna sårbarheter.",
    "vikt": 1,

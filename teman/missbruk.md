@@ -182,7 +182,7 @@ Hur AI används för att skada: cyberangrepp, påverkan och biologiska risker.
 - **Forskare rapporterar att språkmodeller i deras säkerhetstester var särskilt sårbara på kinesiska och i flerstegssamtal.**
   Hongyu Li, Xinlong Huang, Zhan Yu m.fl. (forskare) · 2026-10-21 · kontroll, missbruk · preprint · [BID-17](../påståenden/2026/BID-17.yaml)
   > models are particularly susceptible in Chinese and multi-turn contexts
-  > — [Beyond Binary Labels: Diagnostic Evaluation of LLM Safety with Prompt-Level Rubrics](https://arxiv.org/abs/2610.29225#:~:text=models%20are%20particularly%20susceptible,Chinese%20and%20multi%2Dturn%20contexts)
+  > — [Beyond Binary Labels: Diagnostic Evaluation of LLM Safety with Prompt-Level Rubrics](https://arxiv.org/abs/2610.29225#:~:text=models%20are%20particularly%20susceptible,Chinese%20and%20multi%2Dturn%20contexts) · [arkivkopia](https://web.archive.org/web/20261022073828/https://arxiv.org/abs/2610.29225)
 
   *Förbehåll:* Preprint som inte är granskad. Resultaten gäller författarnas egen tvåspråkiga testmängd (engelska och kinesiska) och deras bedömningsmetod, som enligt dem stämmer med människors bedömning i 95,34 procent av fallen. Modellerna namnges inte i sammanfattningen, och den säger att varje modell också har egna sårbarheter.
 

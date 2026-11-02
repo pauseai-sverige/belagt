@@ -144,7 +144,7 @@ Vad AI-systemen kan göra och hur det mäts.
 - **Forskare rapporterar att den bästa av sex frontmodeller klarade 44 procent av uppgifterna i robotbenchmarken LIBERO-10 när modellerna styrde roboten direkt utan uppgiftsspecifik träning.**
   May Espinola, Qifan Zhang och Yu Xiang (forskare) · 2026-10-21 · förmågor · preprint · [BID-16](../påståenden/2026/BID-16.yaml)
   > GPT-6 Astra achieves the highest success rate of 44%, followed by Gemini-4 Argon at 43%
-  > — [From Reasoning to Action: Benchmarking Frontier AI Models on LIBERO-10 Robot Manipulation Tasks](https://arxiv.org/abs/2610.30051#:~:text=GPT%2D6%20Astra%20achieves%20the,Gemini%2D4%20Argon%20at%2043%25)
+  > — [From Reasoning to Action: Benchmarking Frontier AI Models on LIBERO-10 Robot Manipulation Tasks](https://arxiv.org/abs/2610.30051#:~:text=GPT%2D6%20Astra%20achieves%20the,Gemini%2D4%20Argon%20at%2043%25) · [arkivkopia](https://web.archive.org/web/20261023151051/https://arxiv.org/abs/2610.30051)
 
   *Förbehåll:* Preprint som inte är granskad. Modellerna styr roboten via verktygsanrop utan finjustering för uppgiften, så resultatet säger inget om robotar som tränats för uppgiften. Författarna skriver att modellerna klarade placeringsuppgifter relativt bra men hade svårt med exakta placeringar och uppgifter i flera steg.
 
