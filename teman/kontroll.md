@@ -4,7 +4,7 @@
 
 Går systemen att styra, övervaka och testa? Alignment, tankekedjor och testmedvetenhet.
 
-69 påståenden, de viktigaste först inom varje år.
+71 påståenden, de viktigaste först inom varje år.
 
 ## 2026
 
@@ -122,6 +122,12 @@ Går systemen att styra, övervaka och testa? Alignment, tankekedjor och testmed
   > — [Brief independent investigation of agents’ behavior, reasoning and collaboration in the OpenAI / Hugging Face hacking incident](https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/#:~:text=We%20cannot%20rule%20out,some%20of%20its%20analysis) · [arkivkopia](https://web.archive.org/web/20260922205346/https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/)
 
   *Förbehåll:* Det rörde sig om över tusen mycket långa transkript. Utredarna skriver att de är mindre säkra på sin bild av den här händelsen än av enklare incidenter, och att en människa med tillräckligt med tid hade gjort färre fel än deras AI-agenter.
+- **OpenAI uppger att företaget den 28 augusti 2026 startade om den stora förstärkningsinlärningskörning som tidigare hade pausats, sedan nya säkerhetskrav hade införts.**
+  OpenAI (företagets egen text) · 2026-08-28 · styrning, kontroll · partsuppgift · [BID-19](../påståenden/2026/BID-19.yaml)
+  > On August 28th, we restarted the large frontier RL run that was previously paused after the new safety and security requirements were put in place.
+  > — [Path to Astra: critical capabilities and frontier safeguards](https://openai.com/index/path-to-astra/#:~:text=On%20August%2028th%2C%20we,were%20put%20in%20place)
+
+  *Förbehåll:* Företagets egen text, publicerad 1 september 2026. Samma text säger att vissa mindre experimentella träningskörningar tillfälligt hålls tillbaka. Ingen utomstående kontrollerar uppgifterna, och källan säger inget om läget efter publiceringen.
 - **Andrew Ng menar att Hugging Face-intrånget främst berodde på OpenAI:s buggiga isolering och övervakning, och att lösningen är att rätta dem, inte att pausa AI.**
   Andrew Ng · 2026-09 · röster, kontroll, styrning · opinion · [BAL-02](../påståenden/2026/BAL-02.yaml)
   > Fixing these bugs and putting in place improved monitoring would be appropriate fixes, not pausing AI.
@@ -134,6 +140,12 @@ Går systemen att styra, övervaka och testa? Alignment, tankekedjor och testmed
   > — [Dario Amodei — We Must Pace the Frontier](https://darioamodei.com/post/we-must-pace-the-frontier#:~:text=it%E2%80%99s%20my%20worry%20that,internet%20with%20a%20persistent) · [arkivkopia](https://web.archive.org/web/20260923035802/https://darioamodei.com/post/we-must-pace-the-frontier)
 
   *Förbehåll:* Nämns inte i videon. Formulerat som en oro, inte en förutsägelse. Återge det så. Det gäller en svärm med högre förmåga men lika dålig alignment som i Hugging Face-fallet.
+- **OpenAI uppger att företaget efter intrånget i juli 2026 pausade förstärkningsinlärningen av sina senaste modeller i två veckor, och att pausen inte stoppade all forskning.**
+  OpenAI (företagets egen text) · 2026-09-06 · styrning, kontroll · partsuppgift · [BID-18](../påståenden/2026/BID-18.yaml)
+  > This did not halt all research: some workloads resumed under stronger controls, while others remained paused. … includes the two week pause in reinforcement learning on our latest models intended for deployment.
+  > — [Research acceleration: The view inside OpenAI](https://openai.com/index/research-acceleration-view-inside-openai/#:~:text=This%20did%20not%20halt,models%20intended%20for%20deployment)
+
+  *Förbehåll:* Beskriver en avslutad period, inte läget i dag. Företaget anger i diagrammet att perioden gällde 20 juli till 6 augusti 2026. Ingen utomstående kontrollerar vad som pausades eller hur länge.
 - **OpenAI:s forskningschef skriver att inget AI-labb har löst alignment och övervakning tillräckligt för att ansvarsfullt fortsätta skala upp i maxfart mycket längre. Han hoppas att frivilliga inbromsningar blir vanliga och vill att regeringar gör internationell samordning till en topprioritet.**
   Jakub Pachocki (forskningschef, OpenAI) · 2026-09-06 · styrning, kontroll, röster · partsuppgift · [J3ljHm57yU0-12](../påståenden/2026/J3ljHm57yU0-12.yaml)
   > Currently I believe that no lab has solved alignment and monitoring to a sufficient degree to continue responsibly scaling at maximum speed for much longer.
@@ -153,6 +165,7 @@ Går systemen att styra, övervaka och testa? Alignment, tankekedjor och testmed
 
   *Förbehåll:* Detta är företagets egen skrivning. Jämför [J3ljHm57yU0-13](https://pauseai-sverige.github.io/belagt/#J3ljHm57yU0-13).
 - **OpenAI uppger att pausen efter Hugging Face-intrånget gällde förstärkningsinlärning av de senaste modellerna som var avsedda att släppas, och att en del av arbetet därefter har återupptagits under starkare kontroller medan annat fortfarande är pausat.**
+  *Ersatt av BID-18.*
   OpenAI (företagets egen text) · 2026-09-06 · styrning, kontroll · partsuppgift · [OAI-05](../påståenden/2026/OAI-05.yaml)
   > pausing reinforcement learning (RL) training on our latest models intended for deployment while we further hardened and red-teamed our research environments and expanded coverage of our monitoring systems. This did not halt all research: some workloads resumed under stronger controls, while others remained paused.
   > — [Research acceleration: The view inside OpenAI](https://openai.com/index/research-acceleration-view-inside-openai/#:~:text=pausing%20reinforcement%20learning%20%28RL%29,while%20others%20remained%20paused) · [arkivkopia](https://web.archive.org/web/20260923104226/https://openai.com/index/research-acceleration-view-inside-openai/)

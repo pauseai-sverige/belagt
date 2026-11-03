@@ -1,0 +1,24 @@
+id: BID-19
+påstående: OpenAI uppger att företaget den 28 augusti 2026 startade om den stora förstärkningsinlärningskörning som
+  tidigare hade pausats, sedan nya säkerhetskrav hade införts.
+typ: händelse
+vem: OpenAI (företagets egen text)
+datum: '2026-08-28'
+tema:
+- styrning
+- kontroll
+källa:
+  url: https://openai.com/index/path-to-astra/
+  titel: 'Path to Astra: critical capabilities and frontier safeguards'
+  typ: partsuppgift
+  citat: On August 28th, we restarted the large frontier RL run that was previously paused after the new safety
+    and security requirements were put in place.
+  hämtad: '2026-11-03'
+  arkiv: null
+förbehåll: Företagets egen text, publicerad 1 september 2026. Samma text säger att vissa mindre experimentella
+  träningskörningar tillfälligt hålls tillbaka. Ingen utomstående kontrollerar uppgifterna, och källan säger
+  inget om läget efter publiceringen.
+vikt: 3
+bäst_före: null
+kontrollerad: '2026-11-03'
+ersatt_av: null
