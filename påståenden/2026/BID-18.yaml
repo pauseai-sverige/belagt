@@ -1,0 +1,23 @@
+id: BID-18
+påstående: OpenAI uppger att företaget efter intrånget i juli 2026 pausade förstärkningsinlärningen av sina senaste
+  modeller i två veckor, och att pausen inte stoppade all forskning.
+typ: händelse
+vem: OpenAI (företagets egen text)
+datum: '2026-09-06'
+tema:
+- styrning
+- kontroll
+källa:
+  url: https://openai.com/index/research-acceleration-view-inside-openai/
+  titel: 'Research acceleration: The view inside OpenAI'
+  typ: partsuppgift
+  citat: 'This did not halt all research: some workloads resumed under stronger controls, while others remained
+    paused. … includes the two week pause in reinforcement learning on our latest models intended for deployment.'
+  hämtad: '2026-11-03'
+  arkiv: null
+förbehåll: Beskriver en avslutad period, inte läget i dag. Företaget anger i diagrammet att perioden gällde
+  20 juli till 6 augusti 2026. Ingen utomstående kontrollerar vad som pausades eller hur länge.
+vikt: 3
+bäst_före: null
+kontrollerad: '2026-11-03'
+ersatt_av: null

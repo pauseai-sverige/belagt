@@ -4,7 +4,7 @@
 
 Reglering, standarder, tillsyn och förslag om att bromsa eller pausa.
 
-120 påståenden, de viktigaste först inom varje år.
+122 påståenden, de viktigaste först inom varje år.
 
 ## 2026
 
@@ -121,6 +121,7 @@ Reglering, standarder, tillsyn och förslag om att bromsa eller pausa.
 
   *Förbehåll:* Häggström instämmer i förslaget om ett säkerhetsinstitut men varnar för att det kan bli ”säkerhets-whitewashing” som godkänner modeller utan grund. Han vill att företagen ska bevisa att deras modeller är säkra innan de får lanseras.
 - **Efter intrånget pausade OpenAI förstärkningsinlärningen av sina senaste modeller, och företagets största planerade träningskörning ligger på is tills säkerhetsåtgärderna har kontrollerats.**
+  *Ersatt av BID-19.*
   OpenAI · 2026-08-26 · styrning · partsuppgift · [J3ljHm57yU0-22](../påståenden/2026/J3ljHm57yU0-22.yaml)
   > Our largest planned frontier RL run remains on hold while we conduct smaller-scale training and evaluations
   > — [The Hugging Face incident and the road ahead](https://openai.com/index/hugging-face-incident-and-the-road-ahead/#:~:text=Our%20largest%20planned%20frontier,smaller%2Dscale%20training%20and%20evaluations) · [arkivkopia](https://web.archive.org/web/20260922234408/https://openai.com/index/hugging-face-incident-and-the-road-ahead/)
@@ -132,6 +133,12 @@ Reglering, standarder, tillsyn och förslag om att bromsa eller pausa.
   > — [Brief independent investigation of agents’ behavior, reasoning and collaboration in the OpenAI / Hugging Face hacking incident](https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/#:~:text=we%20did%20not%20take,for%20this%20independent%20assessment) · [arkivkopia](https://web.archive.org/web/20260922205346/https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/)
 
   *Förbehåll:* OpenAI fick stryka icke-offentliga uppgifter ur texten. METR skriver överst att inget som var viktigt för deras slutsatser ströks utöver det som anges i texten. METR såg inte OpenAI:s egen rapport före publiceringen.
+- **OpenAI uppger att företaget den 28 augusti 2026 startade om den stora förstärkningsinlärningskörning som tidigare hade pausats, sedan nya säkerhetskrav hade införts.**
+  OpenAI (företagets egen text) · 2026-08-28 · styrning, kontroll · partsuppgift · [BID-19](../påståenden/2026/BID-19.yaml)
+  > On August 28th, we restarted the large frontier RL run that was previously paused after the new safety and security requirements were put in place.
+  > — [Path to Astra: critical capabilities and frontier safeguards](https://openai.com/index/path-to-astra/#:~:text=On%20August%2028th%2C%20we,were%20put%20in%20place)
+
+  *Förbehåll:* Företagets egen text, publicerad 1 september 2026. Samma text säger att vissa mindre experimentella träningskörningar tillfälligt hålls tillbaka. Ingen utomstående kontrollerar uppgifterna, och källan säger inget om läget efter publiceringen.
 - **Andrew Ng menar att Hugging Face-intrånget främst berodde på OpenAI:s buggiga isolering och övervakning, och att lösningen är att rätta dem, inte att pausa AI.**
   Andrew Ng · 2026-09 · röster, kontroll, styrning · opinion · [BAL-02](../påståenden/2026/BAL-02.yaml)
   > Fixing these bugs and putting in place improved monitoring would be appropriate fixes, not pausing AI.
@@ -186,6 +193,12 @@ Reglering, standarder, tillsyn och förslag om att bromsa eller pausa.
   > — [PauseAI Proposal](https://pauseai.info/proposal#:~:text=The%20most%20dangerous%20models,across%20many%20different%20domains) · [arkivkopia](https://web.archive.org/web/20260920153746/https://pauseai.info/proposal)
 
   *Förbehåll:* Visar var PauseAI drar gränsen. Ställ mot [NYT-06](https://pauseai-sverige.github.io/belagt/#NYT-06): C2S-Scale är byggd på en generell modell och upptäckten hängde på skalan, så gränsen är inte skarp. Sidan uppdateras löpande, hämtad 2026-09-24.
+- **OpenAI uppger att företaget efter intrånget i juli 2026 pausade förstärkningsinlärningen av sina senaste modeller i två veckor, och att pausen inte stoppade all forskning.**
+  OpenAI (företagets egen text) · 2026-09-06 · styrning, kontroll · partsuppgift · [BID-18](../påståenden/2026/BID-18.yaml)
+  > This did not halt all research: some workloads resumed under stronger controls, while others remained paused. … includes the two week pause in reinforcement learning on our latest models intended for deployment.
+  > — [Research acceleration: The view inside OpenAI](https://openai.com/index/research-acceleration-view-inside-openai/#:~:text=This%20did%20not%20halt,models%20intended%20for%20deployment)
+
+  *Förbehåll:* Beskriver en avslutad period, inte läget i dag. Företaget anger i diagrammet att perioden gällde 20 juli till 6 augusti 2026. Ingen utomstående kontrollerar vad som pausades eller hur länge.
 - **OpenAI:s forskningschef skriver att inget AI-labb har löst alignment och övervakning tillräckligt för att ansvarsfullt fortsätta skala upp i maxfart mycket längre. Han hoppas att frivilliga inbromsningar blir vanliga och vill att regeringar gör internationell samordning till en topprioritet.**
   Jakub Pachocki (forskningschef, OpenAI) · 2026-09-06 · styrning, kontroll, röster · partsuppgift · [J3ljHm57yU0-12](../påståenden/2026/J3ljHm57yU0-12.yaml)
   > Currently I believe that no lab has solved alignment and monitoring to a sufficient degree to continue responsibly scaling at maximum speed for much longer.
@@ -199,6 +212,7 @@ Reglering, standarder, tillsyn och förslag om att bromsa eller pausa.
 
   *Förbehåll:* OpenAI motiverar med att AGI måste styras demokratiskt, vilket kräver en informerad allmänhet. Det är företagets eget skäl till att publicera siffrorna nedan, och samtidigt ett erkännande av att glappet mellan insidan och utsidan finns.
 - **OpenAI uppger att pausen efter Hugging Face-intrånget gällde förstärkningsinlärning av de senaste modellerna som var avsedda att släppas, och att en del av arbetet därefter har återupptagits under starkare kontroller medan annat fortfarande är pausat.**
+  *Ersatt av BID-18.*
   OpenAI (företagets egen text) · 2026-09-06 · styrning, kontroll · partsuppgift · [OAI-05](../påståenden/2026/OAI-05.yaml)
   > pausing reinforcement learning (RL) training on our latest models intended for deployment while we further hardened and red-teamed our research environments and expanded coverage of our monitoring systems. This did not halt all research: some workloads resumed under stronger controls, while others remained paused.
   > — [Research acceleration: The view inside OpenAI](https://openai.com/index/research-acceleration-view-inside-openai/#:~:text=pausing%20reinforcement%20learning%20%28RL%29,while%20others%20remained%20paused) · [arkivkopia](https://web.archive.org/web/20260923104226/https://openai.com/index/research-acceleration-view-inside-openai/)

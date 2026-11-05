@@ -6523,7 +6523,7 @@
    "vikt": 3,
    "bäst_före": "2026-11-22",
    "kontrollerad": "2026-09-28",
-   "ersatt_av": null,
+   "ersatt_av": "BID-19",
    "citera": "OpenAI, 2026-08-26. The Hugging Face incident and the road ahead. https://openai.com/index/hugging-face-incident-and-the-road-ahead/. Via Belagt J3ljHm57yU0-22: https://pauseai-sverige.github.io/belagt/#J3ljHm57yU0-22",
    "citatlänk": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/#:~:text=Our%20largest%20planned%20frontier,smaller%2Dscale%20training%20and%20evaluations"
   },
@@ -6752,6 +6752,32 @@
    "ersatt_av": null,
    "citera": "METR och Redwood Research, 2026-08-26. Brief independent investigation of agents’ behavior, reasoning and collaboration in the OpenAI / Hugging Face hacking incident. https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/. Via Belagt MET-13: https://pauseai-sverige.github.io/belagt/#MET-13",
    "citatlänk": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/#:~:text=We%20cannot%20rule%20out,some%20of%20its%20analysis"
+  },
+  {
+   "id": "BID-19",
+   "påstående": "OpenAI uppger att företaget den 28 augusti 2026 startade om den stora förstärkningsinlärningskörning som tidigare hade pausats, sedan nya säkerhetskrav hade införts.",
+   "typ": "händelse",
+   "vem": "OpenAI (företagets egen text)",
+   "datum": "2026-08-28",
+   "tema": [
+    "styrning",
+    "kontroll"
+   ],
+   "källa": {
+    "url": "https://openai.com/index/path-to-astra/",
+    "titel": "Path to Astra: critical capabilities and frontier safeguards",
+    "typ": "partsuppgift",
+    "citat": "On August 28th, we restarted the large frontier RL run that was previously paused after the new safety and security requirements were put in place.",
+    "hämtad": "2026-11-03",
+    "arkiv": null
+   },
+   "förbehåll": "Företagets egen text, publicerad 1 september 2026. Samma text säger att vissa mindre experimentella träningskörningar tillfälligt hålls tillbaka. Ingen utomstående kontrollerar uppgifterna, och källan säger inget om läget efter publiceringen.",
+   "vikt": 3,
+   "bäst_före": null,
+   "kontrollerad": "2026-11-03",
+   "ersatt_av": null,
+   "citera": "OpenAI (företagets egen text), 2026-08-28. Path to Astra: critical capabilities and frontier safeguards. https://openai.com/index/path-to-astra/. Via Belagt BID-19: https://pauseai-sverige.github.io/belagt/#BID-19",
+   "citatlänk": "https://openai.com/index/path-to-astra/#:~:text=On%20August%2028th%2C%20we,were%20put%20in%20place"
   },
   {
    "id": "BAL-01",
@@ -7531,6 +7557,32 @@
    "citatlänk": "https://epoch.ai/trends#:~:text=frontier%20has%20advanced%20linearly,year%20for%20non%2Dreasoning%20models"
   },
   {
+   "id": "BID-18",
+   "påstående": "OpenAI uppger att företaget efter intrånget i juli 2026 pausade förstärkningsinlärningen av sina senaste modeller i två veckor, och att pausen inte stoppade all forskning.",
+   "typ": "händelse",
+   "vem": "OpenAI (företagets egen text)",
+   "datum": "2026-09-06",
+   "tema": [
+    "styrning",
+    "kontroll"
+   ],
+   "källa": {
+    "url": "https://openai.com/index/research-acceleration-view-inside-openai/",
+    "titel": "Research acceleration: The view inside OpenAI",
+    "typ": "partsuppgift",
+    "citat": "This did not halt all research: some workloads resumed under stronger controls, while others remained paused. … includes the two week pause in reinforcement learning on our latest models intended for deployment.",
+    "hämtad": "2026-11-03",
+    "arkiv": null
+   },
+   "förbehåll": "Beskriver en avslutad period, inte läget i dag. Företaget anger i diagrammet att perioden gällde 20 juli till 6 augusti 2026. Ingen utomstående kontrollerar vad som pausades eller hur länge.",
+   "vikt": 3,
+   "bäst_före": null,
+   "kontrollerad": "2026-11-03",
+   "ersatt_av": null,
+   "citera": "OpenAI (företagets egen text), 2026-09-06. Research acceleration: The view inside OpenAI. https://openai.com/index/research-acceleration-view-inside-openai/. Via Belagt BID-18: https://pauseai-sverige.github.io/belagt/#BID-18",
+   "citatlänk": "https://openai.com/index/research-acceleration-view-inside-openai/#:~:text=This%20did%20not%20halt,models%20intended%20for%20deployment"
+  },
+  {
    "id": "J3ljHm57yU0-11",
    "påstående": "OpenAI:s forskningschef säger att interna resultat får honom att starkt förvänta sig att den nuvarande utvecklingstakten kan fortsätta in i rekursiv självförbättring, där AI allt mer driver sin egen utveckling.",
    "typ": "prognos",
@@ -7707,7 +7759,7 @@
    "vikt": 3,
    "bäst_före": "2026-12-01",
    "kontrollerad": "2026-09-28",
-   "ersatt_av": null,
+   "ersatt_av": "BID-18",
    "citera": "OpenAI (företagets egen text), 2026-09-06. Research acceleration: The view inside OpenAI. https://openai.com/index/research-acceleration-view-inside-openai/. Via Belagt OAI-05: https://pauseai-sverige.github.io/belagt/#OAI-05",
    "citatlänk": "https://openai.com/index/research-acceleration-view-inside-openai/#:~:text=pausing%20reinforcement%20learning%20%28RL%29,while%20others%20remained%20paused"
   },
