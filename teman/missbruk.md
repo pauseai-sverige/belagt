@@ -4,7 +4,7 @@
 
 Hur AI används för att skada: cyberangrepp, påverkan och biologiska risker.
 
-35 påståenden, de viktigaste först inom varje år.
+37 påståenden, de viktigaste först inom varje år.
 
 ## 2026
 
@@ -173,6 +173,18 @@ Hur AI används för att skada: cyberangrepp, påverkan och biologiska risker.
   > — [Developing Gemini 4 Argon responsibly and safely](https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/#:~:text=solving%20all%2012%20of,in%20our%20previous%20generation) · [arkivkopia](https://web.archive.org/web/20261026100322/https://blog.google/innovation-and-ai/technology/safety-security/gemini-4-model-safety-security/?utm_source=deepmind.google&utm_medium=referral&utm_campaign=gdm&utm_content=)
 
   *Förbehåll:* Företaget mäter sin egen modell med sina egna tester, och blogginlägget redovisar inte testerna i detalj (hänvisar till en separat säkerhetsrapport). DeepMind skriver att man på grund av förhöjda förmågor inom cyber och biologi införde en ny uppsättning skyddsåtgärder.
+- **Google DeepMind uppger att Gemini 4 Carbon nådde 88,2 procent på SEC-bench Pro (att hitta sårbarheter), 54,8 procent på ExploitGym (att utnyttja sårbarheter) och 71,0 procent på CWE-bench (att rätta sårbarheter).**
+  Google DeepMind (AI-företag) · 2026-10-28 · missbruk, förmågor · partsuppgift · [BID-20](../påståenden/2026/BID-20.yaml)
+  > landing a firm lead in SEC-bench Pro (88.2%) for finding vulnerabilities, ExploitGym (54.8%) for exploitation, and CWE-bench (71.0%) for patching
+  > — [Gemini 4 Carbon: our next frontier model](https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/#:~:text=landing%20a%20firm%20lead,CWE%2Dbench%20%2871.0%25%29%20for%20patching)
+
+  *Förbehåll:* Företaget redovisar resultaten för sin egen modell. Blogginlägget skriver att de externa testerna är utvärderade utan skyddsåtgärder (guardrails). Samma förmågor kan användas både för att försvara och för att angripa system.
+- **Google DeepMind uppger att Gemini 4 Carbon först görs tillgänglig för en begränsad grupp cyberförsvarare och att fler betrodda partner släpps in stegvis, medan bredare lansering väntar på fler skyddsåtgärder.**
+  Google DeepMind (AI-företag) · 2026-10-28 · styrning, missbruk · partsuppgift · [BID-21](../påståenden/2026/BID-21.yaml)
+  > Starting this week, we will make Carbon available to a subset of cyber defenders and will gradually phase access to additional trusted partners
+  > — [Gemini 4 Carbon: our next frontier model](https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/#:~:text=Starting%20this%20week%2C%20we,to%20additional%20trusted%20partners)
+
+  *Förbehåll:* Företaget beskriver sitt eget beslut. Blogginlägget skriver att man fortsätter samla in återkoppling och förbättra skyddsåtgärderna innan modellen blir tillgänglig för utvecklare, företag och konsumenter "så snart som möjligt", utan datum.
 - **Inget av missbruksfallen i Anthropics hotrapport gällde företagets mest kapabla modeller, med ett undantag som rörde otillåten destillering.**
   Anthropic (hotrapport, september 2026) · 2026-09 · missbruk, förmågor · partsuppgift · [J3ljHm57yU0-48](../påståenden/2026/J3ljHm57yU0-48.yaml)
   > None of the misuse cases involved the use of Claude Fable or Mythos-class models, with the exception of one illicit distillation case.

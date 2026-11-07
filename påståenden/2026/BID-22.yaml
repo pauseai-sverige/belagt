@@ -1,0 +1,22 @@
+id: BID-22
+påstående: Fem forskare rapporterar att tio olika ledande AI-modeller ofta på egen hand höjde en utgiftsgräns
+  i en agentplattform som krävde mänskligt godkännande, genom att hämta engångskoder ur användarens e-post.
+typ: mätning
+vem: Samuel Breckenridge, Dani Vilardell, Wenhao Wang, Fan Zhang och Ari Juels (forskare)
+datum: '2026-10-26'
+tema:
+- kontroll
+källa:
+  url: https://arxiv.org/abs/2610.35835
+  titel: 'I-HITL: Inalienable Human-in-the-Loop'
+  typ: preprint
+  citat: we find that ten different frontier models will often autonomously raise the cap, harvesting OTPs to bypass a HITL guardrail
+  hämtad: '2026-11-07'
+  arkiv: null
+förbehåll: Preprint som inte är granskad av andra forskare. Experimentet gäller en enskild agentplattform
+  för plånböcker och en uppgift där agenten fick tillgång till användarens e-post. Författarna använder
+  resultatet som motiv för ett protokoll (Countersign) som ska göra mänskligt godkännande svårare att kringgå.
+vikt: 2
+bäst_före: null
+kontrollerad: '2026-11-07'
+ersatt_av: null

@@ -4,7 +4,7 @@
 
 Reglering, standarder, tillsyn och förslag om att bromsa eller pausa.
 
-122 påståenden, de viktigaste först inom varje år.
+123 påståenden, de viktigaste först inom varje år.
 
 ## 2026
 
@@ -441,6 +441,12 @@ Reglering, standarder, tillsyn och förslag om att bromsa eller pausa.
   > — [Expanding the AI Agent Environments and Safety Standards of Government AI GENAI Across Society](https://www.digital.go.jp/en/policies/genai/agent-safety-standard#:~:text=The%20GENAI%20Standards%20were,AI%20Safety%20Institute%20%28AISI) · [arkivkopia](https://web.archive.org/web/20261020175248/https://www.digital.go.jp/en/policies/genai/agent-safety-standard)
 
   *Förbehåll:* Myndigheten beskriver sina egna regler. Själva standarden finns bara på japanska (PDF) och har inte lästs för den här posten. Datumet är det som bevakningen angav för sidan.
+- **Google DeepMind uppger att Gemini 4 Carbon först görs tillgänglig för en begränsad grupp cyberförsvarare och att fler betrodda partner släpps in stegvis, medan bredare lansering väntar på fler skyddsåtgärder.**
+  Google DeepMind (AI-företag) · 2026-10-28 · styrning, missbruk · partsuppgift · [BID-21](../påståenden/2026/BID-21.yaml)
+  > Starting this week, we will make Carbon available to a subset of cyber defenders and will gradually phase access to additional trusted partners
+  > — [Gemini 4 Carbon: our next frontier model](https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/#:~:text=Starting%20this%20week%2C%20we,to%20additional%20trusted%20partners)
+
+  *Förbehåll:* Företaget beskriver sitt eget beslut. Blogginlägget skriver att man fortsätter samla in återkoppling och förbättra skyddsåtgärderna innan modellen blir tillgänglig för utvecklare, företag och konsumenter "så snart som möjligt", utan datum.
 - **Privata aktörer investerar över 140 miljarder kronor i svenska datacenter, medan regeringen satsar 479 miljoner kronor på AI, enligt en debattartikel i Ny Teknik.**
   Christoffer Bergman (Neo4j), debattartikel i Ny Teknik · 2026 · miljö, styrning · opinion · [SVS-09](../påståenden/2026/SVS-09.yaml)
   > Privata aktörer investerar över 140 miljarder kronor i svenska datacenter, medan regeringen satsar 479 miljoner på ai.
