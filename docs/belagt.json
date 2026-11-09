@@ -6769,7 +6769,7 @@
     "typ": "partsuppgift",
     "citat": "On August 28th, we restarted the large frontier RL run that was previously paused after the new safety and security requirements were put in place.",
     "hämtad": "2026-11-03",
-    "arkiv": null
+    "arkiv": "https://web.archive.org/web/20261027170124/https://openai.com/index/path-to-astra/"
    },
    "förbehåll": "Företagets egen text, publicerad 1 september 2026. Samma text säger att vissa mindre experimentella träningskörningar tillfälligt hålls tillbaka. Ingen utomstående kontrollerar uppgifterna, och källan säger inget om läget efter publiceringen.",
    "vikt": 3,
@@ -7572,7 +7572,7 @@
     "typ": "partsuppgift",
     "citat": "This did not halt all research: some workloads resumed under stronger controls, while others remained paused. … includes the two week pause in reinforcement learning on our latest models intended for deployment.",
     "hämtad": "2026-11-03",
-    "arkiv": null
+    "arkiv": "https://web.archive.org/web/20261027170016/https://openai.com/index/research-acceleration-view-inside-openai/"
    },
    "förbehåll": "Beskriver en avslutad period, inte läget i dag. Företaget anger i diagrammet att perioden gällde 20 juli till 6 augusti 2026. Ingen utomstående kontrollerar vad som pausades eller hur länge.",
    "vikt": 3,
