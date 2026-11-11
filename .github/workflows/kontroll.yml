@@ -10,9 +10,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
       - name: Validera påståenden och kontrollera att genererade filer är aktuella
         run: python tools/bygg.py --kontroll
+      # Citatet i varje ny eller ändrad post ska stå i källan. Kontrollen görs här och inte bara
+      # av den som skrev posten, så att den inte bygger på att någon intygar den.
+      - name: Kontrollera citaten i nya och ändrade poster mot källorna
+        if: github.event_name == 'pull_request'
+        shell: bash  # med pipefail, så att ett fel inte försvinner i tee
+        run: |
+          python tools/kontrollera_citat.py --ändrade "origin/${{ github.base_ref }}" --strikt | tee citat.md
+          cat citat.md >> "$GITHUB_STEP_SUMMARY"

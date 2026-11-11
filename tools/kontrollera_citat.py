@@ -4,9 +4,11 @@
     python tools/kontrollera_citat.py              # alla poster
     python tools/kontrollera_citat.py ISR-01 KIN-09 # bara vissa poster
     python tools/kontrollera_citat.py --fil sida.html --citat "…"  # pröva ett citat mot en sparad fil
+    python tools/kontrollera_citat.py --ändrade origin/main --strikt  # det som körs på varje pull request
 
 Källtexten hämtas helst från arkivkopian (källa.arkiv), eftersom det är den som ska gå att
-kontrollera i efterhand, och annars från källa.url. Citatet söks i texten efter att båda har
+kontrollera i efterhand, och annars från källa.url. Går källan inte att hämta och posten saknar
+arkivkopia prövas den senaste kopian i Wayback Machine. Citatet söks i texten efter att båda har
 normaliserats (blanksteg, citattecken, bindestreck, versaler). Ett utelämnande (…) i citatet
 betyder att delarna före och efter ska finnas i den ordningen.
 
@@ -19,6 +21,7 @@ import gzip
 import html.parser
 import io
 import re
+import subprocess
 import sys
 import time
 import unicodedata
@@ -184,7 +187,11 @@ def kontrollera(poster, paus=2):
         per_källa[(p["källa"]["url"], p["källa"]["arkiv"])].append(p)
     for (url, arkiv), grupp in per_källa.items():
         text, varifrån, fel = None, None, []
-        for försök, kandidat in (("arkivkopian", rå_arkivlänk(arkiv)), ("källan", url)):
+        # Sista utvägen för poster utan arkivkopia: den senaste kopian i Wayback Machine. Många
+        # sajter spärrar automatiska hämtningar men låter sig arkiveras.
+        reserv = None if arkiv else f"https://web.archive.org/web/2id_/{url}"
+        for försök, kandidat in (("arkivkopian", rå_arkivlänk(arkiv)), ("källan", url),
+                                 ("Wayback Machine", reserv)):
             if not kandidat:
                 continue
             for omgång in range(2):  # ett nytt försök vid tillfälliga fel, inte vid 403 eller 404
@@ -224,7 +231,7 @@ def kontrollera(poster, paus=2):
         if saknas:
             time.sleep(paus * 5)
             try:
-                text = hämta(rå_arkivlänk(arkiv) if varifrån == "arkivkopian" else url)
+                text = hämta({"arkivkopian": rå_arkivlänk(arkiv), "källan": url}.get(varifrån, reserv))
                 saknas = [p for p in saknas if not finns(p["källa"]["citat"], text)]
             except Exception:
                 pass
@@ -260,9 +267,34 @@ def rapport(utfall, antal):
     return "".join(ut)
 
 
+def ändrade(bas):
+    """Id för poster som är nya sedan grenen lämnade bas, eller där citatet, källans adress eller
+    kontrolldatumet har ändrats. En post som bara har fått ersatt_av eller en arkivlänk behöver
+    inte hämtas igen."""
+    def git(*arg):
+        return subprocess.run(["git", "-c", "core.quotepath=false", *arg], cwd=ROOT, capture_output=True, text=True)
+
+    gren = git("merge-base", bas, "HEAD").stdout.strip() or bas
+    filer = git("diff", "--name-only", "--diff-filter=AMR", gren, "HEAD", "--", "påståenden").stdout.splitlines()
+    ids = set()
+    for rad in filer:
+        if not rad.endswith(".yaml"):
+            continue
+        ny = yaml.safe_load((ROOT / rad).read_text())
+        förr = git("show", f"{gren}:{rad}")
+        gammal = yaml.safe_load(förr.stdout) if förr.returncode == 0 else None
+        nyckel = lambda p: (p["källa"]["url"], p["källa"]["citat"], p["kontrollerad"])
+        if gammal is None or nyckel(gammal) != nyckel(ny):
+            ids.add(ny["id"])
+    return ids
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("id", nargs="*")
+    ap.add_argument("--ändrade", metavar="BAS", help="bara poster som ändrats sedan grenen lämnade BAS")
+    ap.add_argument("--strikt", action="store_true",
+                    help="avsluta med fel om något citat saknas eller inte gick att kontrollera")
     ap.add_argument("--fil", help="pröva ett citat mot en sparad HTML-, text- eller PDF-fil")
     ap.add_argument("--citat")
     ap.add_argument("--paus", type=float, default=2)
@@ -273,8 +305,18 @@ def main():
         ok = finns(a.citat, text)
         print("Citatet finns i filen." if ok else "Citatet finns inte i filen.")
         sys.exit(0 if ok else 1)
-    poster = ladda(set(a.id))
-    print(rapport(kontrollera(poster, a.paus), len(poster)), end="")
+    ids = set(a.id)
+    if a.ändrade:
+        ids |= ändrade(a.ändrade)
+        if not ids:
+            print("Inga poster har ändrats.", file=sys.stderr)
+            return
+    poster = ladda(ids)
+    utfall = kontrollera(poster, a.paus)
+    print(rapport(utfall, len(poster)), end="")
+    # En död länk fäller inte en post vars citat hittades i arkivkopian.
+    if a.strikt and (utfall["saknas"] or utfall["ohämtbar"]):
+        sys.exit(1)
 
 
 if __name__ == "__main__":

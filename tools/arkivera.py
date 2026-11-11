@@ -3,6 +3,7 @@
 
     python tools/arkivera.py            # högst 20 källor per körning
     python tools/arkivera.py --max 50
+    python tools/arkivera.py BID-24 BID-25   # bara vissa poster, direkt när de skrivs
 
 Finns en kopia redan används den närmaste kopian från det datum källan hämtades. Annars
 begärs en ny kopia. Går det inte (en del sajter blockerar Wayback Machine) används den senaste
@@ -61,6 +62,7 @@ def archive_today(url):
 
 def main():
     ap = argparse.ArgumentParser()
+    ap.add_argument("id", nargs="*")
     ap.add_argument("--max", type=int, default=20)
     a = ap.parse_args()
     klara, cache = 0, {}
@@ -68,7 +70,7 @@ def main():
         text = f.read_text()
         p = yaml.safe_load(text)
         k = p["källa"]
-        if k["arkiv"]:
+        if k["arkiv"] or (a.id and p["id"] not in a.id):
             continue
         if k["url"] not in cache:
             if klara >= a.max:
