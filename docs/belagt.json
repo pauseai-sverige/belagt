@@ -24,6 +24,10 @@
   "opinion": "Person eller grupp som argumenterar i eget namn: essä, blogg, debattartikel, tal eller öppet brev.",
   "media": "Nyhetsartikel, reportage eller intervju i medier."
  },
+ "granskningar": {
+  "maskinell": "Citatet är kontrollerat maskinellt och posten granskad av en oberoende AI-session.",
+  "människa": "En människa har läst posten mot källan."
+ },
  "påståenden": [
   {
    "id": "TID-16",
@@ -7913,7 +7917,7 @@
    "vikt": 3,
    "bäst_före": null,
    "kontrollerad": "2026-09-28",
-   "ersatt_av": null,
+   "ersatt_av": "OAI-06",
    "citera": "OpenAI (pressmeddelande), 2026-09-09. Paul Christiano joins OpenAI Foundation Board. https://openai.com/index/paul-christiano-joins-openai-foundation-board/. Via Belagt J3ljHm57yU0-53: https://pauseai-sverige.github.io/belagt/#J3ljHm57yU0-53",
    "citatlänk": "https://openai.com/index/paul-christiano-joins-openai-foundation-board/#:~:text=We%E2%80%99re%20announcing%20the%20appointment,OpenAI%20Group%20PBC%20Board"
   },

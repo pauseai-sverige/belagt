@@ -172,6 +172,7 @@ Går systemen att styra, övervaka och testa? Alignment, tankekedjor och testmed
 
   *Förbehåll:* Viktig precisering: pausen är inte ett stopp för all utveckling, och den är delvis hävd. Ingen utomstående kontrollerar vad som är pausat.
 - **Paul Christiano, som ledde OpenAI:s alignmentforskning 2017–2021 och var med och utvecklade metoden RLHF, gick i september 2026 in i styrelsen för OpenAI Foundation och dess säkerhetsutskott.**
+  *Ersatt av OAI-06.*
   OpenAI (pressmeddelande) · 2026-09-09 · röster, kontroll · partsuppgift · [J3ljHm57yU0-53](../påståenden/2026/J3ljHm57yU0-53.yaml)
   > We’re announcing the appointment of Paul Christiano to the OpenAI Foundation Board. He will be a non-voting observer on the OpenAI Group PBC Board.
   > — [Paul Christiano joins OpenAI Foundation Board](https://openai.com/index/paul-christiano-joins-openai-foundation-board/#:~:text=We%E2%80%99re%20announcing%20the%20appointment,OpenAI%20Group%20PBC%20Board) · [arkivkopia](https://web.archive.org/web/20260920002520/https://openai.com/index/paul-christiano-joins-openai-foundation-board/)
