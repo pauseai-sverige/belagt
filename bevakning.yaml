@@ -1,24 +1,30 @@
 # Källor som bevakas varje vecka av tools/bevaka.py (.github/workflows/bevaka.yml).
 #
-# Syftet är att nya poster ska hittas systematiskt och inte bara när någon råkar se något.
-# Listan är medvetet blandad: myndigheter, forskning, företag, kritiker och regioner som annars
-# saknas i arkivet. Det som hittas här är *tips*. En post skrivs bara om primärkällan går att
-# hämta och ett ordagrant citat bekräftar påståendet, precis som vanligt (se METOD.md).
+# Syftet är att hitta det som pauseai.se behöver belägg för (se relevans.yaml), systematiskt och
+# inte bara när någon råkar se något. Det som hittas här är *tips*. En post skrivs bara om
+# primärkällan går att hämta och ett ordagrant citat bekräftar påståendet (se METOD.md).
 #
 # Fält:
 #   namn:    vad som bevakas
 #   grupp:   rubrik i veckans ärende
-#   url:     RSS-, Atom- eller JSON-flöde
-#   format:  rss (RSS eller Atom, standard) eller riksdagen (riksdagens öppna data, JSON)
-#   kräv_ai: true om bara poster med AI i titeln ska tas med (sökningar som annars ger brus)
-#   kräv_ord: ord som också måste stå i titeln, åtskilda med | (till exempel landets namn)
+#   url:     RSS-, Atom- eller JSON-flöde, eller en sitemap
+#   format:  rss (RSS eller Atom, standard), riksdagen (riksdagens öppna data, JSON) eller
+#            sitemap (sajter utan flöde: sidor som ändrats under veckan)
+#   sökväg:  för sitemap: bara sidor vars sökväg börjar så här, till exempel [/research/]
+#   roll:    primär (standard) när avsändaren själv är källan, eller tips när flödet är ett
+#            nyhetsbrev eller en blogg som pekar vidare. Ett tips citeras aldrig: följ länkarna i
+#            texten till myndighetens, företagets eller forskarnas egen text.
+#   kräv_ai: true om bara poster med AI i titeln ska tas med (flöden som också handlar om annat)
+#   kräv_ord: ord som också måste stå i titeln, åtskilda med |
 #   kategorier: bara poster i någon av de här kategorierna i flödet (till exempel utan kundcase)
 #   varför:  varför källan finns med
 #
-# Primärkällornas egna flöden står först. Där sådana saknas används nyhetssökningar
-# (news.google.com), som ger tips, inte primärkällor: följ länken bakåt till myndighetens,
-# företagets eller forskarnas egen text. Sajter som aldrig kan vara källa spärras i
-# tools/bevaka.py (BLOCKERADE), se METOD.md.
+# Nyhetssökningar (news.google.com) används inte. De gav mest länkar som inte går att följa till
+# en primärkälla. I stället gör veckans körning egna sökningar per fråga i relevans.yaml.
+# Sajter som aldrig kan vara källa spärras i tools/regler.py (BLOCKERADE), se METOD.md.
+#
+# bevakning/utfall.csv visar hur många tips och poster varje källa har gett. En källa som inte
+# ger poster på länge tas bort.
 
 - namn: Riksdagen, dokument om artificiell intelligens
   grupp: Sverige
@@ -33,11 +39,11 @@
   kräv_ai: true
   varför: Regeringens beslut, uppdrag och utredningar i primärkälla.
 
-- namn: Svenska nyheter om AI-politik och myndigheter
+- namn: Integritetsskyddsmyndigheten (IMY)
   grupp: Sverige
-  url: https://news.google.com/rss/search?q=AI+(regeringen+OR+myndighet+OR+riksdagen+OR+utredning)+when:7d&hl=sv&gl=SE&ceid=SE:sv
+  url: https://www.imy.se/nyheter/rss/
   kräv_ai: true
-  varför: Tips om regeringsuppdrag, myndighetsrapporter och svenska röster.
+  varför: Svensk tillsyn över AI och dataskydd, i primärkälla.
 
 - namn: EU-kommissionen, digital strategi
   grupp: Myndigheter och mellanstatligt
@@ -50,12 +56,6 @@
   url: https://www.europarl.europa.eu/rss/doc/press-releases/en.xml
   kräv_ai: true
   varför: Parlamentets beslut och omröstningar om AI.
-
-- namn: Europeiska datatillsynsmannen (EDPS)
-  grupp: Myndigheter och mellanstatligt
-  url: https://www.edps.europa.eu/feed/news_en
-  kräv_ai: true
-  varför: Dataskydd och AI i EU:s institutioner.
 
 - namn: FN, pressmeddelanden och mötesreferat
   grupp: Myndigheter och mellanstatligt
@@ -74,29 +74,65 @@
   kräv_ai: true
   varför: USA:s standardiseringsmyndighet och dess AI-säkerhetscenter (CAISI).
 
-- namn: Storbritanniens regering om artificiell intelligens
+- namn: AI Security Institute, forskning och blogg
   grupp: Myndigheter och mellanstatligt
-  url: https://www.gov.uk/search/all.atom?keywords=artificial+intelligence&order=updated-newest
-  kräv_ai: true
-  varför: AI Security Institute och DSIT publicerar på gov.uk.
+  url: https://www.aisi.gov.uk/sitemap.xml
+  format: sitemap
+  sökväg: [/research/, /blog/, /frontier-ai-trends-report]
+  varför: Institutets egna utvärderingar av ledande modeller. Sajten saknar flöde.
 
-- namn: EU och AI-förordningen
-  grupp: Myndigheter och mellanstatligt
-  url: https://news.google.com/rss/search?q=%22AI+Act%22+(Commission+OR+%22AI+Office%22)+when:7d&hl=en&gl=US&ceid=US:en
-  kräv_ai: true
-  kräv_ord: "EU|Europe|Brussels|Commission|AI Act|Virkkunen"
-  varför: Genomförandet av AI-förordningen, riktlinjer och uppförandekoder.
+- namn: METR
+  grupp: Forskning och utvärdering
+  url: https://metr.org/feed.xml
+  varför: Oberoende mätningar av vad modellerna klarar på egen hand.
 
-- namn: FN, OECD och internationella paneler
-  grupp: Myndigheter och mellanstatligt
-  url: https://news.google.com/rss/search?q=(OECD+OR+%22United+Nations%22+OR+UNESCO)+%22artificial+intelligence%22+report+when:7d&hl=en&gl=US&ceid=US:en
-  kräv_ai: true
-  kräv_ord: "UN|United Nations|OECD|UNESCO|UNDP|ITU|G7|G20"
-  varför: Mellanstatliga rapporter och FN:s vetenskapliga panel för AI.
+- namn: Apollo Research
+  grupp: Forskning och utvärdering
+  url: https://www.apolloresearch.ai/sitemap.xml
+  format: sitemap
+  sökväg: [/science/, /governance/, /blog/]
+  varför: Utvärderingar av vilseledande beteende hos modeller. Sajten saknar flöde.
 
-- namn: arXiv, AI-säkerhet
-  grupp: Forskning
-  url: https://export.arxiv.org/api/query?search_query=abs:%22AI+safety%22+OR+abs:%22frontier+AI%22&sortBy=submittedDate&sortOrder=descending&max_results=30
+- namn: Palisade Research
+  grupp: Forskning och utvärdering
+  url: https://palisaderesearch.org/sitemap.xml
+  format: sitemap
+  sökväg: [/research/, /blog/]
+  varför: Experiment om avstängning och kontroll. Sajten saknar flöde.
+
+- namn: Redwood Research
+  grupp: Forskning och utvärdering
+  url: https://blog.redwoodresearch.org/feed
+  varför: Forskning om kontroll av AI-system.
+
+- namn: Epoch AI
+  grupp: Forskning och utvärdering
+  url: https://epoch.ai/atom.xml
+  varför: Data om beräkningskraft, investeringar och förmågor över tid.
+
+- namn: AI Impacts
+  grupp: Forskning och utvärdering
+  url: https://aiimpacts.org/feed/
+  varför: Enkäter bland AI-forskare om risker och tidslinjer.
+
+- namn: Forecasting Research Institute
+  grupp: Forskning och utvärdering
+  url: https://forecastingresearch.substack.com/feed
+  varför: Prognoser från experter och superprognosmakare, också de med låga risktal.
+
+- namn: AI Futures Project
+  grupp: Forskning och utvärdering
+  url: https://blog.ai-futures.org/feed
+  varför: Scenarier och tidslinjer med redovisade antaganden.
+
+- namn: Alignment Forum
+  grupp: Forskning och utvärdering
+  url: https://www.alignmentforum.org/feed.xml
+  varför: Forskarnas egna texter om alignment. Ofta opinion eller preprint, märk källtypen därefter.
+
+- namn: arXiv, kontroll och risk
+  grupp: Forskning och utvärdering
+  url: https://export.arxiv.org/api/query?search_query=cat:cs.AI+AND+(abs:%22loss+of+control%22+OR+abs:scheming+OR+abs:%22AI+safety%22+OR+abs:%22frontier+AI%22+OR+abs:%22catastrophic+risk%22)&sortBy=submittedDate&sortOrder=descending&max_results=40
   varför: Nya forskningsartiklar. Ofta preprints, märk källtypen därefter.
 
 - namn: OpenAI
@@ -110,68 +146,86 @@
   url: https://deepmind.google/blog/rss.xml
   varför: Partsuppgifter om modeller och forskning.
 
-- namn: Kritiker och skeptiker
+- namn: OpenAI, alignmentforskning
+  grupp: Företag
+  url: https://alignment.openai.com/rss.xml
+  varför: Företagets egna forskare om vad som är löst och inte. Partsuppgift.
+
+- namn: Anthropic
+  grupp: Företag
+  url: https://www.anthropic.com/sitemap.xml
+  format: sitemap
+  sökväg: [/research/, /news/, /responsible-scaling-policy]
+  varför: Partsuppgifter om modeller, utvärderingar och säkerhetsåtaganden. Sajten saknar flöde.
+
+- namn: Yoshua Bengio
+  grupp: Röster
+  url: https://yoshuabengio.org/feed/
+  varför: En av fältets mest citerade forskare, ordförande för International AI Safety Report.
+
+- namn: LawZero
+  grupp: Röster
+  url: https://lawzero.org/en/rss.xml
+  varför: Bengios forskningsorganisation för säker AI.
+
+- namn: Future of Life Institute
+  grupp: Röster
+  url: https://futureoflife.org/feed/
+  kräv_ai: true
+  varför: Öppna brev, säkerhetsindex och opinionsmätningar.
+
+- namn: PauseAI
+  grupp: Röster
+  url: https://pauseai.info/rss.xml
+  varför: Den globala rörelsens egna förslag och ställningstaganden. Partsuppgift.
+
+- namn: AI as Normal Technology (Narayanan och Kapoor)
   grupp: Motröster
-  url: https://news.google.com/rss/search?q=AI+(hype+OR+skeptic+OR+overblown+OR+%22normal+technology%22)+when:7d&hl=en&gl=US&ceid=US:en
-  kräv_ai: true
-  varför: Arkivet ska också ha röster som tror att riskerna eller tempot är överdrivna.
+  url: https://www.normaltech.ai/feed
+  varför: Forskare som anser att riskerna och tempot är överdrivna.
 
-- namn: Japans digitalmyndighet
-  grupp: Regioner
-  url: https://www.digital.go.jp/en/rss/news.xml
-  kräv_ai: true
-  varför: Japans egen myndighet för digitalisering och statens AI-användning.
+- namn: Gary Marcus
+  grupp: Motröster
+  url: https://garymarcus.substack.com/feed
+  varför: Forskare som är skeptisk till att dagens teknik leder till AGI.
 
-- namn: Norges regering
-  grupp: Regioner
-  url: https://www.regjeringen.no/no/rss/Rss/2581966/?documentType=aktuelt/nyheter
-  kräv_ai: true
-  varför: Norska regeringens beslut och strategier om KI, i primärkälla.
+- namn: AI Now Institute
+  grupp: Motröster
+  url: https://ainowinstitute.org/feed
+  varför: Kritik som sätter makt och skador här och nu före existentiell risk.
 
-- namn: Kina
-  grupp: Regioner
-  url: https://news.google.com/rss/search?q=China+AI+(regulation+OR+CAC+OR+%22State+Council%22)+when:7d&hl=en&gl=US&ceid=US:en
-  kräv_ai: true
-  kräv_ord: "China|Chinese|Beijing|CAC|Kina"
-  varför: Tips som leder till CAC:s, statsrådets och utrikesministeriets egna texter.
+- namn: Center for AI Safety, nyhetsbrev
+  grupp: Nyhetsbrev som ger tips
+  url: https://newsletter.safe.ai/feed
+  roll: tips
+  varför: Veckans händelser inom AI-säkerhet med länkar till källorna.
 
-- namn: Indien
-  grupp: Regioner
-  url: https://news.google.com/rss/search?q=India+AI+(MeitY+OR+governance+OR+%22IndiaAI%22)+when:7d&hl=en&gl=IN&ceid=IN:en
-  kräv_ai: true
-  kräv_ord: "India|MeitY"
-  varför: Världens folkrikaste land saknas helt i arkivet.
+- namn: Transformer
+  grupp: Nyhetsbrev som ger tips
+  url: https://www.transformernews.ai/feed
+  roll: tips
+  varför: Bevakning av AI-politik och företagens säkerhetsarbete.
 
-- namn: Japan
-  grupp: Regioner
-  url: https://news.google.com/rss/search?q=Japan+AI+(law+OR+%22AI+Promotion+Act%22+OR+%22AI+Safety+Institute%22)+when:7d&hl=en&gl=US&ceid=US:en
-  kräv_ai: true
-  kräv_ord: "Japan"
-  varför: Japan har en egen AI-lag och ett eget AI-säkerhetsinstitut.
+- namn: Import AI
+  grupp: Nyhetsbrev som ger tips
+  url: https://importai.substack.com/feed
+  roll: tips
+  varför: Veckobrev om ny forskning med länkar till artiklarna.
 
-- namn: Sydkorea
-  grupp: Regioner
-  url: https://news.google.com/rss/search?q=Korea+%22AI+Basic+Act%22+OR+(Korea+AI+regulation)+when:7d&hl=en&gl=US&ceid=US:en
-  kräv_ai: true
-  kräv_ord: "Korea"
-  varför: Sydkoreas AI-grundlag är en av få heltäckande AI-lagar utanför EU.
+- namn: ControlAI
+  grupp: Nyhetsbrev som ger tips
+  url: https://controlai.news/feed
+  roll: tips
+  varför: Politikers och forskares uttalanden om superintelligens.
 
-- namn: Afrika
-  grupp: Regioner
-  url: https://news.google.com/rss/search?q=(%22African+Union%22+OR+Africa)+%22artificial+intelligence%22+(strategy+OR+policy)+when:7d&hl=en&gl=US&ceid=US:en
-  kräv_ai: true
-  kräv_ord: "Africa|Nigeria|Kenya|Ghana|Rwanda|Egypt|Ethiopia|Morocco|Senegal|Uganda|Tanzania|Zambia"
-  varför: Afrikanska unionens AI-strategi och länder som Kenya, Nigeria och Sydafrika.
+- namn: Concordia AI, AI-säkerhet i Kina
+  grupp: Nyhetsbrev som ger tips
+  url: https://aisafetychina.substack.com/feed
+  roll: tips
+  varför: Leder till kinesiska myndigheters och forskares egna texter.
 
-- namn: Latinamerika
-  grupp: Regioner
-  url: https://news.google.com/rss/search?q=(Brazil+OR+Chile+OR+Mexico)+%22artificial+intelligence%22+(bill+OR+law+OR+regulation)+when:7d&hl=en&gl=US&ceid=US:en
-  kräv_ai: true
-  kräv_ord: "Brazil|Brasil|Chile|(?<!New )Mexic|Argentin|Colombia|Peru|Uruguay|Latin America|LatAm"
-  varför: Brasiliens AI-lag och regionens regleringsarbete.
-
-- namn: Norden
-  grupp: Regioner
-  url: https://news.google.com/rss/search?q=%22kunstig+intelligens%22+(regjeringen+OR+regeringen+OR+Stortinget+OR+Folketinget)+when:7d&hl=no&gl=NO&ceid=NO:no
-  kräv_ai: true
-  varför: Norge och Danmark, som ligger nära svenska förhållanden.
+- namn: LessWrong, utvalda inlägg
+  grupp: Nyhetsbrev som ger tips
+  url: https://www.lesswrong.com/feed.xml?view=curated-rss
+  roll: tips
+  varför: Utvalda texter som ofta sammanfattar ny forskning.
