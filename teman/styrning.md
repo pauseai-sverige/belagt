@@ -136,7 +136,7 @@ Reglering, standarder, tillsyn och förslag om att bromsa eller pausa.
 - **OpenAI uppger att företaget den 28 augusti 2026 startade om den stora förstärkningsinlärningskörning som tidigare hade pausats, sedan nya säkerhetskrav hade införts.**
   OpenAI (företagets egen text) · 2026-08-28 · styrning, kontroll · partsuppgift · [BID-19](../påståenden/2026/BID-19.yaml)
   > On August 28th, we restarted the large frontier RL run that was previously paused after the new safety and security requirements were put in place.
-  > — [Path to Astra: critical capabilities and frontier safeguards](https://openai.com/index/path-to-astra/#:~:text=On%20August%2028th%2C%20we,were%20put%20in%20place)
+  > — [Path to Astra: critical capabilities and frontier safeguards](https://openai.com/index/path-to-astra/#:~:text=On%20August%2028th%2C%20we,were%20put%20in%20place) · [arkivkopia](https://web.archive.org/web/20261027170124/https://openai.com/index/path-to-astra/)
 
   *Förbehåll:* Företagets egen text, publicerad 1 september 2026. Samma text säger att vissa mindre experimentella träningskörningar tillfälligt hålls tillbaka. Ingen utomstående kontrollerar uppgifterna, och källan säger inget om läget efter publiceringen.
 - **Andrew Ng menar att Hugging Face-intrånget främst berodde på OpenAI:s buggiga isolering och övervakning, och att lösningen är att rätta dem, inte att pausa AI.**
@@ -196,7 +196,7 @@ Reglering, standarder, tillsyn och förslag om att bromsa eller pausa.
 - **OpenAI uppger att företaget efter intrånget i juli 2026 pausade förstärkningsinlärningen av sina senaste modeller i två veckor, och att pausen inte stoppade all forskning.**
   OpenAI (företagets egen text) · 2026-09-06 · styrning, kontroll · partsuppgift · [BID-18](../påståenden/2026/BID-18.yaml)
   > This did not halt all research: some workloads resumed under stronger controls, while others remained paused. … includes the two week pause in reinforcement learning on our latest models intended for deployment.
-  > — [Research acceleration: The view inside OpenAI](https://openai.com/index/research-acceleration-view-inside-openai/#:~:text=This%20did%20not%20halt,models%20intended%20for%20deployment)
+  > — [Research acceleration: The view inside OpenAI](https://openai.com/index/research-acceleration-view-inside-openai/#:~:text=This%20did%20not%20halt,models%20intended%20for%20deployment) · [arkivkopia](https://web.archive.org/web/20261027170016/https://openai.com/index/research-acceleration-view-inside-openai/)
 
   *Förbehåll:* Beskriver en avslutad period, inte läget i dag. Företaget anger i diagrammet att perioden gällde 20 juli till 6 augusti 2026. Ingen utomstående kontrollerar vad som pausades eller hur länge.
 - **OpenAI:s forskningschef skriver att inget AI-labb har löst alignment och övervakning tillräckligt för att ansvarsfullt fortsätta skala upp i maxfart mycket längre. Han hoppas att frivilliga inbromsningar blir vanliga och vill att regeringar gör internationell samordning till en topprioritet.**
