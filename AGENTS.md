@@ -30,6 +30,11 @@ rättigheter.
 - `förbehåll`: nyanser som påverkar hur påståendet ska förstås.
 - `bäst_före`: när posten bör kontrolleras igen. `null` betyder att den inte åldras.
 - `ersatt_av`: om fältet är ifyllt har posten ersatts av en nyare.
+- `granskning`: `maskinell` betyder att citatet är kontrollerat maskinellt och posten granskad av
+  en oberoende AI-session, men inte läst av en människa. `människa` betyder att en människa också
+  har läst den mot källan. Poster utan fältet kom in före november 2026, via en pull request som en
+  människa slog ihop.
+- `relevans`: vilka frågor i [relevans.yaml](relevans.yaml) posten svarar på.
 - `källa.språk` och `källa.granskad_av`: citat på andra språk har en översättning. Är
   `granskad_av` `null` har ingen människa kontrollerat översättningen.
 
@@ -54,30 +59,38 @@ rättigheter.
 
 Du behöver ingen skrivrättighet. Arbeta i en fork och öppna en pull request.
 
-1. Läs METOD.md hela, särskilt reglerna för urval och vilka avsändare som kan vara källa.
+1. Läs METOD.md hela, särskilt reglerna för urval och vilka avsändare som kan vara källa, och
+   [relevans.yaml](relevans.yaml), som säger vad arkivet letar efter.
 2. Gå till primärkällan, alltså myndighetens, forskarnas eller organisationens egen text och inte
    en nyhetsartikel om den. Hämta texten.
 3. Skriv en post bara om ett ordagrant citat i primärkällan bekräftar påståendet: högst 50 ord,
    eller högst 120 tecken för kinesiska, japanska och koreanska. Ett påstående per post. Är du
    osäker, låt bli.
 4. Följ mallen i METOD.md. Id: `BID-` följt av nästa lediga nummer. `hämtad` och `kontrollerad`
-   blir dagens datum. `arkiv` lämnas som `null`, för det fylls i automatiskt.
+   blir dagens datum. Sätt `granskning: maskinell` och `relevans` med nycklar ur relevans.yaml.
 5. Kontrollera, och stryk poster vars citat inte hittas:
 
    ```
    pip install -r requirements.txt
-   python tools/kontrollera_citat.py <id> …
+   python tools/liknande.py <id> …            # dubblett, eller ersätter den en äldre post?
+   python tools/arkivera.py <id> …            # arkivkopia direkt
+   python tools/kontrollera_citat.py --strikt <id> …
    python tools/bygg.py
    python tools/bygg.py --kontroll
    ```
 
 6. Öppna pull requesten som utkast. Ange för varje post id, påstående, länk till källan och
-   citatet.
+   citatet. Citatkontrollen körs igen på pull requesten.
+
+De schemalagda körningarna som sköter arkivet har egna, utförligare instruktioner i
+[agent/](agent/README.md).
 
 Redigera aldrig de genererade filerna för hand: `tidslinje.md`, `statistik.md`, `teman/`, `data/`
 och `docs/belagt.json`. De skapas av `tools/bygg.py`.
 
-Slå aldrig ihop en pull request själv och ta aldrig bort poster. När ett påstående blir inaktuellt
+Slå aldrig ihop en pull request du själv har skrivit, och ta aldrig bort poster ur arkivet. Bara
+granskningskörningen ([agent/granskning.md](agent/granskning.md)) slår ihop, och bara pull
+requests som enbart innehåller poster. När ett påstående blir inaktuellt
 läggs en ny post till, och den gamla får `ersatt_av`. Ett fel i en befintlig post rapporteras som
 ett [ärende](https://github.com/pauseai-sverige/belagt/issues/new/choose).
 

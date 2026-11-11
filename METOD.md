@@ -9,7 +9,9 @@
 2. **Ett ordagrant citat ur källan bekräftar påståendet.** Citatet kontrolleras maskinellt mot
    den hämtade källtexten innan posten publiceras, och därefter varje månad mot arkivkopian
    (se *Citatkontroll* nedan).
-3. **En människa har granskat posten.** Varje ny post kommer in via en pull request.
+3. **Posten har granskats av någon annan än den som skrev den.** Varje ny post kommer in via en
+   pull request. Sedan november 2026 görs granskningen maskinellt, och en människa läser ett
+   stickprov (se *Granskning* nedan).
 
 **Hämta primärkällan, inte den som återger den.** När en rapport eller en tidning återger vad
 någon annan har sagt eller beslutat, ska posten helst bygga på originalet: lagtexten i stället för
@@ -41,10 +43,34 @@ avsändaren inte är värd att citera. Därför gäller också:
 - **Statliga medier och partsuppgifter kan vara källa för vad avsändaren hävdar**, men aldrig
   för att något är sant. De återges som det de är (se *Källor på andra språk* nedan).
 
-Sajter som aldrig kan vara källa spärras i bevakningen (`BLOCKERADE` i
-[tools/bevaka.py](tools/bevaka.py)), så att de inte heller dyker upp som tips. Samma regler gäller
-för poster som tas fram automatiskt: de kommer in via en pull request som en människa granskar
-mot den här metoden.
+Sajter som aldrig kan vara källa spärras (`BLOCKERADE` i [tools/regler.py](tools/regler.py)). De
+dyker inte upp som tips i bevakningen, och bygget stoppar en post som har en sådan sajt, eller en
+sök- eller kortlänk, som källa.
+
+## Granskning
+
+Poster tas fram och granskas av AI (Claude), i tre led som inte litar på varandra:
+
+1. **Citatkontrollen** hämtar källan och kontrollerar att citatet står där ordagrant. Den körs i
+   GitHub Actions på varje pull request, inte av den som skrev posten, och en post vars citat inte
+   hittas kan inte komma in.
+2. **En oberoende session** läser sedan varje post mot källan: bär citatet hela påståendet, säger
+   sammanhanget emot, stämmer avsändare, datum och källtyp, saknas något förbehåll? Den har inte
+   skrivit posterna och får inte skriva om dem, bara stryka dem som inte håller och slå ihop
+   resten. Det som stryks läggs öppet i ärendet
+   [Struket av granskningen](https://github.com/pauseai-sverige/belagt/issues?q=label%3Astruket).
+   Instruktionen är [agent/granskning.md](agent/granskning.md).
+3. **En människa läser ett stickprov.** Varje vecka lottas fem maskinellt granskade poster till
+   ärendet [Stickprov](https://github.com/pauseai-sverige/belagt/issues?q=label%3Astickprov).
+   Hittas ett fel rättas posten och granskningsinstruktionen skärps.
+
+Fältet `granskning` visar vilken granskning en post har fått: `maskinell` (led 1 och 2) eller
+`människa` (också läst av en människa). Poster utan fältet kom in före november 2026, via en pull
+request som en människa slog ihop. [statistik.md](statistik.md) visar hur många poster som är av
+varje sort.
+
+Maskinell granskning är inte samma sak som att en människa har läst källan. Den som använder en
+post i en egen text bör öppna källänken, som går till citatet, och läsa själv.
 
 ## Källor på andra språk
 
@@ -69,19 +95,29 @@ källa:
 
 ## Urval: vad som tas med
 
-Varje enskild post kan vara korrekt och arkivet ändå ge en skev bild, om urvalet är skevt. Därför:
+Arkivet finns för att [pauseai.se](https://pauseai.se) ska kunna belägga det som står där. Det
+styr vad som letas efter, och det redovisas öppet: [relevans.yaml](relevans.yaml) listar frågorna
+som sajten behöver belägg för, och ett tips tas med om det kan ge ett påstående som svarar på
+någon av dem. Urvalet är alltså inte en neutral bild av allt som händer inom AI.
+
+Varje enskild post kan vara korrekt och arkivet ändå ge en skev bild av de frågor det täcker, om
+urvalet inom dem är skevt. Därför:
 
 - **Källor bevakas systematiskt.** [bevakning.yaml](bevakning.yaml) är en fast lista med
-  myndigheter, forskning, företag, kritiker och regioner. Primärkällornas egna flöden går före
-  nyhetssökningar, som bara används där sådana flöden saknas. Varje vecka läser
-  [tools/bevaka.py](tools/bevaka.py) flödena och lägger det som är nytt i ärendet *Nytt att granska*.
-  Listan är medvetet blandad och vem som helst kan föreslå tillägg.
+  myndigheter, forskningsinstitut, företag, kritiker och nyhetsbrev. Bara primärkällornas egna
+  flöden används. Nyhetsbrev ger tips och citeras aldrig. Varje vecka läser
+  [tools/bevaka.py](tools/bevaka.py) flödena och lägger det som är nytt i ärendet *Nytt att granska*,
+  tillsammans med källor som pauseai.se länkar till men som saknas här. Utöver flödena görs
+  sökningar per fråga i relevans.yaml. Vem som helst kan föreslå tillägg.
+- **Utfallet redovisas.** [bevakning/utfall.csv](bevakning/utfall.csv) och statistik.md visar hur
+  många tips och poster varje källa har gett. Källor som inte ger poster tas bort.
 - **Motröster tas med.** Bedömningar som går emot varandra tas med på samma villkor. Ett påstående
   väljs inte bort för att det inte passar arkivets ursprung.
 - **Ingen enskild källa ska dominera.** När en rapport eller ett företag står för en stor del av
   posterna inom ett tema prioriteras andra källor.
-- **Bredd i världen.** Arkivet ska inte bara spegla USA, Storbritannien, Kina och Sverige.
-  Bevakningen omfattar därför också EU, Norden, Indien, Japan, Sydkorea, Afrika och Latinamerika.
+- **Bredd i världen där frågan kräver det.** Regioner bevakas inte för sin egen skull. Men frågor
+  om internationella avtal och om Kina kan inte besvaras bara med källor från USA och Europa, och
+  där söks också myndigheters och forskares egna texter från andra länder.
 - **Fördelningen redovisas öppet.** [statistik.md](statistik.md) genereras vid varje bygge och visar
   hur posterna fördelar sig på tema, typ, källtyp, språk, år och avsändare.
 
@@ -117,6 +153,8 @@ vikt: 3                    # 1–3, hur central posten är (3 = kärnpåstående
 bäst_före: '2027-07-01'    # när posten bör kontrolleras igen, null om den inte åldras
 kontrollerad: '2026-09-28' # senaste kontrollen mot källan
 ersatt_av: null            # id för en nyare post, om den här blivit inaktuell
+granskning: maskinell      # valfritt: maskinell eller människa, se Granskning ovan
+relevans: [avtal, kina]       # valfritt: nycklar ur relevans.yaml för de frågor posten svarar på
 ```
 
 ### Typ av källa
@@ -143,8 +181,8 @@ den egna produkten är `partsuppgift`. En preprint som senare publiceras efter g
 - **Ingenting tas bort.** När ett påstående blir inaktuellt, till exempel när en ny mätning
   ersätter en gammal, läggs en ny post till och den gamla får `ersatt_av`. Då går det att se hur
   kunskapsläget har förändrats.
-- **Källorna arkiveras.** Varje vecka söker ett skript upp eller skapar en kopia av källan i
-  Wayback Machine, så att citatet går att kontrollera även om sidan försvinner eller ändras. Sajter
+- **Källorna arkiveras.** När en post skrivs, och annars varje vecka, söker ett skript upp eller
+  skapar en kopia av källan i Wayback Machine, så att citatet går att kontrollera även om sidan försvinner eller ändras. Sajter
   som blockerar Wayback Machine får i stället den senaste kopian i archive.today, om det finns någon.
 - **Citaten kontrolleras igen, öppet.** Varje månad hämtar
   [tools/kontrollera_citat.py](tools/kontrollera_citat.py) arkivkopian (eller källan, om kopia
@@ -155,9 +193,14 @@ den egna produkten är `partsuppgift`. En preprint som senare publiceras efter g
   [textfragmentlänk](https://developer.mozilla.org/en-US/docs/Web/URI/Reference/Fragment/Text_fragments)
   som öppnar källan med citatet markerat, i webbläsare som stöder det. PDF-filer stöder det inte.
 - **Poster kontrolleras igen.** Varje månad listar ett arbetsflöde de poster som har passerat
-  `bäst_före` i ärendet *Dags att kontrollera igen*, med de som går ut inom en månad. En post
-  som fortfarande stämmer får ny `kontrollerad` och ett nytt `bäst_före`. En post som inte
-  längre stämmer ersätts av en ny.
+  `bäst_före` i ärendet *Dags att kontrollera igen*, med de som går ut inom en månad. En månatlig
+  session ([agent/underhåll.md](agent/underhåll.md)) hämtar källorna på nytt. En post som
+  fortfarande stämmer får ny `kontrollerad` och ett nytt `bäst_före`. En post som inte längre
+  stämmer ersätts av en ny. Samma session tar hand om citatkontrollens fynd, letar upp originalet
+  till poster som bygger på att någon annan återger det, och märker om preprints som har publicerats.
+- **Nya uppgifter ersätter gamla.** När en post skrivs jämförs den med äldre poster från samma
+  avsändare och källa ([tools/liknande.py](tools/liknande.py)). Gäller den ett nyare läge av
+  samma sak får den äldre `ersatt_av`.
 - **Ändringar syns.** Varje ändring görs som en commit med förklaring, och historiken är öppen.
 
 ## Arbetsgång
@@ -170,21 +213,27 @@ python tools/arkivera.py        # hämta arkivkopior (körs också varje vecka)
 python tools/kontrollera_citat.py  # kontrollera citaten mot källorna (körs också varje månad)
 python tools/bevaka.py          # nytt i de bevakade källorna (körs också varje vecka)
 python tools/bast_fore.py       # poster att kontrollera igen (körs också varje månad)
+python tools/liknande.py <id>   # äldre poster som en ny post kan ersätta eller dubblera
+python tools/stickprov.py       # lotta maskinellt granskade poster till en människa (körs också varje vecka)
 ```
 
-Allt körs i GitHub Actions eller i molnet, inte på någons egen dator. Nya poster tas fram så här:
+Allt körs i GitHub Actions eller i molnet, inte på någons egen dator. De schemalagda sessionernas
+instruktioner ligger i [agent/](agent/README.md). Nya poster tas fram så här:
 
 1. **Måndag:** arbetsflödet *Bevakning* lägger det som är nytt i de bevakade källorna i ärendet
    *Nytt att granska*.
-2. **Lördag:** en schemalagd Claude-session i molnet går igenom tipsen i ärendet. Den följer
-   varje tips till primärkällan, hämtar den och skriver en post bara om ett ordagrant citat
-   bekräftar påståendet. Sedan kör den `python tools/kontrollera_citat.py <id> …` och
-   `python tools/bygg.py --kontroll`, och stryker poster vars citat inte hittas.
-3. Sessionen öppnar en pull request som utkast från en gren som heter `nya-ÅÅÅÅ-MM-DD`. Där
-   står varje ny post med källa och citat, och vilka tips som valdes bort och varför. Den kryssar
-   också i de genomgångna tipsen i ärendet.
-4. **En människa granskar** pull requesten mot den här metoden. Ingenting kommer in förrän den
-   är granskad och ihopslagen.
+2. **Lördag:** en schemalagd Claude-session ([agent/nya-poster.md](agent/nya-poster.md)) går
+   igenom tipsen och gör egna sökningar per fråga i relevans.yaml. Den följer varje tips till
+   primärkällan, hämtar den och skriver en post bara om ett ordagrant citat bekräftar påståendet.
+   Den öppnar en pull request från en gren som heter `nya-ÅÅÅÅ-MM-DD`, med varje ny post, vilka
+   sökningar som gjordes och vilka tips som valdes bort och varför.
+3. **GitHub Actions** kontrollerar på pull requesten att varje citat står i sin källa.
+4. **Söndag:** en annan session ([agent/granskning.md](agent/granskning.md)) läser varje post mot
+   källan, stryker det som inte håller och slår ihop resten.
+5. **Onsdag:** fem av de maskinellt granskade posterna lottas till en människa.
+
+Pull requests som ändrar något annat än poster, till exempel metoden, verktygen eller
+bevakningslistan, slås alltid ihop av en människa.
 
 Du kan också föreslå en post direkt: skapa en fil enligt mallen ovan, kör `python tools/bygg.py`
 och öppna en pull request med länk till källan. Id:t får då prefixet `BID-` följt av nästa lediga nummer.
