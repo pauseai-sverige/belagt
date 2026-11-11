@@ -1,0 +1,98 @@
+# Vad pauseai.se behöver belägg för. Bevakningen och urvalet av nya poster styrs av den här
+# listan: ett tips är relevant om det kan ge ett påstående som svarar på någon av frågorna.
+# Listan är härledd ur sajtens sidor (pauseai-sverige/pauseai-se, src/content/sidor/ och
+# startsidan) och ändras när sajten ändras.
+#
+# Fält:
+#   nyckel:  kort namn, används i fältet relevans i posterna
+#   fråga:   vad sajten påstår eller frågar sig
+#   sidor:   var på pauseai.se frågan behandlas
+#   söker:   vilken sorts påståenden som saknas eller åldras fort
+#   sökord:  sökningar som veckans körning gör utöver flödena i bevakning.yaml
+#
+# Motröster hör till varje fråga. Ett påstående som talar emot sajtens linje är lika relevant
+# som ett som talar för, och tas med på samma villkor (se METOD.md).
+
+- nyckel: förlorad-kontroll
+  fråga: Kan avancerade AI-system undgå mänsklig kontroll, och har det redan hänt i liten skala?
+  sidor: [risker, existentiell-risk, startsidan, mejla]
+  söker: Mätningar och incidenter där modeller vilseleder, kringgår spärrar, motsätter sig avstängning eller agerar på egen hand. Utvärderingar från oberoende institut väger tyngst.
+  sökord: ["AI loss of control incident", "frontier model scheming evaluation", "AI model shutdown resistance", "AI sabotage evaluation"]
+
+- nyckel: alignment
+  fråga: Går det i dag att säkerställa att kraftfulla AI-system gör det vi vill?
+  sidor: [existentiell-risk, faq]
+  söker: Vad forskningen visar om alignment, tolkningsbarhet och övervakning, och vad utvecklarna själva säger att de inte kan.
+  sökord: ["alignment research unsolved", "interpretability limits frontier models", "chain of thought monitorability"]
+
+- nyckel: experter
+  fråga: Vad säger forskare, företagsledare och andra insatta om riskerna, och hur eniga är de?
+  sidor: [existentiell-risk, faq, startsidan, mejla]
+  söker: Daterade uttalanden i primärkälla, enkäter bland forskare och öppna brev. Också de som anser att riskerna är överdrivna.
+  sökord: ["AI researchers survey extinction risk", "statement AI risk signatories", "AI existential risk overblown"]
+
+- nyckel: tidslinjer
+  fråga: Hur snart kan AI-system som överträffar människor på de flesta områden finnas?
+  sidor: [existentiell-risk, faq]
+  söker: Prognoser med avsändare och datum, mätningar av hur fort förmågorna växer, och bedömningar som pekar åt andra hållet.
+  sökord: ["AGI timeline forecast", "time horizon AI tasks doubling", "superintelligence timeline skeptic"]
+
+- nyckel: självförbättring
+  fråga: Används AI redan för att utveckla AI, och hur mycket snabbar det på utvecklingen?
+  sidor: [existentiell-risk, risker]
+  söker: Mätningar och partsuppgifter om automatiserad AI-forskning.
+  sökord: ["AI R&D automation measurement", "recursive self-improvement AI lab"]
+
+- nyckel: kapplöpning
+  fråga: Driver konkurrensen mellan företag och länder fram en utveckling som går fortare än säkerheten?
+  sidor: [existentiell-risk, risker, faq]
+  söker: Vad företagen själva säger om tempot, ändrade säkerhetsåtaganden, investeringar och beräkningskraft.
+  sökord: ["AI lab safety commitment weakened", "frontier safety framework change", "AI race dynamics statement"]
+
+- nyckel: paus
+  fråga: Är en paus eller broms möjlig, och vilka föreslår eller genomför sådana?
+  sidor: [forslaget, faq, startsidan]
+  söker: Förslag om paus, moratorier eller gränser för träning. Faktiska pauser hos utvecklare. Invändningar mot att en paus skulle fungera.
+  sökord: ["pause AI development proposal", "AI moratorium superintelligence", "AI training pause criticism"]
+
+- nyckel: avtal
+  fråga: Hur långt har arbetet med internationella avtal, tillsyn och verifiering kommit?
+  sidor: [forslaget]
+  söker: Beslut och förslag i FN, EU, G7 och mellan stater. Förslag om en internationell myndighet, om kontroll av beräkningskraft och om hur ett avtal kan verifieras.
+  sökord: ["international AI treaty proposal", "AI red lines United Nations", "compute governance verification"]
+
+- nyckel: kina
+  fråga: Vad händer med Kina om väst bromsar, och hur ser Kina självt på riskerna?
+  sidor: [faq, forslaget]
+  söker: Kinesiska myndigheters och forskares egna texter om AI-säkerhet och internationellt samarbete.
+  sökord: ["China AI safety governance statement", "China frontier AI risk regulation"]
+
+- nyckel: sverige
+  fråga: Vad gör och säger svenska politiker, myndigheter och forskare om riskerna med avancerad AI?
+  sidor: [forslaget, mejla, startsidan]
+  söker: Riksdagsdokument, regeringsbeslut, myndighetsrapporter och uttalanden av svenska forskare och partier.
+  sökord: ["AI-säkerhet riksdagen", "AI risker regeringen myndighet", "superintelligens svensk forskare"]
+
+- nyckel: opinion
+  fråga: Vad tycker allmänheten om tempot i AI-utvecklingen och om reglering?
+  sidor: [faq, existentiell-risk]
+  söker: Opinionsmätningar med redovisad metod, helst svenska och europeiska.
+  sökord: ["poll public opinion AI regulation", "opinionsmätning AI oro"]
+
+- nyckel: missbruk
+  fråga: Hur används AI redan för cyberangrepp, påverkan och bedrägerier, och hur nära är hjälp med biologiska vapen?
+  sidor: [risker]
+  söker: Incidentrapporter, utvärderingar av modellers förmåga och myndigheters bedömningar.
+  sökord: ["AI cyberattack autonomous incident report", "AI biological weapons uplift evaluation", "deepfake fraud statistics"]
+
+- nyckel: samhälle
+  fråga: Vilka skador syns redan på jobb, demokrati, psykisk hälsa och rättigheter?
+  sidor: [risker]
+  söker: Mätningar och myndighetsbeslut om arbetsmarknad, diskriminering, AI-kompanjoner, upphovsrätt och övervakning.
+  sökord: ["AI labor market measurement", "AI companion mental health study", "AI discrimination ruling"]
+
+- nyckel: makt
+  fråga: Leder utvecklingen till att makt samlas hos ett fåtal företag eller stater?
+  sidor: [risker, existentiell-risk]
+  söker: Bedömningar och uppgifter om maktkoncentration, autonoma vapen och auktoritär användning.
+  sökord: ["AI concentration of power report", "autonomous weapons treaty"]

@@ -1,0 +1,35 @@
+name: Stickprov
+
+# Lottar varje vecka ut maskinellt granskade poster som en människa läser mot källan.
+on:
+  schedule:
+    - cron: "13 7 * * 3"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  stickprov:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+      ETIKETT: stickprov
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: python tools/stickprov.py > lista.md
+      - name: Skapa veckans ärende
+        run: |
+          if [ ! -s lista.md ]; then echo "Inget att lotta."; exit 0; fi
+          # Ett öppet stickprov ska bli klart innan nästa lottas.
+          if [ -n "$(gh issue list --label "$ETIKETT" --state open --json number --jq '.[0].number')" ]; then
+            echo "Förra stickprovet är inte klart."; exit 0
+          fi
+          gh label create "$ETIKETT" --color 5319E7 --description "Maskinellt granskade poster som en människa läser" 2>/dev/null || true
+          gh issue create --title "Stickprov, vecka $(date +%G-%V)" --label "$ETIKETT" --body-file lista.md

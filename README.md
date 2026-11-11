@@ -57,19 +57,24 @@ Knappen *Kopiera källhänvisning* på webbsidan ger den texten. Id:t (`TID-01`)
 
 ## Ursprung och öppenhet
 
-Arkivet började som underlag för folkbildningsmaterial som en volontär i
-[PauseAI](https://pauseai.info) tar fram. PauseAI vill att utvecklingen av de mest kraftfulla
-AI-systemen pausas tills de går att göra säkra. Arkivet är ändå inte ett argument för en viss
-hållning. Det innehåller också motröster, osäkerheter och exempel på vad AI redan gör för nytta.
+Arkivet drivs av [PauseAI Sverige](https://pauseai.se) och finns för att det som står på
+pauseai.se ska gå att kontrollera. PauseAI vill att utvecklingen av de mest kraftfulla
+AI-systemen pausas tills de går att göra säkra. Det styr vilka frågor arkivet täcker, men inte
+vilka svar som tas med: motröster, osäkerheter och exempel på vad AI redan gör för nytta tas med
+på samma villkor.
 Ett arkiv som bara tar med det som passar den egna saken blir oanvändbart för alla, den egna
 saken inräknad.
 
-AI (Claude) används för att hitta, extrahera och kontrollera påståenden. Varje post granskas av
-en människa innan den kommer in, och citatet kontrolleras maskinellt mot den hämtade källtexten.
-Varje månad kontrolleras alla citat igen mot arkivkopiorna, och resultatet läggs öppet i ett
-[ärende](https://github.com/pauseai-sverige/belagt/issues?q=label%3Acitatkontroll). Nya poster
-hittas genom att en [fast lista med källor](bevakning.yaml) bevakas varje vecka, så att urvalet
-inte bara beror på vad någon råkar läsa.
+AI (Claude) hittar, skriver och granskar posterna. Citatet kontrolleras maskinellt mot den
+hämtade källtexten, och en oberoende AI-session läser varje post mot källan innan den kommer in.
+En människa läser ett stickprov varje vecka. Varje post visar vilken granskning den har fått, och
+hur det går till står i [METOD.md](METOD.md#granskning). Varje månad kontrolleras alla citat igen
+mot arkivkopiorna, och resultatet läggs öppet i ett
+[ärende](https://github.com/pauseai-sverige/belagt/issues?q=label%3Acitatkontroll).
+
+Vad som letas efter styrs av vad [pauseai.se](https://pauseai.se) behöver belägg för. Frågorna
+står i [relevans.yaml](relevans.yaml), och en [fast lista med källor](bevakning.yaml) bevakas
+varje vecka, så att urvalet inte bara beror på vad någon råkar läsa.
 
 ## Bidra
 

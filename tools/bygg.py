@@ -22,6 +22,8 @@ from pathlib import Path
 
 import yaml
 
+from regler import blockerad, mellanled
+
 ROOT = Path(__file__).resolve().parent.parent
 PÅST = ROOT / "påståenden"
 REPO_URL = "https://github.com/pauseai-sverige/belagt"
@@ -44,6 +46,14 @@ TEMAN = {
 }
 FÄLT = ["id", "påstående", "typ", "vem", "datum", "tema", "källa", "förbehåll", "vikt",
         "bäst_före", "kontrollerad", "ersatt_av"]
+# Valfria fält. granskning: hur posten granskades innan den kom in (se METOD.md). Poster utan
+# fältet kom in före november 2026, via en pull request som en människa slog ihop.
+# relevans: vilka frågor i relevans.yaml posten svarar på.
+VALFRIA = ["granskning", "relevans"]
+GRANSKNINGAR = {
+    "maskinell": "Citatet är kontrollerat maskinellt och posten granskad av en oberoende AI-session.",
+    "människa": "En människa har läst posten mot källan.",
+}
 KÄLLFÄLT = ["url", "titel", "typ", "citat", "hämtad", "arkiv"]
 # Vilken sorts källa det är, så att läsaren ser hur tung den är utan att läsa förbehållet.
 KÄLLTYPER = {
@@ -83,8 +93,17 @@ def ladda():
     return poster, fel
 
 
+def relevansnycklar():
+    f = ROOT / "relevans.yaml"
+    return {r["nyckel"] for r in yaml.safe_load(f.read_text())} if f.exists() else set()
+
+
+def jämför(s):
+    return "".join(c for c in (s or "").lower() if c.isalnum())
+
+
 def validera(poster):
-    fel, ids = [], {}
+    fel, ids, citat, nycklar = [], {}, {}, relevansnycklar()
     for p in poster:
         f = p["_fil"].relative_to(ROOT)
         pid = p.get("id", "?")
@@ -95,7 +114,7 @@ def validera(poster):
         if saknas := [k for k in FÄLT if k not in p]:
             err(f"saknar {saknas}")
             continue
-        if okända := [k for k in p if k not in FÄLT and k != "_fil"]:
+        if okända := [k for k in p if k not in FÄLT + VALFRIA and k != "_fil"]:
             err(f"okända fält {okända}")
         if not ID_RE.match(str(pid)) or p["_fil"].stem != pid:
             err("id ska matcha filnamnet och ha formen PREFIX-NN")
@@ -114,6 +133,10 @@ def validera(poster):
             err(f"ligger i {p['_fil'].parent.name}/ men datum är {p['datum']}")
         if not isinstance(p["tema"], list) or not p["tema"] or set(p["tema"]) - set(TEMAN):
             err(f"tema {p['tema']!r}, ska vara en lista ur {sorted(TEMAN)}")
+        if "granskning" in p and p["granskning"] not in GRANSKNINGAR:
+            err(f"granskning {p['granskning']!r}, ska vara en av {sorted(GRANSKNINGAR)}")
+        if "relevans" in p and (not isinstance(p["relevans"], list) or set(p["relevans"]) - nycklar):
+            err(f"relevans {p['relevans']!r}, ska vara en lista med nycklar ur relevans.yaml")
         if p["vikt"] not in (1, 2, 3):
             err(f"vikt {p['vikt']!r}, ska vara 1, 2 eller 3")
         for fält in ("bäst_före", "kontrollerad"):
@@ -126,6 +149,15 @@ def validera(poster):
             continue
         if not str(k["url"]).startswith(("http://", "https://")):
             err("källa.url ska vara en webbadress")
+        elif blockerad(k["url"]):
+            err("källa.url är en sajt som aldrig kan vara källa (tools/regler.py, se METOD.md)")
+        elif mellanled(k["url"]):
+            err("källa.url är en sök- eller kortlänk, inte källan själv")
+        # Samma citat ur samma källa två gånger är en dubblett, om inte den ena har ersatt den andra.
+        nyckel = (str(k["url"]).split("#")[0].rstrip("/"), jämför(k["citat"]))
+        if nyckel in citat and not p["ersatt_av"] and not citat[nyckel]["ersatt_av"]:
+            err(f"samma citat ur samma källa som {citat[nyckel]['id']}")
+        citat.setdefault(nyckel, p)
         if k["typ"] not in KÄLLTYPER:
             err(f"källa.typ {k['typ']!r}, ska vara en av {sorted(KÄLLTYPER)}")
         if not k["citat"]:
@@ -159,7 +191,7 @@ def validera(poster):
 
 
 def ren(p):
-    return {k: p[k] for k in FÄLT}
+    return {k: p[k] for k in FÄLT + VALFRIA if k in p}
 
 
 def sortera(poster):
@@ -262,19 +294,21 @@ def data_csv(poster):
     w = csv.writer(buf, lineterminator="\n")
     w.writerow(["id", "datum", "påstående", "typ", "vem", "tema", "vikt", "källa_url", "källa_titel", "källa_typ",
                 "citat", "hämtad", "arkiv", "förbehåll", "bäst_före", "kontrollerad", "ersatt_av",
-                "citat_språk", "översättning", "översatt_av", "granskad_av"])
+                "citat_språk", "översättning", "översatt_av", "granskad_av", "granskning", "relevans"])
     for p in sortera(poster):
         k = p["källa"]
         w.writerow([p["id"], p["datum"], p["påstående"], p["typ"], p["vem"], ";".join(p["tema"]),
                     p["vikt"], k["url"], k["titel"] or "", k["typ"], k["citat"], k["hämtad"] or "",
                     k["arkiv"] or "", p["förbehåll"] or "", p["bäst_före"] or "", p["kontrollerad"],
                     p["ersatt_av"] or "", k.get("språk") or "", k.get("översättning") or "",
-                    k.get("översatt_av") or "", k.get("granskad_av") or ""])
+                    k.get("översatt_av") or "", k.get("granskad_av") or "", p.get("granskning") or "",
+                    ";".join(p.get("relevans") or [])])
     return buf.getvalue()
 
 
 def data_json(poster):
     return json.dumps({"källa": REPO_URL, "licens": "CC BY 4.0", "teman": TEMAN, "källtyper": KÄLLTYPER,
+                       "granskningar": GRANSKNINGAR,
                        "påståenden": [dict(ren(p), citera=citera(p), citatlänk=citatlänk(p["källa"]))
                                       for p in sortera(poster)]},
                       ensure_ascii=False, indent=1) + "\n"
@@ -314,6 +348,11 @@ def statistik(poster):
           f"- **{len(återgivet)}** aktuella poster bygger på att någon annan återger primärkällan: "
           f"{', '.join(återgivet) or '–'}. Intervjuer i medier räknas med här, men duger enligt "
           "[metoden](METOD.md) när tidningen själv har gjort intervjun.\n"]
+    maskinella = sum(1 for p in poster if p.get("granskning") == "maskinell")
+    lästa = sum(1 for p in poster if p.get("granskning") == "människa")
+    ut.append(f"- **{maskinella}** poster är maskinellt granskade och väntar på att kunna lottas till "
+              f"[stickprov](METOD.md#granskning), och **{lästa}** har en människa läst mot källan i ett stickprov. "
+              "Övriga kom in före november 2026, via en pull request som en människa slog ihop.\n")
     ut.append(tabell("Tema", Counter(t for p in poster for t in p["tema"]),
                      "Ett påstående kan ha flera teman, så andelarna summerar till mer än 100 %.", list(TEMAN)))
     ut.append(tabell("Typ av påstående", Counter(p["typ"] for p in poster)))
@@ -327,6 +366,29 @@ def statistik(poster):
                      [k for k, _ in vem.most_common(15)]))
     ut.append(tabell("Vanligaste webbplatserna", Counter(dict(domäner.most_common(15))), None,
                      [k for k, _ in domäner.most_common(15)]))
+    ut.append(bevakningens_utfall())
+    return "".join(ut)
+
+
+def bevakningens_utfall():
+    """Hur många tips och poster varje bevakad källa har gett, ur bevakning/utfall.csv som
+    veckans körning fyller på. Visar vilka källor som bär arkivet och vilka som bara ger brus."""
+    f = ROOT / "bevakning" / "utfall.csv"
+    rader = list(csv.DictReader(f.open())) if f.exists() else []
+    if not rader:
+        return ""
+    summa = defaultdict(lambda: [0, 0, set()])
+    for r in rader:
+        s = summa[r["källa"]]
+        s[0] += int(r["genomgångna"])
+        s[1] += int(r["poster"])
+        s[2].add(r["vecka"])
+    ut = ["\n## Bevakningens utfall\n\n",
+          "Hur många tips från varje källa i [bevakning.yaml](bevakning.yaml) som har gåtts igenom och hur många "
+          "poster de har gett. *Egen sökning* är sökningarna per fråga i [relevans.yaml](relevans.yaml).\n\n",
+          "| Källa | Veckor | Tips | Poster |\n|---|---:|---:|---:|\n"]
+    for namn, (tips, antal, veckor) in sorted(summa.items(), key=lambda x: (-x[1][1], -x[1][0], x[0])):
+        ut.append(f"| {namn} | {len(veckor)} | {tips} | {antal} |\n")
     return "".join(ut)
 
 

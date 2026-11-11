@@ -8,13 +8,18 @@ Skriver markdown till stdout, eller ingenting om inget är nytt. Länkar som red
 arkivet hoppas över. Körs varje vecka av .github/workflows/bevaka.yml, som lägger listan i ett
 ärende. Det som listas är tips: en post skrivs bara när primärkällan har hämtats och ett ordagrant
 citat bekräftar påståendet.
+
+Sist i listan står källänkar på pauseai.se som inte finns i arkivet, så att sajtens egna
+påståenden efter hand blir kontrollerade här.
 """
 import argparse
 import datetime
 import email.utils
 import gzip
+import io
 import json
 import re
+import tarfile
 import time
 import urllib.error
 import urllib.parse
@@ -25,28 +30,17 @@ from pathlib import Path
 
 import yaml
 
+from regler import blockerad, värd
+
 ROOT = Path(__file__).resolve().parent.parent
 UA = {"User-Agent": "Mozilla/5.0 (compatible; belagt-bevakning; +https://github.com/pauseai-sverige/belagt)"}
 ATOM = "{http://www.w3.org/2005/Atom}"
-MAX_PER_KÄLLA = 5
+MAX_PER_KÄLLA = 15
+SITEMAP = "{http://www.sitemaps.org/schemas/sitemap/0.9}"
 # Källor med kräv_ai: true tar bara med poster där något av orden står i titeln.
 AI_ORD = re.compile(r"\b(AI|KI|A\.I\.|AGI)\b|artificiell intelligens|artificial intelligence|kunstig intelligens"
                     r"|maskininlärning|machine learning|språkmodell|language model|chatbot|chattbot|generativ",
                     re.IGNORECASE)
-# Sajter som aldrig kan vara källa enligt METOD.md (avsnittet Vilka avsändare som kan vara källa):
-# maskinöversatta eller troligen automatgenererade sajter, återpublicering av andras texter och
-# tjänster för betalda pressmeddelanden.
-BLOCKERADE = {
-    # maskinöversatt, automatgenererat eller utan identifierbar redaktion
-    "vietnam.vn", "news55.se", "news.lavx.hu", "streamlinefeed.co.ke", "powersofafrica.com", "inyheter.no",
-    # återpublicerar andras texter, gå till originalet
-    "tradingview.com",
-    # kryptonyheter och fackpress inom reklam och tv
-    "tokenpost.com", "adgully.com", "indiantelevision.com",
-    # betalda pressmeddelanden
-    "markets.businessinsider.com", "prnewswire.com", "globenewswire.com", "businesswire.com",
-    "einpresswire.com", "openpr.com", "accessnewswire.com", "newsfilecorp.com",
-}
 # Riksdagsdokument som kan bära ett påstående. Protokoll, dagordningar och EU-dokument hoppas över.
 RIKSDAGSTYPER = {"mot", "ip", "fr", "frs", "prop", "sou", "ds", "dir", "bet", "skr", "rir"}
 MAX_TECKEN = 60000  # GitHub tar högst 65 536 tecken i ett ärende
@@ -90,11 +84,6 @@ def text(el, *namn):
     return ""
 
 
-def blockerad(url):
-    värd = urllib.parse.urlparse(url or "").hostname or ""
-    return any(värd == b or värd.endswith("." + b) for b in BLOCKERADE)
-
-
 def läs_flöde(data, kategorier=None):
     """Poster ur ett RSS- eller Atom-flöde som (titel, länk, datum).
 
@@ -110,6 +99,61 @@ def läs_flöde(data, kategorier=None):
     for entry in rot.iter(f"{ATOM}entry"):  # Atom
         länk = next((l.get("href") for l in entry.findall(f"{ATOM}link") if l.get("rel") in (None, "alternate")), "")
         yield text(entry, f"{ATOM}title"), länk, datum(text(entry, f"{ATOM}published", f"{ATOM}updated"))
+
+
+def läs_sitemap(data, sökvägar=None):
+    """Sidor ur en sitemap som (titel, länk, datum), för sajter utan flöde. Datumet är när sidan
+    senast ändrades, så en gammal sida som har rättats kan dyka upp igen. Titeln saknas i en
+    sitemap och tas ur adressen."""
+    for u in ET.fromstring(data).iter(f"{SITEMAP}url"):
+        länk = text(u, f"{SITEMAP}loc")
+        väg = urllib.parse.urlparse(länk).path
+        if sökvägar and not any(väg.startswith(s) and väg.rstrip("/") != s.rstrip("/") for s in sökvägar):
+            continue
+        titel = väg.rstrip("/").rsplit("/", 1)[-1].replace("-", " ").replace("_", " ").capitalize()
+        yield titel, länk, datum(text(u, f"{SITEMAP}lastmod"))
+
+
+SAJT = "https://codeload.github.com/pauseai-sverige/pauseai-se/tar.gz/refs/heads/main"
+LÄNK_RE = re.compile(r"https?://[^\s)\"'<>\]]+")
+MAX_SAJTLÄNKAR = 10
+# Sidor med sakpåståenden om AI. Sidor om att engagera sig, evenemang och insatser länkar till
+# verktyg och kampanjer, inte till källor.
+SAJTSIDOR = re.compile(r"src/(content/(laget|blogg)/|content/sidor/(?!engagera-dig|donera|protester|om-oss|upprop)"
+                       r"|pages/(index|mejla)\.astro)")
+# Länkar på sajten som inte är källor för sakpåståenden: egna sidor, sociala medier, verktyg,
+# uppslagsverk och arkiv.
+INTE_KÄLLA = {"pauseai.se", "pauseai.info", "lu.ma", "luma.com", "github.com", "github.io", "youtube.com", "youtu.be",
+              "youtube-nocookie.com", "x.com", "twitter.com", "facebook.com", "instagram.com", "tiktok.com",
+              "linkedin.com", "discord.gg", "whatsapp.com", "wikipedia.org", "archive.org", "archive.ph",
+              "google.com", "creativecommons.org", "w3.org", "schema.org", "goatcounter.com", "riksdagen.se",
+              "astro.build", "pagescms.org", "zod.dev"}
+
+
+def jämförbar(url):
+    """Adressen utan textfragment, www, avslutande snedstreck och arXiv-version."""
+    url = url.split("#")[0].rstrip("/").replace("http://", "https://", 1).replace("://www.", "://", 1)
+    return re.sub(r"(arxiv\.org/(?:abs|pdf)/[\d.]+)v\d+$", r"\1", url)
+
+
+def sajtlänkar(kända):
+    """Källänkar på pauseai.se som inte är källa i någon post, som (sida, länk)."""
+    kända = {jämförbar(u) for u in kända}
+    ut, sedda = [], set()
+    with tarfile.open(fileobj=io.BytesIO(hämta(SAJT)), mode="r:*") as tar:  # hämta() har redan packat upp gzip
+        for m in sorted(tar.getmembers(), key=lambda m: m.name):
+            väg = m.name.split("/", 1)[-1]
+            if not m.isfile() or not SAJTSIDOR.match(väg):
+                continue
+            for länk in LÄNK_RE.findall(tar.extractfile(m).read().decode("utf-8", "replace")):
+                länk = länk.rstrip(".,;:")
+                v = värd(länk)
+                if any(v == i or v.endswith("." + i) for i in INTE_KÄLLA) or blockerad(länk):
+                    continue
+                if jämförbar(länk) not in kända and jämförbar(länk) not in sedda:
+                    sedda.add(jämförbar(länk))
+                    ut.append((väg.removeprefix("src/"), länk.split("#:~:text=")[0]))
+    return ut
 
 
 def läs_riksdagen(data):
@@ -142,42 +186,56 @@ def main():
             data = hämta(k["url"])
             if k.get("format") == "riksdagen":
                 poster = list(läs_riksdagen(data))
+            elif k.get("format") == "sitemap":
+                poster = list(läs_sitemap(data, k.get("sökväg")))
             else:
                 poster = list(läs_flöde(data, k.get("kategorier")))
         except Exception as e:  # nätverksfel, flytt eller ändrat format: syns i ärendet
             trasiga.append(f"- {k['namn']}: {type(e).__name__}: {e} ({k['url']})")
             continue
         nya = [(t, l, d) for t, l, d in poster
-               if t and l and l not in kända and l not in sedda and (d is None or d >= gräns)
+               if t and l and l not in kända and l not in sedda and d is not None and d >= gräns
                and not blockerad(l) and (not k.get("kräv_ai") or AI_ORD.search(t))
                and (not k.get("kräv_ord") or re.search(rf"\b({k['kräv_ord']})", t, re.IGNORECASE))]
         nya.sort(key=lambda x: x[2] or datetime.date.min, reverse=True)
         if nya:
             per_grupp[k["grupp"]].append((k, nya))
         sedda.update(l for _, l, _ in nya)
-    if not per_grupp and not trasiga:
+    try:
+        saknas = sajtlänkar(kända)
+    except Exception as e:
+        saknas = []
+        trasiga.append(f"- pauseai.se: {type(e).__name__}: {e} ({SAJT})")
+    if not per_grupp and not trasiga and not saknas:
         return
     # Färre tips per källa tills ärendet ryms, så att alla källor syns.
     for högst in range(MAX_PER_KÄLLA, 0, -1):
-        text_ut = rapport(gräns, per_grupp, trasiga, högst)
+        text_ut = rapport(gräns, per_grupp, trasiga, högst, saknas)
         if len(text_ut) <= MAX_TECKEN:
             break
     print(text_ut[:MAX_TECKEN], end="")
 
 
-def rapport(gräns, per_grupp, trasiga, högst):
+def rapport(gräns, per_grupp, trasiga, högst, saknas=()):
     utelämnade = sum(max(len(nya) - högst, 0) for rader in per_grupp.values() for _, nya in rader)
+    bas = "https://github.com/pauseai-sverige/belagt/blob/main/"
     ut = [f"Nytt i de bevakade källorna sedan {gräns}. Det här är tips: följ länken till primärkällan, "
           "hämta den och skriv en post bara om ett ordagrant citat bekräftar påståendet "
-          "([METOD.md](https://github.com/pauseai-sverige/belagt/blob/main/METOD.md)). Listan över källor finns i "
-          "[bevakning.yaml](https://github.com/pauseai-sverige/belagt/blob/main/bevakning.yaml).\n"]
+          f"([METOD.md]({bas}METOD.md)). Ett tips är relevant om det svarar på någon av frågorna i "
+          f"[relevans.yaml]({bas}relevans.yaml). Listan över källor finns i [bevakning.yaml]({bas}bevakning.yaml).\n"]
     if utelämnade:
         ut.append(f"\nÄrendet rymmer högst {högst} tips per källa, så {utelämnade} äldre tips är utelämnade.\n")
     for grupp, rader in per_grupp.items():
         ut.append(f"\n## {grupp}\n")
         for k, nya in rader:
-            ut.append(f"\n**{k['namn']}**\n\n")
+            tips = " (ger tips, är inte själv källa: följ länkarna i texten)" if k.get("roll") == "tips" else ""
+            ut.append(f"\n**{k['namn']}**{tips}\n\n")
             ut += [f"- [ ] {d or 'okänt datum'}: [{t}]({l})\n" for t, l, d in nya[:högst]]
+    if saknas:
+        ut.append(f"\n## Källor på pauseai.se som saknas i arkivet\n\nSajten länkar till {len(saknas)} källor som "
+                  "inte finns i någon post. Finns det ett ordagrant citat som bär det sajten påstår, skriv en post. "
+                  f"Här är de {min(len(saknas), MAX_SAJTLÄNKAR)} första.\n\n")
+        ut += [f"- [ ] `{sida}`: {länk}\n" for sida, länk in saknas[:MAX_SAJTLÄNKAR]]
     if trasiga:
         ut.append("\n## Flöden som inte gick att läsa\n\nAdressen kan ha ändrats. Rätta den i bevakning.yaml.\n\n")
         ut.append("\n".join(trasiga) + "\n")

@@ -434,7 +434,8 @@ function postHtml(p) {
           <div class="översättning"><small>${esc(översättningsetikett(k))}</small>${markera(k.översättning)}</div>` : ""}</blockquote>
         <div class="källrad">Källa: <a href="${esc(p.citatlänk || k.url)}" target="_blank" rel="noopener" title="Öppnar källan med citatet markerat, om webbläsaren stöder det">${esc(k.titel || k.url)}</a>
           <span class="svag">· ${esc(p.domän)}${k.hämtad ? ` · hämtad ${esc(k.hämtad)}` : ""}</span>
-          ${k.arkiv ? ` · <a href="${esc(k.arkiv)}" target="_blank" rel="noopener">arkivkopia</a>` : ""}</div>
+          ${k.arkiv ? ` · <a href="${esc(k.arkiv)}" target="_blank" rel="noopener">arkivkopia</a>` : ""}
+          ${p.granskning ? ` <span class="svag">· ${p.granskning === "människa" ? "läst av en människa" : "maskinellt granskad"}</span>` : ""}</div>
         ${p.förbehåll ? `<p class="förbehåll"><b>Förbehåll:</b> ${länkaId(markera(p.förbehåll), p.id)}</p>` : ""}
         <div class="åtgärder">
           <button class="knapp liten" data-kopiera="${esc(p.id)}">Kopiera källhänvisning</button>
