@@ -1,0 +1,23 @@
+id: BID-23
+påstående: Två forskare visar i en preprint att en AI-modells egenskaper kan föras över till en annan modell
+  genom en bedömningsmodells poäng, och att det gäller även oönskade beteenden i säkerhetstester.
+typ: mätning
+vem: Keuntae Kim och Yong Suk Choi (forskare)
+datum: '2026-10-30'
+tema:
+- kontroll
+källa:
+  url: https://arxiv.org/abs/2610.41301
+  titel: "Subliminal Reinforcement Learning: traits travel through a judge's scores"
+  typ: preprint
+  citat: "Carried unchanged to AI-safety dispositions, the chain holds: undesirable dispositions reach the student's answers"
+  hämtad: '2026-11-07'
+  arkiv: null
+förbehåll: Preprint som inte är granskad av andra forskare. Huvudexperimenten gäller en modell som skriver påhittade
+  stavelser eller tal och en bedömningsmodell som föredrar ett visst djur. Överföringen till säkerhetsrelaterade
+  beteenden är en förlängning av den principen, och författarna skriver att överföringen inte upptäcks när
+  bedömaren byggts på andra data eller en annan modell.
+vikt: 1
+bäst_före: null
+kontrollerad: '2026-11-07'
+ersatt_av: null

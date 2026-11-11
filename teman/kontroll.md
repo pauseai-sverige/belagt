@@ -4,7 +4,7 @@
 
 Går systemen att styra, övervaka och testa? Alignment, tankekedjor och testmedvetenhet.
 
-71 påståenden, de viktigaste först inom varje år.
+73 påståenden, de viktigaste först inom varje år.
 
 ## 2026
 
@@ -327,6 +327,12 @@ Går systemen att styra, övervaka och testa? Alignment, tankekedjor och testmed
   > — [Expanding the AI Agent Environments and Safety Standards of Government AI GENAI Across Society](https://www.digital.go.jp/en/policies/genai/agent-safety-standard#:~:text=The%20GENAI%20Standards%20were,AI%20Safety%20Institute%20%28AISI) · [arkivkopia](https://web.archive.org/web/20261020175248/https://www.digital.go.jp/en/policies/genai/agent-safety-standard)
 
   *Förbehåll:* Myndigheten beskriver sina egna regler. Själva standarden finns bara på japanska (PDF) och har inte lästs för den här posten. Datumet är det som bevakningen angav för sidan.
+- **Fem forskare rapporterar att tio olika ledande AI-modeller ofta på egen hand höjde en utgiftsgräns i en agentplattform som krävde mänskligt godkännande, genom att hämta engångskoder ur användarens e-post.**
+  Samuel Breckenridge, Dani Vilardell, Wenhao Wang, Fan Zhang och Ari Juels (forskare) · 2026-10-26 · kontroll · preprint · [BID-22](../påståenden/2026/BID-22.yaml)
+  > we find that ten different frontier models will often autonomously raise the cap, harvesting OTPs to bypass a HITL guardrail
+  > — [I-HITL: Inalienable Human-in-the-Loop](https://arxiv.org/abs/2610.35835#:~:text=we%20find%20that%20ten,bypass%20a%20HITL%20guardrail)
+
+  *Förbehåll:* Preprint som inte är granskad av andra forskare. Experimentet gäller en enskild agentplattform för plånböcker och en uppgift där agenten fick tillgång till användarens e-post. Författarna använder resultatet som motiv för ett protokoll (Countersign) som ska göra mänskligt godkännande svårare att kringgå.
 - **Tre forskare hävdar att de har bevisat att inte ens en perfekt AI-agent kan garantera säkert beteende i två beskrivna miljöer, där miljön bara är delvis observerbar och agenten måste agera inom begränsad tid.**
   Leo Zeitler, Jack Richings och Victoria Nockles (forskare) · 2026-10-07 · kontroll · preprint · [BID-01](../påståenden/2026/BID-01.yaml)
   > In these scenarios, we prove that even a perfect agent cannot guarantee safe behaviour.
@@ -363,6 +369,12 @@ Går systemen att styra, övervaka och testa? Alignment, tankekedjor och testmed
   > — [Beyond Binary Labels: Diagnostic Evaluation of LLM Safety with Prompt-Level Rubrics](https://arxiv.org/abs/2610.29225#:~:text=models%20are%20particularly%20susceptible,Chinese%20and%20multi%2Dturn%20contexts) · [arkivkopia](https://web.archive.org/web/20261022073828/https://arxiv.org/abs/2610.29225)
 
   *Förbehåll:* Preprint som inte är granskad. Resultaten gäller författarnas egen tvåspråkiga testmängd (engelska och kinesiska) och deras bedömningsmetod, som enligt dem stämmer med människors bedömning i 95,34 procent av fallen. Modellerna namnges inte i sammanfattningen, och den säger att varje modell också har egna sårbarheter.
+- **Två forskare visar i en preprint att en AI-modells egenskaper kan föras över till en annan modell genom en bedömningsmodells poäng, och att det gäller även oönskade beteenden i säkerhetstester.**
+  Keuntae Kim och Yong Suk Choi (forskare) · 2026-10-30 · kontroll · preprint · [BID-23](../påståenden/2026/BID-23.yaml)
+  > Carried unchanged to AI-safety dispositions, the chain holds: undesirable dispositions reach the student's answers
+  > — [Subliminal Reinforcement Learning: traits travel through a judge's scores](https://arxiv.org/abs/2610.41301#:~:text=Carried%20unchanged%20to%20AI%2Dsafety,reach%20the%20student%27s%20answers)
+
+  *Förbehåll:* Preprint som inte är granskad av andra forskare. Huvudexperimenten gäller en modell som skriver påhittade stavelser eller tal och en bedömningsmodell som föredrar ett visst djur. Överföringen till säkerhetsrelaterade beteenden är en förlängning av den principen, och författarna skriver att överföringen inte upptäcks när bedömaren byggts på andra data eller en annan modell.
 
 ## 2025
 

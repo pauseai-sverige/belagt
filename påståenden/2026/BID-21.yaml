@@ -1,0 +1,24 @@
+id: BID-21
+påstående: Google DeepMind uppger att Gemini 4 Carbon först görs tillgänglig för en begränsad grupp
+  cyberförsvarare och att fler betrodda partner släpps in stegvis, medan bredare lansering väntar på fler
+  skyddsåtgärder.
+typ: händelse
+vem: Google DeepMind (AI-företag)
+datum: '2026-10-28'
+tema:
+- styrning
+- missbruk
+källa:
+  url: https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/
+  titel: 'Gemini 4 Carbon: our next frontier model'
+  typ: partsuppgift
+  citat: Starting this week, we will make Carbon available to a subset of cyber defenders and will gradually phase access to additional trusted partners
+  hämtad: '2026-11-07'
+  arkiv: null
+förbehåll: Företaget beskriver sitt eget beslut. Blogginlägget skriver att man fortsätter samla in
+  återkoppling och förbättra skyddsåtgärderna innan modellen blir tillgänglig för utvecklare, företag och
+  konsumenter "så snart som möjligt", utan datum.
+vikt: 2
+bäst_före: null
+kontrollerad: '2026-11-07'
+ersatt_av: null
