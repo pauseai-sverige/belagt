@@ -121,3 +121,13 @@ De 15 som står bakom flest påståenden.
 | riksdagen.se | 5 | 1 % |
 | digital-strategy.ec.europa.eu | 5 | 1 % |
 | aaai.org | 5 | 1 % |
+
+## Bevakningens utfall
+
+Hur många tips från varje källa i [bevakning.yaml](bevakning.yaml) som har gåtts igenom och hur många poster de har gett. *Egen sökning* är sökningarna per fråga i [relevans.yaml](relevans.yaml).
+
+| Källa | Veckor | Tips | Poster |
+|---|---:|---:|---:|
+| arXiv, kontroll och risk | 1 | 5 | 1 |
+| OpenAI | 1 | 2 | 0 |
+| Egen sökning | 1 | 0 | 0 |
