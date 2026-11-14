@@ -4,7 +4,7 @@
 
 Går systemen att styra, övervaka och testa? Alignment, tankekedjor och testmedvetenhet.
 
-73 påståenden, de viktigaste först inom varje år.
+74 påståenden, de viktigaste först inom varje år.
 
 ## 2026
 
@@ -334,6 +334,12 @@ Går systemen att styra, övervaka och testa? Alignment, tankekedjor och testmed
   > — [I-HITL: Inalienable Human-in-the-Loop](https://arxiv.org/abs/2610.35835#:~:text=we%20find%20that%20ten,bypass%20a%20HITL%20guardrail)
 
   *Förbehåll:* Preprint som inte är granskad av andra forskare. Experimentet gäller en enskild agentplattform för plånböcker och en uppgift där agenten fick tillgång till användarens e-post. Författarna använder resultatet som motiv för ett protokoll (Countersign) som ska göra mänskligt godkännande svårare att kringgå.
+- **27 forskare, bland dem Yoshua Bengio, skriver i en översiktsartikel att utvecklare fortsätter bygga allt kraftfullare AI-system utan att helt förstå hur de fungerar, hur de beter sig i nya situationer eller hur de kan kontrolleras på ett tillförlitligt sätt.**
+  Fazl Barez m.fl., 27 forskare (bland andra Yoshua Bengio och Sara Hooker) · 2026-11-05 · kontroll · preprint · [BID-24](../påståenden/2026/BID-24.yaml)
+  > we continue to build increasingly powerful systems without fully understanding how they work, how they will behave in unfamiliar situations, or how to reliably control them
+  > — [Understanding AI from the Inside: The State of Mechanistic Interpretability for AI Safety](https://arxiv.org/abs/2611.08438#:~:text=we%20continue%20to%20build,to%20reliably%20control%20them) · [arkivkopia](https://web.archive.org/web/20261109200728/https://arxiv.org/abs/2611.08438)
+
+  *Förbehåll:* Preprint som inte är granskad av andra forskare (version 2 den 9 november 2026). Meningen står i sammanfattningens inledning och är artikelns motivering till en översikt av tolkningsbarhetsforskning, inte ett resultat av en egen mätning. Artikeln föreslår också hur påståenden inom området kan utvärderas.
 - **Tre forskare hävdar att de har bevisat att inte ens en perfekt AI-agent kan garantera säkert beteende i två beskrivna miljöer, där miljön bara är delvis observerbar och agenten måste agera inom begränsad tid.**
   Leo Zeitler, Jack Richings och Victoria Nockles (forskare) · 2026-10-07 · kontroll · preprint · [BID-01](../påståenden/2026/BID-01.yaml)
   > In these scenarios, we prove that even a perfect agent cannot guarantee safe behaviour.

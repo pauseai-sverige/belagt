@@ -2,7 +2,7 @@
 
 # Tidslinje
 
-Alla 340 påståenden i arkivet, i den ordning det de handlar om hände eller sades.
+Alla 341 påståenden i arkivet, i den ordning det de handlar om hände eller sades.
 
 ## 2017
 
@@ -2142,3 +2142,9 @@ Alla 340 påståenden i arkivet, i den ordning det de handlar om hände eller sa
   > — [Subliminal Reinforcement Learning: traits travel through a judge's scores](https://arxiv.org/abs/2610.41301#:~:text=Carried%20unchanged%20to%20AI%2Dsafety,reach%20the%20student%27s%20answers)
 
   *Förbehåll:* Preprint som inte är granskad av andra forskare. Huvudexperimenten gäller en modell som skriver påhittade stavelser eller tal och en bedömningsmodell som föredrar ett visst djur. Överföringen till säkerhetsrelaterade beteenden är en förlängning av den principen, och författarna skriver att överföringen inte upptäcks när bedömaren byggts på andra data eller en annan modell.
+- **27 forskare, bland dem Yoshua Bengio, skriver i en översiktsartikel att utvecklare fortsätter bygga allt kraftfullare AI-system utan att helt förstå hur de fungerar, hur de beter sig i nya situationer eller hur de kan kontrolleras på ett tillförlitligt sätt.**
+  Fazl Barez m.fl., 27 forskare (bland andra Yoshua Bengio och Sara Hooker) · 2026-11-05 · kontroll · preprint · [BID-24](./påståenden/2026/BID-24.yaml)
+  > we continue to build increasingly powerful systems without fully understanding how they work, how they will behave in unfamiliar situations, or how to reliably control them
+  > — [Understanding AI from the Inside: The State of Mechanistic Interpretability for AI Safety](https://arxiv.org/abs/2611.08438#:~:text=we%20continue%20to%20build,to%20reliably%20control%20them) · [arkivkopia](https://web.archive.org/web/20261109200728/https://arxiv.org/abs/2611.08438)
+
+  *Förbehåll:* Preprint som inte är granskad av andra forskare (version 2 den 9 november 2026). Meningen står i sammanfattningens inledning och är artikelns motivering till en översikt av tolkningsbarhetsforskning, inte ett resultat av en egen mätning. Artikeln föreslår också hur påståenden inom området kan utvärderas.
