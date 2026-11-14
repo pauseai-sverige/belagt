@@ -4,12 +4,12 @@
 
 Varje påstående i arkivet är kontrollerat mot sin källa. Men arkivet kan ändå ge en skev bild om *urvalet* är skevt, till exempel om en enda rapport eller ett enda företag står för en stor del av posterna. Den här sidan visar hur arkivet fördelar sig, så att det syns var det är tunt.
 
-- **340** påståenden, varav 324 aktuella och 16 ersatta
-- **141** olika källor och **83** olika webbplatser
+- **341** påståenden, varav 325 aktuella och 16 ersatta
+- **142** olika källor och **83** olika webbplatser
 - **4** poster saknar ännu arkivkopia
 - **37** översättningar är inte granskade av någon som läser språket
 - **10** aktuella poster bygger på att någon annan återger primärkällan: BAL-13, BAL-14, BAL-15, BID-06, BID-15, J3ljHm57yU0-01, KIN-23, SVR-14, SVR-15, SVS-13. Intervjuer i medier räknas med här, men duger enligt [metoden](METOD.md) när tidningen själv har gjort intervjun.
-- **0** poster är maskinellt granskade och väntar på att kunna lottas till [stickprov](METOD.md#granskning), och **0** har en människa läst mot källan i ett stickprov. Övriga kom in före november 2026, via en pull request som en människa slog ihop.
+- **1** poster är maskinellt granskade och väntar på att kunna lottas till [stickprov](METOD.md#granskning), och **0** har en människa läst mot källan i ett stickprov. Övriga kom in före november 2026, via en pull request som en människa slog ihop.
 
 ## Tema
 
@@ -20,7 +20,7 @@ Ett påstående kan ha flera teman, så andelarna summerar till mer än 100 %.
 | förmågor | 40 | 12 % |
 | tempo | 38 | 11 % |
 | självförbättring | 11 | 3 % |
-| kontroll | 73 | 21 % |
+| kontroll | 74 | 22 % |
 | missbruk | 37 | 11 % |
 | styrning | 123 | 36 % |
 | geopolitik | 27 | 8 % |
@@ -34,8 +34,8 @@ Ett påstående kan ha flera teman, så andelarna summerar till mer än 100 %.
 
 | | Antal | Andel |
 |---|---:|---:|
-| bedömning | 101 | 30 % |
-| händelse | 97 | 29 % |
+| bedömning | 102 | 30 % |
+| händelse | 97 | 28 % |
 | mätning | 79 | 23 % |
 | prognos | 34 | 10 % |
 | förslag | 29 | 9 % |
@@ -48,7 +48,7 @@ Ett påstående kan ha flera teman, så andelarna summerar till mer än 100 %.
 |---|---:|---:|
 | myndighet | 73 | 21 % |
 | granskad | 3 | 1 % |
-| preprint | 19 | 6 % |
+| preprint | 20 | 6 % |
 | rapport | 96 | 28 % |
 | partsuppgift | 68 | 20 % |
 | opinion | 45 | 13 % |
@@ -58,7 +58,7 @@ Ett påstående kan ha flera teman, så andelarna summerar till mer än 100 %.
 
 | | Antal | Andel |
 |---|---:|---:|
-| engelska eller svenska | 303 | 89 % |
+| engelska eller svenska | 304 | 89 % |
 | kinesiska | 27 | 8 % |
 | koreanska | 3 | 1 % |
 | portugisiska | 2 | 1 % |
@@ -70,7 +70,7 @@ Ett påstående kan ha flera teman, så andelarna summerar till mer än 100 %.
 
 | | Antal | Andel |
 |---|---:|---:|
-| 2026 | 214 | 63 % |
+| 2026 | 215 | 63 % |
 | 2025 | 79 | 23 % |
 | 2024 | 24 | 7 % |
 | 2023 | 17 | 5 % |
@@ -106,7 +106,7 @@ De 15 som står bakom flest påståenden.
 
 | | Antal | Andel |
 |---|---:|---:|
-| arxiv.org | 67 | 20 % |
+| arxiv.org | 68 | 20 % |
 | openai.com | 28 | 8 % |
 | metr.org | 16 | 5 % |
 | cac.gov.cn | 15 | 4 % |
@@ -121,3 +121,13 @@ De 15 som står bakom flest påståenden.
 | riksdagen.se | 5 | 1 % |
 | digital-strategy.ec.europa.eu | 5 | 1 % |
 | aaai.org | 5 | 1 % |
+
+## Bevakningens utfall
+
+Hur många tips från varje källa i [bevakning.yaml](bevakning.yaml) som har gåtts igenom och hur många poster de har gett. *Egen sökning* är sökningarna per fråga i [relevans.yaml](relevans.yaml).
+
+| Källa | Veckor | Tips | Poster |
+|---|---:|---:|---:|
+| arXiv, kontroll och risk | 1 | 5 | 1 |
+| OpenAI | 1 | 2 | 0 |
+| Egen sökning | 1 | 0 | 0 |
