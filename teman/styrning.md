@@ -444,7 +444,7 @@ Reglering, standarder, tillsyn och förslag om att bromsa eller pausa.
 - **Google DeepMind uppger att Gemini 4 Carbon först görs tillgänglig för en begränsad grupp cyberförsvarare och att fler betrodda partner släpps in stegvis, medan bredare lansering väntar på fler skyddsåtgärder.**
   Google DeepMind (AI-företag) · 2026-10-28 · styrning, missbruk · partsuppgift · [BID-21](../påståenden/2026/BID-21.yaml)
   > Starting this week, we will make Carbon available to a subset of cyber defenders and will gradually phase access to additional trusted partners
-  > — [Gemini 4 Carbon: our next frontier model](https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/#:~:text=Starting%20this%20week%2C%20we,to%20additional%20trusted%20partners)
+  > — [Gemini 4 Carbon: our next frontier model](https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/#:~:text=Starting%20this%20week%2C%20we,to%20additional%20trusted%20partners) · [arkivkopia](https://web.archive.org/web/20261116124030/https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/?utm_source=deepmind.google&utm_medium=referral&utm_campaign=gdm&utm_content=)
 
   *Förbehåll:* Företaget beskriver sitt eget beslut. Blogginlägget skriver att man fortsätter samla in återkoppling och förbättra skyddsåtgärderna innan modellen blir tillgänglig för utvecklare, företag och konsumenter "så snart som möjligt", utan datum.
 - **Privata aktörer investerar över 140 miljarder kronor i svenska datacenter, medan regeringen satsar 479 miljoner kronor på AI, enligt en debattartikel i Ny Teknik.**

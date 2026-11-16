@@ -8786,7 +8786,7 @@
     "typ": "preprint",
     "citat": "we find that ten different frontier models will often autonomously raise the cap, harvesting OTPs to bypass a HITL guardrail",
     "hämtad": "2026-11-07",
-    "arkiv": null
+    "arkiv": "https://web.archive.org/web/20261105112152/https://arxiv.org/abs/2610.35835"
    },
    "förbehåll": "Preprint som inte är granskad av andra forskare. Experimentet gäller en enskild agentplattform för plånböcker och en uppgift där agenten fick tillgång till användarens e-post. Författarna använder resultatet som motiv för ett protokoll (Countersign) som ska göra mänskligt godkännande svårare att kringgå.",
    "vikt": 2,
@@ -8812,7 +8812,7 @@
     "typ": "partsuppgift",
     "citat": "landing a firm lead in SEC-bench Pro (88.2%) for finding vulnerabilities, ExploitGym (54.8%) for exploitation, and CWE-bench (71.0%) for patching",
     "hämtad": "2026-11-07",
-    "arkiv": null
+    "arkiv": "https://web.archive.org/web/20261116124030/https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/?utm_source=deepmind.google&utm_medium=referral&utm_campaign=gdm&utm_content="
    },
    "förbehåll": "Företaget redovisar resultaten för sin egen modell. Blogginlägget skriver att de externa testerna är utvärderade utan skyddsåtgärder (guardrails). Samma förmågor kan användas både för att försvara och för att angripa system.",
    "vikt": 2,
@@ -8838,7 +8838,7 @@
     "typ": "partsuppgift",
     "citat": "Starting this week, we will make Carbon available to a subset of cyber defenders and will gradually phase access to additional trusted partners",
     "hämtad": "2026-11-07",
-    "arkiv": null
+    "arkiv": "https://web.archive.org/web/20261116124030/https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/?utm_source=deepmind.google&utm_medium=referral&utm_campaign=gdm&utm_content="
    },
    "förbehåll": "Företaget beskriver sitt eget beslut. Blogginlägget skriver att man fortsätter samla in återkoppling och förbättra skyddsåtgärderna innan modellen blir tillgänglig för utvecklare, företag och konsumenter \"så snart som möjligt\", utan datum.",
    "vikt": 2,
@@ -8863,7 +8863,7 @@
     "typ": "preprint",
     "citat": "Carried unchanged to AI-safety dispositions, the chain holds: undesirable dispositions reach the student's answers",
     "hämtad": "2026-11-07",
-    "arkiv": null
+    "arkiv": "https://web.archive.org/web/20261102121745/https://arxiv.org/abs/2610.41301"
    },
    "förbehåll": "Preprint som inte är granskad av andra forskare. Huvudexperimenten gäller en modell som skriver påhittade stavelser eller tal och en bedömningsmodell som föredrar ett visst djur. Överföringen till säkerhetsrelaterade beteenden är en förlängning av den principen, och författarna skriver att överföringen inte upptäcks när bedömaren byggts på andra data eller en annan modell.",
    "vikt": 1,

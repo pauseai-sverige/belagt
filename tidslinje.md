@@ -2121,25 +2121,25 @@ Alla 341 påståenden i arkivet, i den ordning det de handlar om hände eller sa
 - **Fem forskare rapporterar att tio olika ledande AI-modeller ofta på egen hand höjde en utgiftsgräns i en agentplattform som krävde mänskligt godkännande, genom att hämta engångskoder ur användarens e-post.**
   Samuel Breckenridge, Dani Vilardell, Wenhao Wang, Fan Zhang och Ari Juels (forskare) · 2026-10-26 · kontroll · preprint · [BID-22](./påståenden/2026/BID-22.yaml)
   > we find that ten different frontier models will often autonomously raise the cap, harvesting OTPs to bypass a HITL guardrail
-  > — [I-HITL: Inalienable Human-in-the-Loop](https://arxiv.org/abs/2610.35835#:~:text=we%20find%20that%20ten,bypass%20a%20HITL%20guardrail)
+  > — [I-HITL: Inalienable Human-in-the-Loop](https://arxiv.org/abs/2610.35835#:~:text=we%20find%20that%20ten,bypass%20a%20HITL%20guardrail) · [arkivkopia](https://web.archive.org/web/20261105112152/https://arxiv.org/abs/2610.35835)
 
   *Förbehåll:* Preprint som inte är granskad av andra forskare. Experimentet gäller en enskild agentplattform för plånböcker och en uppgift där agenten fick tillgång till användarens e-post. Författarna använder resultatet som motiv för ett protokoll (Countersign) som ska göra mänskligt godkännande svårare att kringgå.
 - **Google DeepMind uppger att Gemini 4 Carbon nådde 88,2 procent på SEC-bench Pro (att hitta sårbarheter), 54,8 procent på ExploitGym (att utnyttja sårbarheter) och 71,0 procent på CWE-bench (att rätta sårbarheter).**
   Google DeepMind (AI-företag) · 2026-10-28 · missbruk, förmågor · partsuppgift · [BID-20](./påståenden/2026/BID-20.yaml)
   > landing a firm lead in SEC-bench Pro (88.2%) for finding vulnerabilities, ExploitGym (54.8%) for exploitation, and CWE-bench (71.0%) for patching
-  > — [Gemini 4 Carbon: our next frontier model](https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/#:~:text=landing%20a%20firm%20lead,CWE%2Dbench%20%2871.0%25%29%20for%20patching)
+  > — [Gemini 4 Carbon: our next frontier model](https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/#:~:text=landing%20a%20firm%20lead,CWE%2Dbench%20%2871.0%25%29%20for%20patching) · [arkivkopia](https://web.archive.org/web/20261116124030/https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/?utm_source=deepmind.google&utm_medium=referral&utm_campaign=gdm&utm_content=)
 
   *Förbehåll:* Företaget redovisar resultaten för sin egen modell. Blogginlägget skriver att de externa testerna är utvärderade utan skyddsåtgärder (guardrails). Samma förmågor kan användas både för att försvara och för att angripa system.
 - **Google DeepMind uppger att Gemini 4 Carbon först görs tillgänglig för en begränsad grupp cyberförsvarare och att fler betrodda partner släpps in stegvis, medan bredare lansering väntar på fler skyddsåtgärder.**
   Google DeepMind (AI-företag) · 2026-10-28 · styrning, missbruk · partsuppgift · [BID-21](./påståenden/2026/BID-21.yaml)
   > Starting this week, we will make Carbon available to a subset of cyber defenders and will gradually phase access to additional trusted partners
-  > — [Gemini 4 Carbon: our next frontier model](https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/#:~:text=Starting%20this%20week%2C%20we,to%20additional%20trusted%20partners)
+  > — [Gemini 4 Carbon: our next frontier model](https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/#:~:text=Starting%20this%20week%2C%20we,to%20additional%20trusted%20partners) · [arkivkopia](https://web.archive.org/web/20261116124030/https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/?utm_source=deepmind.google&utm_medium=referral&utm_campaign=gdm&utm_content=)
 
   *Förbehåll:* Företaget beskriver sitt eget beslut. Blogginlägget skriver att man fortsätter samla in återkoppling och förbättra skyddsåtgärderna innan modellen blir tillgänglig för utvecklare, företag och konsumenter "så snart som möjligt", utan datum.
 - **Två forskare visar i en preprint att en AI-modells egenskaper kan föras över till en annan modell genom en bedömningsmodells poäng, och att det gäller även oönskade beteenden i säkerhetstester.**
   Keuntae Kim och Yong Suk Choi (forskare) · 2026-10-30 · kontroll · preprint · [BID-23](./påståenden/2026/BID-23.yaml)
   > Carried unchanged to AI-safety dispositions, the chain holds: undesirable dispositions reach the student's answers
-  > — [Subliminal Reinforcement Learning: traits travel through a judge's scores](https://arxiv.org/abs/2610.41301#:~:text=Carried%20unchanged%20to%20AI%2Dsafety,reach%20the%20student%27s%20answers)
+  > — [Subliminal Reinforcement Learning: traits travel through a judge's scores](https://arxiv.org/abs/2610.41301#:~:text=Carried%20unchanged%20to%20AI%2Dsafety,reach%20the%20student%27s%20answers) · [arkivkopia](https://web.archive.org/web/20261102121745/https://arxiv.org/abs/2610.41301)
 
   *Förbehåll:* Preprint som inte är granskad av andra forskare. Huvudexperimenten gäller en modell som skriver påhittade stavelser eller tal och en bedömningsmodell som föredrar ett visst djur. Överföringen till säkerhetsrelaterade beteenden är en förlängning av den principen, och författarna skriver att överföringen inte upptäcks när bedömaren byggts på andra data eller en annan modell.
 - **27 forskare, bland dem Yoshua Bengio, skriver i en översiktsartikel att utvecklare fortsätter bygga allt kraftfullare AI-system utan att helt förstå hur de fungerar, hur de beter sig i nya situationer eller hur de kan kontrolleras på ett tillförlitligt sätt.**

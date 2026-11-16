@@ -132,7 +132,7 @@ Vad AI-systemen kan göra och hur det mäts.
 - **Google DeepMind uppger att Gemini 4 Carbon nådde 88,2 procent på SEC-bench Pro (att hitta sårbarheter), 54,8 procent på ExploitGym (att utnyttja sårbarheter) och 71,0 procent på CWE-bench (att rätta sårbarheter).**
   Google DeepMind (AI-företag) · 2026-10-28 · missbruk, förmågor · partsuppgift · [BID-20](../påståenden/2026/BID-20.yaml)
   > landing a firm lead in SEC-bench Pro (88.2%) for finding vulnerabilities, ExploitGym (54.8%) for exploitation, and CWE-bench (71.0%) for patching
-  > — [Gemini 4 Carbon: our next frontier model](https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/#:~:text=landing%20a%20firm%20lead,CWE%2Dbench%20%2871.0%25%29%20for%20patching)
+  > — [Gemini 4 Carbon: our next frontier model](https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/#:~:text=landing%20a%20firm%20lead,CWE%2Dbench%20%2871.0%25%29%20for%20patching) · [arkivkopia](https://web.archive.org/web/20261116124030/https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/?utm_source=deepmind.google&utm_medium=referral&utm_campaign=gdm&utm_content=)
 
   *Förbehåll:* Företaget redovisar resultaten för sin egen modell. Blogginlägget skriver att de externa testerna är utvärderade utan skyddsåtgärder (guardrails). Samma förmågor kan användas både för att försvara och för att angripa system.
 - **Inget av missbruksfallen i Anthropics hotrapport gällde företagets mest kapabla modeller, med ett undantag som rörde otillåten destillering.**

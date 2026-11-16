@@ -13,7 +13,7 @@ källa:
   typ: partsuppgift
   citat: landing a firm lead in SEC-bench Pro (88.2%) for finding vulnerabilities, ExploitGym (54.8%) for exploitation, and CWE-bench (71.0%) for patching
   hämtad: '2026-11-07'
-  arkiv: null
+  arkiv: https://web.archive.org/web/20261116124030/https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/?utm_source=deepmind.google&utm_medium=referral&utm_campaign=gdm&utm_content=
 förbehåll: Företaget redovisar resultaten för sin egen modell. Blogginlägget skriver att de externa testerna är
   utvärderade utan skyddsåtgärder (guardrails). Samma förmågor kan användas både för att försvara och för att
   angripa system.
