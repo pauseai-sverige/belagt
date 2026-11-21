@@ -4,7 +4,7 @@
 
 Reglering, standarder, tillsyn och förslag om att bromsa eller pausa.
 
-123 påståenden, de viktigaste först inom varje år.
+125 påståenden, de viktigaste först inom varje år.
 
 ## 2026
 
@@ -447,6 +447,18 @@ Reglering, standarder, tillsyn och förslag om att bromsa eller pausa.
   > — [Gemini 4 Carbon: our next frontier model](https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/#:~:text=Starting%20this%20week%2C%20we,to%20additional%20trusted%20partners) · [arkivkopia](https://web.archive.org/web/20261116124030/https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/?utm_source=deepmind.google&utm_medium=referral&utm_campaign=gdm&utm_content=)
 
   *Förbehåll:* Företaget beskriver sitt eget beslut. Blogginlägget skriver att man fortsätter samla in återkoppling och förbättra skyddsåtgärderna innan modellen blir tillgänglig för utvecklare, företag och konsumenter "så snart som möjligt", utan datum.
+- **Riksdagsledamöterna Marie Nicholson och Anna af Sillén (M) föreslår att riksdagen ger regeringen i uppdrag att se över om svenska myndigheter har tillräckliga befogenheter att stoppa, begränsa eller ta ur bruk avancerade AI-system vid allvarliga risker.**
+  Marie Nicholson och Anna af Sillén (båda M), motion 2026/27:1121 · 2026-11-20 · kontroll, styrning · myndighet · [BID-28](../påståenden/2026/BID-28.yaml)
+  > se över om svenska myndigheter har tillräckliga befogenheter att vid allvarliga risker besluta om att avancerade AI-system ska stoppas, begränsas eller tas ur bruk
+  > — [Motion 2026/27:1121 Mänsklig kontroll över avancerade AI-system](https://data.riksdagen.se/dokument/HE021121.html#:~:text=se%20%C3%B6ver%20om%20svenska,eller%20tas%20ur%20bruk)
+
+  *Förbehåll:* En motion är ett förslag från enskilda ledamöter, inte ett riksdagsbeslut och inte regeringens linje. Datumet är det som riksdagen anger för publiceringen.
+- **Riksdagsledamöterna Edmir Mehmeti och Daniel Lyckestam (M) föreslår att riksdagen ger regeringen i uppdrag att se över möjligheten att inrätta ett nationellt institut för AI-säkerhet.**
+  Edmir Mehmeti och Daniel Lyckestam (båda M), motion 2026/27:1170 · 2026-11-20 · styrning · myndighet · [BID-29](../påståenden/2026/BID-29.yaml)
+  > se över möjligheten att inrätta ett nationellt institut för AI-säkerhet med ansvar för oberoende säkerhetsutvärdering av avancerade AI-system
+  > — [Motion 2026/27:1170 Ett nationellt institut för AI-säkerhet](https://data.riksdagen.se/dokument/HE021170.html#:~:text=se%20%C3%B6ver%20m%C3%B6jligheten%20att,s%C3%A4kerhetsutv%C3%A4rdering%20av%20avancerade%20AI%2Dsystem)
+
+  *Förbehåll:* En motion är ett förslag från enskilda ledamöter, inte ett riksdagsbeslut och inte regeringens linje. Motionen anger att AI-kommissionens färdplan (SOU 2025:12) föreslog ett sådant institut och att FOI ville organisera uppgiften inom befintliga myndigheter.
 - **Privata aktörer investerar över 140 miljarder kronor i svenska datacenter, medan regeringen satsar 479 miljoner kronor på AI, enligt en debattartikel i Ny Teknik.**
   Christoffer Bergman (Neo4j), debattartikel i Ny Teknik · 2026 · miljö, styrning · opinion · [SVS-09](../påståenden/2026/SVS-09.yaml)
   > Privata aktörer investerar över 140 miljarder kronor i svenska datacenter, medan regeringen satsar 479 miljoner på ai.

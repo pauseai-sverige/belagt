@@ -1,0 +1,24 @@
+id: BID-26
+påstående: METR bedömer att offentligt tillgängliga belägg inte räcker för att utesluta drastisk acceleration av AI-forskning de närmaste åren.
+typ: bedömning
+vem: METR (Megan Kinniment m.fl.)
+datum: '2026-11-20'
+tema:
+- självförbättring
+- tempo
+källa:
+  url: https://metr.org/blog/2026-11-20-q4-2026-capability-update/
+  titel: AI R&D-relevant model capabilities are improving rapidly and are getting harder to measure
+  typ: rapport
+  citat: We think that current public evidence is insufficient to rule out drastic AI R&D acceleration in the next couple of years.
+  hämtad: '2026-11-21'
+  arkiv: https://web.archive.org/web/20261121103808/https://metr.org/blog/2026-11-20-q4-2026-capability-update/
+förbehåll: METR skriver också att de är mycket osäkra på vilka förmågor som krävs för drastisk acceleration och hur snabbt de förbättras. Med drastisk acceleration avses att förmågorna förbättras så fort att människor inte längre kan förstå, bedöma och reagera på katastrofrisker. Utvärderingen gäller modeller till och med Opus 5.5 och GPT-6 Astra.
+vikt: 3
+bäst_före: '2027-05-01'
+kontrollerad: '2026-11-21'
+ersatt_av: null
+granskning: maskinell
+relevans:
+- självförbättring
+- tidslinjer

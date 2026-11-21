@@ -4,7 +4,7 @@
 
 Hur snabbt utvecklingen går och varför: beräkningskraft, investeringar och skalning.
 
-38 påståenden, de viktigaste först inom varje år.
+40 påståenden, de viktigaste först inom varje år.
 
 ## 2026
 
@@ -69,6 +69,12 @@ Hur snabbt utvecklingen går och varför: beräkningskraft, investeringar och sk
   > — [How Accurate Have AI Progress Forecasts Been So Far?](https://forecastingresearch.org/research/ai-progress-accuracy-update#:~:text=The%20median%20expert%20predicted,question%20resolved%20at%2040.7%25) · [arkivkopia](https://web.archive.org/web/20261002014557/https://forecastingresearch.org/research/ai-progress-accuracy-update)
 
   *Förbehåll:* Uppföljning av prognosen i [FOR-24](https://pauseai-sverige.github.io/belagt/#FOR-24). Enligt samma rapport har både experter och superprognosmakare underskattat framstegen på flera test. Det är ett enskilt test och en enskild tidpunkt.
+- **METR bedömer att offentligt tillgängliga belägg inte räcker för att utesluta drastisk acceleration av AI-forskning de närmaste åren.**
+  METR (Megan Kinniment m.fl.) · 2026-11-20 · självförbättring, tempo · rapport · [BID-26](../påståenden/2026/BID-26.yaml)
+  > We think that current public evidence is insufficient to rule out drastic AI R&D acceleration in the next couple of years.
+  > — [AI R&D-relevant model capabilities are improving rapidly and are getting harder to measure](https://metr.org/blog/2026-11-20-q4-2026-capability-update/#:~:text=We%20think%20that%20current,next%20couple%20of%20years) · [arkivkopia](https://web.archive.org/web/20261121103808/https://metr.org/blog/2026-11-20-q4-2026-capability-update/)
+
+  *Förbehåll:* METR skriver också att de är mycket osäkra på vilka förmågor som krävs för drastisk acceleration och hur snabbt de förbättras. Med drastisk acceleration avses att förmågorna förbättras så fort att människor inte längre kan förstå, bedöma och reagera på katastrofrisker. Utvärderingen gäller modeller till och med Opus 5.5 och GPT-6 Astra.
 - **Oxford Economics påpekar att produktivitetstillväxten borde öka om AI redan ersatte arbetskraft i stor skala, men att den i allmänhet inte gör det. Det kan dock ändras snabbt om AI fortsätter att utvecklas snabbt.**
   Oxford Economics (analysföretag, Ben May och Yasmine Badawy) · 2026-01-07 · samhälle, tempo · rapport · [SAM-03](../påståenden/2026/SAM-03.yaml)
   > If AI were already replacing labour at scale, productivity growth should be accelerating. Generally, it isn't, though that could change quickly if AI continues to develop rapidly
@@ -134,6 +140,12 @@ Hur snabbt utvecklingen går och varför: beräkningskraft, investeringar och sk
   > — [On the Navier–Stokes Millennium Prize Problem](https://openai.com/index/navier-stokes-solution/#:~:text=Since%20August%2028%20we,our%20benchmarks%2C%20including%20mathematics) · [arkivkopia](https://web.archive.org/web/20260921191308/https://openai.com/index/navier-stokes-solution/)
 
   *Förbehåll:* Uppgiften kommer från OpenAI. Samma text beskriver modellen som ”betydligt mer kapabel än GPT-6 Astra”.
+- **Epoch AI uppger att Anthropic under tredje kvartalet 2026 lade nästan 10 miljarder dollar på beräkningskraft och infrastruktur, motsvarande drygt 40 miljarder dollar på årsbasis.**
+  Epoch AI (Josh You) · 2026-11-18 · tempo · rapport · [BID-27](../påståenden/2026/BID-27.yaml)
+  > Anthropic spent nearly $10 billion on compute and infrastructure in the third quarter of 2026, or close to $40 billion on an annualized basis
+  > — [Anthropic’s compute spending is increasing by 4x per year, outpacing OpenAI’s 3x](https://epoch.ai/data-insights/anthropic-openai-compute-spend-growth#:~:text=Anthropic%20spent%20nearly%20%2410,on%20an%20annualized%20basis) · [arkivkopia](https://web.archive.org/web/20261120105225/https://epoch.ai/data-insights/anthropic-openai-compute-spend-growth)
+
+  *Förbehåll:* Siffrorna bygger enligt Epochs tabell på uppgifter från bolagens egna redovisningar, bland annat Anthropics S-1/A. Uppgifterna för OpenAI är glesare. Texten säger "close to $40 billion" på årsbasis.
 
 ## 2025
 

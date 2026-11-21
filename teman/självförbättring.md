@@ -4,7 +4,7 @@
 
 AI som används för att utveckla AI.
 
-11 påståenden, de viktigaste först inom varje år.
+12 påståenden, de viktigaste först inom varje år.
 
 ## 2026
 
@@ -47,6 +47,12 @@ AI som används för att utveckla AI.
   > — [Research acceleration: The view inside OpenAI](https://openai.com/index/research-acceleration-view-inside-openai/#:~:text=We%20are%20making%20strong,by%20March%20of%202028) · [arkivkopia](https://web.archive.org/web/20260923104226/https://openai.com/index/research-acceleration-view-inside-openai/)
 
   *Förbehåll:* Med praktikant menar OpenAI ett system som klarar uppgifter som hade tagit en skicklig forskare några dagar. Att bolaget säger sig ha nått ett eget mål är en partsuppgift som ingen utomstående har kontrollerat.
+- **METR bedömer att offentligt tillgängliga belägg inte räcker för att utesluta drastisk acceleration av AI-forskning de närmaste åren.**
+  METR (Megan Kinniment m.fl.) · 2026-11-20 · självförbättring, tempo · rapport · [BID-26](../påståenden/2026/BID-26.yaml)
+  > We think that current public evidence is insufficient to rule out drastic AI R&D acceleration in the next couple of years.
+  > — [AI R&D-relevant model capabilities are improving rapidly and are getting harder to measure](https://metr.org/blog/2026-11-20-q4-2026-capability-update/#:~:text=We%20think%20that%20current,next%20couple%20of%20years) · [arkivkopia](https://web.archive.org/web/20261121103808/https://metr.org/blog/2026-11-20-q4-2026-capability-update/)
+
+  *Förbehåll:* METR skriver också att de är mycket osäkra på vilka förmågor som krävs för drastisk acceleration och hur snabbt de förbättras. Med drastisk acceleration avses att förmågorna förbättras så fort att människor inte längre kan förstå, bedöma och reagera på katastrofrisker. Utvärderingen gäller modeller till och med Opus 5.5 och GPT-6 Astra.
 - **Samma prognosmakare höjde sin bedömning till 18 procent i scenarier där AI-system presterar bättre än mänskliga forskare på forskningsprojekt som tar en månad.**
   *Ersatt av FOR-26.*
   Forecasting Research Institute, återgivet i International AI Safety Report 2026 · 2026-02-03 · tempo, självförbättring, röster · rapport · [FOR-03](../påståenden/2026/FOR-03.yaml)

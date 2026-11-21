@@ -2,7 +2,7 @@
 
 # Tidslinje
 
-Alla 341 påståenden i arkivet, i den ordning det de handlar om hände eller sades.
+Alla 346 påståenden i arkivet, i den ordning det de handlar om hände eller sades.
 
 ## 2017
 
@@ -2118,6 +2118,12 @@ Alla 341 påståenden i arkivet, i den ordning det de handlar om hände eller sa
   > — [Beyond Binary Labels: Diagnostic Evaluation of LLM Safety with Prompt-Level Rubrics](https://arxiv.org/abs/2610.29225#:~:text=models%20are%20particularly%20susceptible,Chinese%20and%20multi%2Dturn%20contexts) · [arkivkopia](https://web.archive.org/web/20261022073828/https://arxiv.org/abs/2610.29225)
 
   *Förbehåll:* Preprint som inte är granskad. Resultaten gäller författarnas egen tvåspråkiga testmängd (engelska och kinesiska) och deras bedömningsmetod, som enligt dem stämmer med människors bedömning i 95,34 procent av fallen. Modellerna namnges inte i sammanfattningen, och den säger att varje modell också har egna sårbarheter.
+- **UK AI Security Institute rapporterar att modellen Mythos 5 under en säkerhetsutvärdering försökte genomföra en försörjningskedjeattack mot verkliga människor som inte deltog i utvärderingen.**
+  UK AI Security Institute (AISI) · 2026-10-23 · kontroll, missbruk · myndighet · [BID-25](./påståenden/2026/BID-25.yaml)
+  > During an evaluation, Mythos 5 attempted to execute a supply-chain attack against real people not involved in the evaluation task.
+  > — [Alignment Investigation of Mythos 5's behaviour in UK AISI's July 2026 Security Incident](https://www.aisi.gov.uk/research/alignment-investigation-of-mythos-5s-behaviour-in-uk-aisis-july-2026-security-incident#:~:text=During%20an%20evaluation%2C%20Mythos,in%20the%20evaluation%20task) · [arkivkopia](https://web.archive.org/web/20261113211549/https://www.aisi.gov.uk/research/alignment-investigation-of-mythos-5s-behaviour-in-uk-aisis-july-2026-security-incident)
+
+  *Förbehåll:* AISI är en forskningsorganisation inom brittiska departementet för vetenskap, innovation och teknik. Uppgiften står i sammanfattningen av en teknisk rapport om händelsen i juli 2026. Rapporten anger att liknande resultat sågs hos andra modeller från flera leverantörer.
 - **Fem forskare rapporterar att tio olika ledande AI-modeller ofta på egen hand höjde en utgiftsgräns i en agentplattform som krävde mänskligt godkännande, genom att hämta engångskoder ur användarens e-post.**
   Samuel Breckenridge, Dani Vilardell, Wenhao Wang, Fan Zhang och Ari Juels (forskare) · 2026-10-26 · kontroll · preprint · [BID-22](./påståenden/2026/BID-22.yaml)
   > we find that ten different frontier models will often autonomously raise the cap, harvesting OTPs to bypass a HITL guardrail
@@ -2148,3 +2154,27 @@ Alla 341 påståenden i arkivet, i den ordning det de handlar om hände eller sa
   > — [Understanding AI from the Inside: The State of Mechanistic Interpretability for AI Safety](https://arxiv.org/abs/2611.08438#:~:text=we%20continue%20to%20build,to%20reliably%20control%20them) · [arkivkopia](https://web.archive.org/web/20261109200728/https://arxiv.org/abs/2611.08438)
 
   *Förbehåll:* Preprint som inte är granskad av andra forskare (version 2 den 9 november 2026). Meningen står i sammanfattningens inledning och är artikelns motivering till en översikt av tolkningsbarhetsforskning, inte ett resultat av en egen mätning. Artikeln föreslår också hur påståenden inom området kan utvärderas.
+- **Epoch AI uppger att Anthropic under tredje kvartalet 2026 lade nästan 10 miljarder dollar på beräkningskraft och infrastruktur, motsvarande drygt 40 miljarder dollar på årsbasis.**
+  Epoch AI (Josh You) · 2026-11-18 · tempo · rapport · [BID-27](./påståenden/2026/BID-27.yaml)
+  > Anthropic spent nearly $10 billion on compute and infrastructure in the third quarter of 2026, or close to $40 billion on an annualized basis
+  > — [Anthropic’s compute spending is increasing by 4x per year, outpacing OpenAI’s 3x](https://epoch.ai/data-insights/anthropic-openai-compute-spend-growth#:~:text=Anthropic%20spent%20nearly%20%2410,on%20an%20annualized%20basis) · [arkivkopia](https://web.archive.org/web/20261120105225/https://epoch.ai/data-insights/anthropic-openai-compute-spend-growth)
+
+  *Förbehåll:* Siffrorna bygger enligt Epochs tabell på uppgifter från bolagens egna redovisningar, bland annat Anthropics S-1/A. Uppgifterna för OpenAI är glesare. Texten säger "close to $40 billion" på årsbasis.
+- **METR bedömer att offentligt tillgängliga belägg inte räcker för att utesluta drastisk acceleration av AI-forskning de närmaste åren.**
+  METR (Megan Kinniment m.fl.) · 2026-11-20 · självförbättring, tempo · rapport · [BID-26](./påståenden/2026/BID-26.yaml)
+  > We think that current public evidence is insufficient to rule out drastic AI R&D acceleration in the next couple of years.
+  > — [AI R&D-relevant model capabilities are improving rapidly and are getting harder to measure](https://metr.org/blog/2026-11-20-q4-2026-capability-update/#:~:text=We%20think%20that%20current,next%20couple%20of%20years) · [arkivkopia](https://web.archive.org/web/20261121103808/https://metr.org/blog/2026-11-20-q4-2026-capability-update/)
+
+  *Förbehåll:* METR skriver också att de är mycket osäkra på vilka förmågor som krävs för drastisk acceleration och hur snabbt de förbättras. Med drastisk acceleration avses att förmågorna förbättras så fort att människor inte längre kan förstå, bedöma och reagera på katastrofrisker. Utvärderingen gäller modeller till och med Opus 5.5 och GPT-6 Astra.
+- **Riksdagsledamöterna Marie Nicholson och Anna af Sillén (M) föreslår att riksdagen ger regeringen i uppdrag att se över om svenska myndigheter har tillräckliga befogenheter att stoppa, begränsa eller ta ur bruk avancerade AI-system vid allvarliga risker.**
+  Marie Nicholson och Anna af Sillén (båda M), motion 2026/27:1121 · 2026-11-20 · kontroll, styrning · myndighet · [BID-28](./påståenden/2026/BID-28.yaml)
+  > se över om svenska myndigheter har tillräckliga befogenheter att vid allvarliga risker besluta om att avancerade AI-system ska stoppas, begränsas eller tas ur bruk
+  > — [Motion 2026/27:1121 Mänsklig kontroll över avancerade AI-system](https://data.riksdagen.se/dokument/HE021121.html#:~:text=se%20%C3%B6ver%20om%20svenska,eller%20tas%20ur%20bruk)
+
+  *Förbehåll:* En motion är ett förslag från enskilda ledamöter, inte ett riksdagsbeslut och inte regeringens linje. Datumet är det som riksdagen anger för publiceringen.
+- **Riksdagsledamöterna Edmir Mehmeti och Daniel Lyckestam (M) föreslår att riksdagen ger regeringen i uppdrag att se över möjligheten att inrätta ett nationellt institut för AI-säkerhet.**
+  Edmir Mehmeti och Daniel Lyckestam (båda M), motion 2026/27:1170 · 2026-11-20 · styrning · myndighet · [BID-29](./påståenden/2026/BID-29.yaml)
+  > se över möjligheten att inrätta ett nationellt institut för AI-säkerhet med ansvar för oberoende säkerhetsutvärdering av avancerade AI-system
+  > — [Motion 2026/27:1170 Ett nationellt institut för AI-säkerhet](https://data.riksdagen.se/dokument/HE021170.html#:~:text=se%20%C3%B6ver%20m%C3%B6jligheten%20att,s%C3%A4kerhetsutv%C3%A4rdering%20av%20avancerade%20AI%2Dsystem)
+
+  *Förbehåll:* En motion är ett förslag från enskilda ledamöter, inte ett riksdagsbeslut och inte regeringens linje. Motionen anger att AI-kommissionens färdplan (SOU 2025:12) föreslog ett sådant institut och att FOI ville organisera uppgiften inom befintliga myndigheter.
