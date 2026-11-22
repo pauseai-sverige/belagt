@@ -2,7 +2,7 @@
 
 # Tidslinje
 
-Alla 346 påståenden i arkivet, i den ordning det de handlar om hände eller sades.
+Alla 345 påståenden i arkivet, i den ordning det de handlar om hände eller sades.
 
 ## 2017
 
@@ -2154,12 +2154,6 @@ Alla 346 påståenden i arkivet, i den ordning det de handlar om hände eller sa
   > — [Understanding AI from the Inside: The State of Mechanistic Interpretability for AI Safety](https://arxiv.org/abs/2611.08438#:~:text=we%20continue%20to%20build,to%20reliably%20control%20them) · [arkivkopia](https://web.archive.org/web/20261109200728/https://arxiv.org/abs/2611.08438)
 
   *Förbehåll:* Preprint som inte är granskad av andra forskare (version 2 den 9 november 2026). Meningen står i sammanfattningens inledning och är artikelns motivering till en översikt av tolkningsbarhetsforskning, inte ett resultat av en egen mätning. Artikeln föreslår också hur påståenden inom området kan utvärderas.
-- **Epoch AI uppger att Anthropic under tredje kvartalet 2026 lade nästan 10 miljarder dollar på beräkningskraft och infrastruktur, motsvarande drygt 40 miljarder dollar på årsbasis.**
-  Epoch AI (Josh You) · 2026-11-18 · tempo · rapport · [BID-27](./påståenden/2026/BID-27.yaml)
-  > Anthropic spent nearly $10 billion on compute and infrastructure in the third quarter of 2026, or close to $40 billion on an annualized basis
-  > — [Anthropic’s compute spending is increasing by 4x per year, outpacing OpenAI’s 3x](https://epoch.ai/data-insights/anthropic-openai-compute-spend-growth#:~:text=Anthropic%20spent%20nearly%20%2410,on%20an%20annualized%20basis) · [arkivkopia](https://web.archive.org/web/20261120105225/https://epoch.ai/data-insights/anthropic-openai-compute-spend-growth)
-
-  *Förbehåll:* Siffrorna bygger enligt Epochs tabell på uppgifter från bolagens egna redovisningar, bland annat Anthropics S-1/A. Uppgifterna för OpenAI är glesare. Texten säger "close to $40 billion" på årsbasis.
 - **METR bedömer att offentligt tillgängliga belägg inte räcker för att utesluta drastisk acceleration av AI-forskning de närmaste åren.**
   METR (Megan Kinniment m.fl.) · 2026-11-20 · självförbättring, tempo · rapport · [BID-26](./påståenden/2026/BID-26.yaml)
   > We think that current public evidence is insufficient to rule out drastic AI R&D acceleration in the next couple of years.

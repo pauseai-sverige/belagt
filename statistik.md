@@ -4,12 +4,12 @@
 
 Varje påstående i arkivet är kontrollerat mot sin källa. Men arkivet kan ändå ge en skev bild om *urvalet* är skevt, till exempel om en enda rapport eller ett enda företag står för en stor del av posterna. Den här sidan visar hur arkivet fördelar sig, så att det syns var det är tunt.
 
-- **346** påståenden, varav 330 aktuella och 16 ersatta
-- **147** olika källor och **85** olika webbplatser
+- **345** påståenden, varav 329 aktuella och 16 ersatta
+- **146** olika källor och **85** olika webbplatser
 - **2** poster saknar ännu arkivkopia
 - **37** översättningar är inte granskade av någon som läser språket
 - **10** aktuella poster bygger på att någon annan återger primärkällan: BAL-13, BAL-14, BAL-15, BID-06, BID-15, J3ljHm57yU0-01, KIN-23, SVR-14, SVR-15, SVS-13. Intervjuer i medier räknas med här, men duger enligt [metoden](METOD.md) när tidningen själv har gjort intervjun.
-- **6** poster är maskinellt granskade och väntar på att kunna lottas till [stickprov](METOD.md#granskning), och **0** har en människa läst mot källan i ett stickprov. Övriga kom in före november 2026, via en pull request som en människa slog ihop.
+- **5** poster är maskinellt granskade och väntar på att kunna lottas till [stickprov](METOD.md#granskning), och **0** har en människa läst mot källan i ett stickprov. Övriga kom in före november 2026, via en pull request som en människa slog ihop.
 
 ## Tema
 
@@ -18,7 +18,7 @@ Ett påstående kan ha flera teman, så andelarna summerar till mer än 100 %.
 | | Antal | Andel |
 |---|---:|---:|
 | förmågor | 40 | 12 % |
-| tempo | 40 | 12 % |
+| tempo | 39 | 11 % |
 | självförbättring | 12 | 3 % |
 | kontroll | 76 | 22 % |
 | missbruk | 38 | 11 % |
@@ -36,7 +36,7 @@ Ett påstående kan ha flera teman, så andelarna summerar till mer än 100 %.
 |---|---:|---:|
 | bedömning | 103 | 30 % |
 | händelse | 98 | 28 % |
-| mätning | 80 | 23 % |
+| mätning | 79 | 23 % |
 | prognos | 34 | 10 % |
 | förslag | 31 | 9 % |
 
@@ -49,7 +49,7 @@ Ett påstående kan ha flera teman, så andelarna summerar till mer än 100 %.
 | myndighet | 76 | 22 % |
 | granskad | 3 | 1 % |
 | preprint | 20 | 6 % |
-| rapport | 98 | 28 % |
+| rapport | 97 | 28 % |
 | partsuppgift | 68 | 20 % |
 | opinion | 45 | 13 % |
 | media | 36 | 10 % |
@@ -58,7 +58,7 @@ Ett påstående kan ha flera teman, så andelarna summerar till mer än 100 %.
 
 | | Antal | Andel |
 |---|---:|---:|
-| engelska eller svenska | 309 | 89 % |
+| engelska eller svenska | 308 | 89 % |
 | kinesiska | 27 | 8 % |
 | koreanska | 3 | 1 % |
 | portugisiska | 2 | 1 % |
@@ -70,7 +70,7 @@ Ett påstående kan ha flera teman, så andelarna summerar till mer än 100 %.
 
 | | Antal | Andel |
 |---|---:|---:|
-| 2026 | 220 | 64 % |
+| 2026 | 219 | 63 % |
 | 2025 | 79 | 23 % |
 | 2024 | 24 | 7 % |
 | 2023 | 17 | 5 % |
@@ -98,9 +98,9 @@ De 15 som står bakom flest påståenden.
 | PauseAI | 7 | 2 % |
 | Olle Häggström | 6 | 2 % |
 | EU-kommissionen | 5 | 1 % |
-| Epoch AI | 5 | 1 % |
 | AAAI:s ordförandepanel om AI-forskningens framtid | 5 | 1 % |
 | Andrew Ng | 5 | 1 % |
+| Google DeepMind | 5 | 1 % |
 
 ## Vanligaste webbplatserna
 
@@ -120,7 +120,7 @@ De 15 som står bakom flest påståenden.
 | nyteknik.se | 6 | 2 % |
 | riksdagen.se | 5 | 1 % |
 | digital-strategy.ec.europa.eu | 5 | 1 % |
-| epoch.ai | 5 | 1 % |
+| aaai.org | 5 | 1 % |
 
 ## Bevakningens utfall
 
