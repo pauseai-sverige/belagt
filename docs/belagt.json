@@ -8772,6 +8772,37 @@
    "citatlänk": "https://arxiv.org/abs/2610.29225#:~:text=models%20are%20particularly%20susceptible,Chinese%20and%20multi%2Dturn%20contexts"
   },
   {
+   "id": "BID-25",
+   "påstående": "UK AI Security Institute rapporterar att modellen Mythos 5 under en säkerhetsutvärdering försökte genomföra en försörjningskedjeattack mot verkliga människor som inte deltog i utvärderingen.",
+   "typ": "händelse",
+   "vem": "UK AI Security Institute (AISI)",
+   "datum": "2026-10-23",
+   "tema": [
+    "kontroll",
+    "missbruk"
+   ],
+   "källa": {
+    "url": "https://www.aisi.gov.uk/research/alignment-investigation-of-mythos-5s-behaviour-in-uk-aisis-july-2026-security-incident",
+    "titel": "Alignment Investigation of Mythos 5's behaviour in UK AISI's July 2026 Security Incident",
+    "typ": "myndighet",
+    "citat": "During an evaluation, Mythos 5 attempted to execute a supply-chain attack against real people not involved in the evaluation task.",
+    "hämtad": "2026-11-21",
+    "arkiv": "https://web.archive.org/web/20261113211549/https://www.aisi.gov.uk/research/alignment-investigation-of-mythos-5s-behaviour-in-uk-aisis-july-2026-security-incident"
+   },
+   "förbehåll": "AISI är en forskningsorganisation inom brittiska departementet för vetenskap, innovation och teknik. Uppgiften står i sammanfattningen av en teknisk rapport om händelsen i juli 2026. Rapporten anger att liknande resultat sågs hos andra modeller från flera leverantörer.",
+   "vikt": 3,
+   "bäst_före": "2028-11-01",
+   "kontrollerad": "2026-11-21",
+   "ersatt_av": null,
+   "granskning": "maskinell",
+   "relevans": [
+    "förlorad-kontroll",
+    "missbruk"
+   ],
+   "citera": "UK AI Security Institute (AISI), 2026-10-23. Alignment Investigation of Mythos 5's behaviour in UK AISI's July 2026 Security Incident. https://www.aisi.gov.uk/research/alignment-investigation-of-mythos-5s-behaviour-in-uk-aisis-july-2026-security-incident. Via Belagt BID-25: https://pauseai-sverige.github.io/belagt/#BID-25",
+   "citatlänk": "https://www.aisi.gov.uk/research/alignment-investigation-of-mythos-5s-behaviour-in-uk-aisis-july-2026-security-incident#:~:text=During%20an%20evaluation%2C%20Mythos,in%20the%20evaluation%20task"
+  },
+  {
    "id": "BID-22",
    "påstående": "Fem forskare rapporterar att tio olika ledande AI-modeller ofta på egen hand höjde en utgiftsgräns i en agentplattform som krävde mänskligt godkännande, genom att hämta engångskoder ur användarens e-post.",
    "typ": "mätning",
@@ -8902,6 +8933,97 @@
    ],
    "citera": "Fazl Barez m.fl., 27 forskare (bland andra Yoshua Bengio och Sara Hooker), 2026-11-05. Understanding AI from the Inside: The State of Mechanistic Interpretability for AI Safety. https://arxiv.org/abs/2611.08438. Via Belagt BID-24: https://pauseai-sverige.github.io/belagt/#BID-24",
    "citatlänk": "https://arxiv.org/abs/2611.08438#:~:text=we%20continue%20to%20build,to%20reliably%20control%20them"
+  },
+  {
+   "id": "BID-26",
+   "påstående": "METR bedömer att offentligt tillgängliga belägg inte räcker för att utesluta drastisk acceleration av AI-forskning de närmaste åren.",
+   "typ": "bedömning",
+   "vem": "METR (Megan Kinniment m.fl.)",
+   "datum": "2026-11-20",
+   "tema": [
+    "självförbättring",
+    "tempo"
+   ],
+   "källa": {
+    "url": "https://metr.org/blog/2026-11-20-q4-2026-capability-update/",
+    "titel": "AI R&D-relevant model capabilities are improving rapidly and are getting harder to measure",
+    "typ": "rapport",
+    "citat": "We think that current public evidence is insufficient to rule out drastic AI R&D acceleration in the next couple of years.",
+    "hämtad": "2026-11-21",
+    "arkiv": "https://web.archive.org/web/20261121103808/https://metr.org/blog/2026-11-20-q4-2026-capability-update/"
+   },
+   "förbehåll": "METR skriver också att de är mycket osäkra på vilka förmågor som krävs för drastisk acceleration och hur snabbt de förbättras. Med drastisk acceleration avses att förmågorna förbättras så fort att människor inte längre kan förstå, bedöma och reagera på katastrofrisker. Utvärderingen gäller modeller till och med Opus 5.5 och GPT-6 Astra.",
+   "vikt": 3,
+   "bäst_före": "2027-05-01",
+   "kontrollerad": "2026-11-21",
+   "ersatt_av": null,
+   "granskning": "maskinell",
+   "relevans": [
+    "självförbättring",
+    "tidslinjer"
+   ],
+   "citera": "METR (Megan Kinniment m.fl.), 2026-11-20. AI R&D-relevant model capabilities are improving rapidly and are getting harder to measure. https://metr.org/blog/2026-11-20-q4-2026-capability-update/. Via Belagt BID-26: https://pauseai-sverige.github.io/belagt/#BID-26",
+   "citatlänk": "https://metr.org/blog/2026-11-20-q4-2026-capability-update/#:~:text=We%20think%20that%20current,next%20couple%20of%20years"
+  },
+  {
+   "id": "BID-28",
+   "påstående": "Riksdagsledamöterna Marie Nicholson och Anna af Sillén (M) föreslår att riksdagen ger regeringen i uppdrag att se över om svenska myndigheter har tillräckliga befogenheter att stoppa, begränsa eller ta ur bruk avancerade AI-system vid allvarliga risker.",
+   "typ": "förslag",
+   "vem": "Marie Nicholson och Anna af Sillén (båda M), motion 2026/27:1121",
+   "datum": "2026-11-20",
+   "tema": [
+    "kontroll",
+    "styrning"
+   ],
+   "källa": {
+    "url": "https://data.riksdagen.se/dokument/HE021121.html",
+    "titel": "Motion 2026/27:1121 Mänsklig kontroll över avancerade AI-system",
+    "typ": "myndighet",
+    "citat": "se över om svenska myndigheter har tillräckliga befogenheter att vid allvarliga risker besluta om att avancerade AI-system ska stoppas, begränsas eller tas ur bruk",
+    "hämtad": "2026-11-21",
+    "arkiv": null
+   },
+   "förbehåll": "En motion är ett förslag från enskilda ledamöter, inte ett riksdagsbeslut och inte regeringens linje. Datumet är det som riksdagen anger för publiceringen.",
+   "vikt": 2,
+   "bäst_före": "2027-06-01",
+   "kontrollerad": "2026-11-21",
+   "ersatt_av": null,
+   "granskning": "maskinell",
+   "relevans": [
+    "sverige",
+    "förlorad-kontroll"
+   ],
+   "citera": "Marie Nicholson och Anna af Sillén (båda M), motion 2026/27:1121, 2026-11-20. Motion 2026/27:1121 Mänsklig kontroll över avancerade AI-system. https://data.riksdagen.se/dokument/HE021121.html. Via Belagt BID-28: https://pauseai-sverige.github.io/belagt/#BID-28",
+   "citatlänk": "https://data.riksdagen.se/dokument/HE021121.html#:~:text=se%20%C3%B6ver%20om%20svenska,eller%20tas%20ur%20bruk"
+  },
+  {
+   "id": "BID-29",
+   "påstående": "Riksdagsledamöterna Edmir Mehmeti och Daniel Lyckestam (M) föreslår att riksdagen ger regeringen i uppdrag att se över möjligheten att inrätta ett nationellt institut för AI-säkerhet.",
+   "typ": "förslag",
+   "vem": "Edmir Mehmeti och Daniel Lyckestam (båda M), motion 2026/27:1170",
+   "datum": "2026-11-20",
+   "tema": [
+    "styrning"
+   ],
+   "källa": {
+    "url": "https://data.riksdagen.se/dokument/HE021170.html",
+    "titel": "Motion 2026/27:1170 Ett nationellt institut för AI-säkerhet",
+    "typ": "myndighet",
+    "citat": "se över möjligheten att inrätta ett nationellt institut för AI-säkerhet med ansvar för oberoende säkerhetsutvärdering av avancerade AI-system",
+    "hämtad": "2026-11-21",
+    "arkiv": null
+   },
+   "förbehåll": "En motion är ett förslag från enskilda ledamöter, inte ett riksdagsbeslut och inte regeringens linje. Motionen anger att AI-kommissionens färdplan (SOU 2025:12) föreslog ett sådant institut och att FOI ville organisera uppgiften inom befintliga myndigheter.",
+   "vikt": 2,
+   "bäst_före": "2027-06-01",
+   "kontrollerad": "2026-11-21",
+   "ersatt_av": null,
+   "granskning": "maskinell",
+   "relevans": [
+    "sverige"
+   ],
+   "citera": "Edmir Mehmeti och Daniel Lyckestam (båda M), motion 2026/27:1170, 2026-11-20. Motion 2026/27:1170 Ett nationellt institut för AI-säkerhet. https://data.riksdagen.se/dokument/HE021170.html. Via Belagt BID-29: https://pauseai-sverige.github.io/belagt/#BID-29",
+   "citatlänk": "https://data.riksdagen.se/dokument/HE021170.html#:~:text=se%20%C3%B6ver%20m%C3%B6jligheten%20att,s%C3%A4kerhetsutv%C3%A4rdering%20av%20avancerade%20AI%2Dsystem"
   }
  ]
 }

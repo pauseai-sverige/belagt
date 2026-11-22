@@ -1,0 +1,22 @@
+id: BID-29
+påstående: Riksdagsledamöterna Edmir Mehmeti och Daniel Lyckestam (M) föreslår att riksdagen ger regeringen i uppdrag att se över möjligheten att inrätta ett nationellt institut för AI-säkerhet.
+typ: förslag
+vem: Edmir Mehmeti och Daniel Lyckestam (båda M), motion 2026/27:1170
+datum: '2026-11-20'
+tema:
+- styrning
+källa:
+  url: https://data.riksdagen.se/dokument/HE021170.html
+  titel: Motion 2026/27:1170 Ett nationellt institut för AI-säkerhet
+  typ: myndighet
+  citat: se över möjligheten att inrätta ett nationellt institut för AI-säkerhet med ansvar för oberoende säkerhetsutvärdering av avancerade AI-system
+  hämtad: '2026-11-21'
+  arkiv: null
+förbehåll: En motion är ett förslag från enskilda ledamöter, inte ett riksdagsbeslut och inte regeringens linje. Motionen anger att AI-kommissionens färdplan (SOU 2025:12) föreslog ett sådant institut och att FOI ville organisera uppgiften inom befintliga myndigheter.
+vikt: 2
+bäst_före: '2027-06-01'
+kontrollerad: '2026-11-21'
+ersatt_av: null
+granskning: maskinell
+relevans:
+- sverige

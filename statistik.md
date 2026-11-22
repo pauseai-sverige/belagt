@@ -4,12 +4,12 @@
 
 Varje påstående i arkivet är kontrollerat mot sin källa. Men arkivet kan ändå ge en skev bild om *urvalet* är skevt, till exempel om en enda rapport eller ett enda företag står för en stor del av posterna. Den här sidan visar hur arkivet fördelar sig, så att det syns var det är tunt.
 
-- **341** påståenden, varav 325 aktuella och 16 ersatta
-- **142** olika källor och **83** olika webbplatser
-- **0** poster saknar ännu arkivkopia
+- **345** påståenden, varav 329 aktuella och 16 ersatta
+- **146** olika källor och **85** olika webbplatser
+- **2** poster saknar ännu arkivkopia
 - **37** översättningar är inte granskade av någon som läser språket
 - **10** aktuella poster bygger på att någon annan återger primärkällan: BAL-13, BAL-14, BAL-15, BID-06, BID-15, J3ljHm57yU0-01, KIN-23, SVR-14, SVR-15, SVS-13. Intervjuer i medier räknas med här, men duger enligt [metoden](METOD.md) när tidningen själv har gjort intervjun.
-- **1** poster är maskinellt granskade och väntar på att kunna lottas till [stickprov](METOD.md#granskning), och **0** har en människa läst mot källan i ett stickprov. Övriga kom in före november 2026, via en pull request som en människa slog ihop.
+- **5** poster är maskinellt granskade och väntar på att kunna lottas till [stickprov](METOD.md#granskning), och **0** har en människa läst mot källan i ett stickprov. Övriga kom in före november 2026, via en pull request som en människa slog ihop.
 
 ## Tema
 
@@ -18,11 +18,11 @@ Ett påstående kan ha flera teman, så andelarna summerar till mer än 100 %.
 | | Antal | Andel |
 |---|---:|---:|
 | förmågor | 40 | 12 % |
-| tempo | 38 | 11 % |
-| självförbättring | 11 | 3 % |
-| kontroll | 74 | 22 % |
-| missbruk | 37 | 11 % |
-| styrning | 123 | 36 % |
+| tempo | 39 | 11 % |
+| självförbättring | 12 | 3 % |
+| kontroll | 76 | 22 % |
+| missbruk | 38 | 11 % |
+| styrning | 125 | 36 % |
 | geopolitik | 27 | 8 % |
 | nytta | 20 | 6 % |
 | röster | 89 | 26 % |
@@ -34,11 +34,11 @@ Ett påstående kan ha flera teman, så andelarna summerar till mer än 100 %.
 
 | | Antal | Andel |
 |---|---:|---:|
-| bedömning | 102 | 30 % |
-| händelse | 97 | 28 % |
+| bedömning | 103 | 30 % |
+| händelse | 98 | 28 % |
 | mätning | 79 | 23 % |
 | prognos | 34 | 10 % |
-| förslag | 29 | 9 % |
+| förslag | 31 | 9 % |
 
 ## Typ av källa
 
@@ -46,19 +46,19 @@ Ett påstående kan ha flera teman, så andelarna summerar till mer än 100 %.
 
 | | Antal | Andel |
 |---|---:|---:|
-| myndighet | 73 | 21 % |
+| myndighet | 76 | 22 % |
 | granskad | 3 | 1 % |
 | preprint | 20 | 6 % |
-| rapport | 96 | 28 % |
+| rapport | 97 | 28 % |
 | partsuppgift | 68 | 20 % |
 | opinion | 45 | 13 % |
-| media | 36 | 11 % |
+| media | 36 | 10 % |
 
 ## Språk i källan
 
 | | Antal | Andel |
 |---|---:|---:|
-| engelska eller svenska | 304 | 89 % |
+| engelska eller svenska | 308 | 89 % |
 | kinesiska | 27 | 8 % |
 | koreanska | 3 | 1 % |
 | portugisiska | 2 | 1 % |
@@ -70,7 +70,7 @@ Ett påstående kan ha flera teman, så andelarna summerar till mer än 100 %.
 
 | | Antal | Andel |
 |---|---:|---:|
-| 2026 | 215 | 63 % |
+| 2026 | 219 | 63 % |
 | 2025 | 79 | 23 % |
 | 2024 | 24 | 7 % |
 | 2023 | 17 | 5 % |
@@ -89,9 +89,9 @@ De 15 som står bakom flest påståenden.
 | International AI Safety Report 2026 | 38 | 11 % |
 | OpenAI | 27 | 8 % |
 | METR och Redwood Research | 14 | 4 % |
-| Dario Amodei | 12 | 4 % |
-| IEA | 12 | 4 % |
-| Kinas cyberrymdsmyndighet | 12 | 4 % |
+| Dario Amodei | 12 | 3 % |
+| IEA | 12 | 3 % |
+| Kinas cyberrymdsmyndighet | 12 | 3 % |
 | Anthropic | 11 | 3 % |
 | AI Impacts | 8 | 2 % |
 | Forecasting Research Institute | 7 | 2 % |
@@ -108,9 +108,9 @@ De 15 som står bakom flest påståenden.
 |---|---:|---:|
 | arxiv.org | 68 | 20 % |
 | openai.com | 28 | 8 % |
-| metr.org | 16 | 5 % |
+| metr.org | 17 | 5 % |
 | cac.gov.cn | 15 | 4 % |
-| iea.org | 12 | 4 % |
+| iea.org | 12 | 3 % |
 | anthropic.com | 10 | 3 % |
 | darioamodei.com | 10 | 3 % |
 | theguardian.com | 7 | 2 % |
@@ -128,6 +128,10 @@ Hur många tips från varje källa i [bevakning.yaml](bevakning.yaml) som har g�
 
 | Källa | Veckor | Tips | Poster |
 |---|---:|---:|---:|
+| Riksdagen, dokument om artificiell intelligens | 1 | 6 | 2 |
+| Storbritanniens AI Security Institute | 1 | 7 | 1 |
 | arXiv, kontroll och risk | 1 | 5 | 1 |
+| Epoch AI | 1 | 4 | 1 |
+| METR | 1 | 2 | 1 |
 | OpenAI | 1 | 2 | 0 |
-| Egen sökning | 1 | 0 | 0 |
+| Egen sökning | 2 | 0 | 0 |

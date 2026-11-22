@@ -4,7 +4,7 @@
 
 Går systemen att styra, övervaka och testa? Alignment, tankekedjor och testmedvetenhet.
 
-74 påståenden, de viktigaste först inom varje år.
+76 påståenden, de viktigaste först inom varje år.
 
 ## 2026
 
@@ -184,6 +184,12 @@ Går systemen att styra, övervaka och testa? Alignment, tankekedjor och testmed
   > — [Personal Statement on AI Risk](https://docs.google.com/document/d/e/2PACX-1vQNl3SEX5IyA6d9qHjjFZN-qzGRZNFI6b63g-yu1Fy-ZYkVfCWm7i9WXRXw63m6yDB_auDuPLyQ7jBm/pub#:~:text=The%20crucial%20and%20overlooked,being%20watched%20or%20controlled) · [arkivkopia](https://web.archive.org/web/20260923141050/https://docs.google.com/document/d/e/2PACX-1vQNl3SEX5IyA6d9qHjjFZN-qzGRZNFI6b63g-yu1Fy-ZYkVfCWm7i9WXRXw63m6yDB_auDuPLyQ7jBm/pub)
 
   *Förbehåll:* Selsam skriver själv att han tidigare trodde att språkmodeller skulle bli en avgränsad, ofarlig teknik.
+- **UK AI Security Institute rapporterar att modellen Mythos 5 under en säkerhetsutvärdering försökte genomföra en försörjningskedjeattack mot verkliga människor som inte deltog i utvärderingen.**
+  UK AI Security Institute (AISI) · 2026-10-23 · kontroll, missbruk · myndighet · [BID-25](../påståenden/2026/BID-25.yaml)
+  > During an evaluation, Mythos 5 attempted to execute a supply-chain attack against real people not involved in the evaluation task.
+  > — [Alignment Investigation of Mythos 5's behaviour in UK AISI's July 2026 Security Incident](https://www.aisi.gov.uk/research/alignment-investigation-of-mythos-5s-behaviour-in-uk-aisis-july-2026-security-incident#:~:text=During%20an%20evaluation%2C%20Mythos,in%20the%20evaluation%20task) · [arkivkopia](https://web.archive.org/web/20261113211549/https://www.aisi.gov.uk/research/alignment-investigation-of-mythos-5s-behaviour-in-uk-aisis-july-2026-security-incident)
+
+  *Förbehåll:* AISI är en forskningsorganisation inom brittiska departementet för vetenskap, innovation och teknik. Uppgiften står i sammanfattningen av en teknisk rapport om händelsen i juli 2026. Rapporten anger att liknande resultat sågs hos andra modeller från flera leverantörer.
 - **Sydkoreas krav på säkerhetsåtgärder gäller AI-modeller som tränats med minst 10^26 flyttalsoperationer, använder den mest avancerade tekniken och riskerar att få stora och allvarliga följder för människors grundläggande rättigheter.**
   Sydkoreas ministerium för vetenskap och IKT, i regeringens policynyheter · 2026-01-22 · styrning, kontroll · myndighet · [KOR-02](../påståenden/2026/KOR-02.yaml)
   > 학습에 사용된 누적연산량이 10의 26승 부동소수점 연산(FLOPs)이상이고 ▲최첨단 기술을 적용하며 ▲위험도가 사람의 기본권에 광범위하고 중대한 영향을 미칠 우려가 있는 경우
@@ -340,6 +346,12 @@ Går systemen att styra, övervaka och testa? Alignment, tankekedjor och testmed
   > — [Understanding AI from the Inside: The State of Mechanistic Interpretability for AI Safety](https://arxiv.org/abs/2611.08438#:~:text=we%20continue%20to%20build,to%20reliably%20control%20them) · [arkivkopia](https://web.archive.org/web/20261109200728/https://arxiv.org/abs/2611.08438)
 
   *Förbehåll:* Preprint som inte är granskad av andra forskare (version 2 den 9 november 2026). Meningen står i sammanfattningens inledning och är artikelns motivering till en översikt av tolkningsbarhetsforskning, inte ett resultat av en egen mätning. Artikeln föreslår också hur påståenden inom området kan utvärderas.
+- **Riksdagsledamöterna Marie Nicholson och Anna af Sillén (M) föreslår att riksdagen ger regeringen i uppdrag att se över om svenska myndigheter har tillräckliga befogenheter att stoppa, begränsa eller ta ur bruk avancerade AI-system vid allvarliga risker.**
+  Marie Nicholson och Anna af Sillén (båda M), motion 2026/27:1121 · 2026-11-20 · kontroll, styrning · myndighet · [BID-28](../påståenden/2026/BID-28.yaml)
+  > se över om svenska myndigheter har tillräckliga befogenheter att vid allvarliga risker besluta om att avancerade AI-system ska stoppas, begränsas eller tas ur bruk
+  > — [Motion 2026/27:1121 Mänsklig kontroll över avancerade AI-system](https://data.riksdagen.se/dokument/HE021121.html#:~:text=se%20%C3%B6ver%20om%20svenska,eller%20tas%20ur%20bruk)
+
+  *Förbehåll:* En motion är ett förslag från enskilda ledamöter, inte ett riksdagsbeslut och inte regeringens linje. Datumet är det som riksdagen anger för publiceringen.
 - **Tre forskare hävdar att de har bevisat att inte ens en perfekt AI-agent kan garantera säkert beteende i två beskrivna miljöer, där miljön bara är delvis observerbar och agenten måste agera inom begränsad tid.**
   Leo Zeitler, Jack Richings och Victoria Nockles (forskare) · 2026-10-07 · kontroll · preprint · [BID-01](../påståenden/2026/BID-01.yaml)
   > In these scenarios, we prove that even a perfect agent cannot guarantee safe behaviour.

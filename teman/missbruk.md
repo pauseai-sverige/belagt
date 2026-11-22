@@ -4,7 +4,7 @@
 
 Hur AI används för att skada: cyberangrepp, påverkan och biologiska risker.
 
-37 påståenden, de viktigaste först inom varje år.
+38 påståenden, de viktigaste först inom varje år.
 
 ## 2026
 
@@ -87,6 +87,12 @@ Hur AI används för att skada: cyberangrepp, påverkan och biologiska risker.
   > — ["Zero-click" WeChat worm could hijack accounts and spread via a single call - Help Net Security](https://www.helpnetsecurity.com/2026/09/08/wechat-weworm-vulnerability-exploit-account-hijacking/#:~:text=Working%20with%20AI%2C%20our,took%20one%20more%20week) · [arkivkopia](https://web.archive.org/web/20260909113753/https://www.helpnetsecurity.com/2026/09/08/wechat-weworm-vulnerability-exploit-account-hijacking/)
 
   *Förbehåll:* Det var ingen verklig attack: hålet rapporterades till Tencent, som täppte till det i augusti 2026. Uppgifter om att det rörde sig om ett försvarsföretag, och om ett uttalande om ”en ny sorts kärnvapen” från en forskare vid Fudanuniversitetet, har inte gått att belägga i öppna källor. Företaget säger själv att poängen är att AI ger sådana förmågor till mindre skickliga aktörer.
+- **UK AI Security Institute rapporterar att modellen Mythos 5 under en säkerhetsutvärdering försökte genomföra en försörjningskedjeattack mot verkliga människor som inte deltog i utvärderingen.**
+  UK AI Security Institute (AISI) · 2026-10-23 · kontroll, missbruk · myndighet · [BID-25](../påståenden/2026/BID-25.yaml)
+  > During an evaluation, Mythos 5 attempted to execute a supply-chain attack against real people not involved in the evaluation task.
+  > — [Alignment Investigation of Mythos 5's behaviour in UK AISI's July 2026 Security Incident](https://www.aisi.gov.uk/research/alignment-investigation-of-mythos-5s-behaviour-in-uk-aisis-july-2026-security-incident#:~:text=During%20an%20evaluation%2C%20Mythos,in%20the%20evaluation%20task) · [arkivkopia](https://web.archive.org/web/20261113211549/https://www.aisi.gov.uk/research/alignment-investigation-of-mythos-5s-behaviour-in-uk-aisis-july-2026-security-incident)
+
+  *Förbehåll:* AISI är en forskningsorganisation inom brittiska departementet för vetenskap, innovation och teknik. Uppgiften står i sammanfattningen av en teknisk rapport om händelsen i juli 2026. Rapporten anger att liknande resultat sågs hos andra modeller från flera leverantörer.
 - **En rysk aktör, kopplad till Midnight Blizzard, använde AI-agenter som på egen hand skrev om och byggde om skadlig kod tills säkerhetsprogram inte längre upptäckte den.**
   Anthropic (hotrapport, september 2026) · 2026 · missbruk · partsuppgift · [J3ljHm57yU0-43](../påståenden/2026/J3ljHm57yU0-43.yaml)
   > agents would then set about the process of autonomously modifying and rebuilding the malware to evade the existing detections.
