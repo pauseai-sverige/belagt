@@ -2163,7 +2163,7 @@ Alla 345 påståenden i arkivet, i den ordning det de handlar om hände eller sa
 - **Riksdagsledamöterna Marie Nicholson och Anna af Sillén (M) föreslår att riksdagen ger regeringen i uppdrag att se över om svenska myndigheter har tillräckliga befogenheter att stoppa, begränsa eller ta ur bruk avancerade AI-system vid allvarliga risker.**
   Marie Nicholson och Anna af Sillén (båda M), motion 2026/27:1121 · 2026-11-20 · kontroll, styrning · myndighet · [BID-28](./påståenden/2026/BID-28.yaml)
   > se över om svenska myndigheter har tillräckliga befogenheter att vid allvarliga risker besluta om att avancerade AI-system ska stoppas, begränsas eller tas ur bruk
-  > — [Motion 2026/27:1121 Mänsklig kontroll över avancerade AI-system](https://data.riksdagen.se/dokument/HE021121.html#:~:text=se%20%C3%B6ver%20om%20svenska,eller%20tas%20ur%20bruk)
+  > — [Motion 2026/27:1121 Mänsklig kontroll över avancerade AI-system](https://data.riksdagen.se/dokument/HE021121.html#:~:text=se%20%C3%B6ver%20om%20svenska,eller%20tas%20ur%20bruk) · [arkivkopia](https://web.archive.org/web/20261123143154/https://data.riksdagen.se/dokument/HE021121.html)
 
   *Förbehåll:* En motion är ett förslag från enskilda ledamöter, inte ett riksdagsbeslut och inte regeringens linje. Datumet är det som riksdagen anger för publiceringen.
 - **Riksdagsledamöterna Edmir Mehmeti och Daniel Lyckestam (M) föreslår att riksdagen ger regeringen i uppdrag att se över möjligheten att inrätta ett nationellt institut för AI-säkerhet.**
